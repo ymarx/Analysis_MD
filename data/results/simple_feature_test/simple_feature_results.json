@@ -1,0 +1,33 @@
+{
+  "statistical": {
+    "feature_count": 16,
+    "extraction_time_ms": 10.93602180480957,
+    "success_rate": 1.0,
+    "description": "기본 통계 + 히스토그램 특징",
+    "classification_accuracy": 1.0,
+    "accuracy_std": 0.0
+  },
+  "hog_simple": {
+    "feature_count": 1568,
+    "extraction_time_ms": 97.32604026794434,
+    "success_rate": 1.0,
+    "description": "기본 HOG 특징 (8방향, 8x8셀)",
+    "classification_accuracy": 0.4365079365079365,
+    "accuracy_std": 0.22363496513659323
+  },
+  "texture_simple": {
+    "feature_count": 6,
+    "extraction_time_ms": 7.715702056884766,
+    "success_rate": 1.0,
+    "description": "기울기 + 지역 분산 기반 텍스처",
+    "classification_accuracy": 1.0,
+    "accuracy_std": 0.0
+  },
+  "metadata": {
+    "test_date": "2025-09-09T11:24:00.115233",
+    "num_samples": 20,
+    "positive_samples": 10,
+    "negative_samples": 10,
+    "image_size": "64x64"
+  }
+}

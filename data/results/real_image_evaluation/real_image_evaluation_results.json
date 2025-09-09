@@ -1,0 +1,689 @@
+{
+  "analysis_type": "real_image_feature_extraction",
+  "data_summary": {
+    "mine_images": 15,
+    "background_images": 15,
+    "total_images": 30
+  },
+  "extractor_results": {
+    "MultiScale_HOG": {
+      "mine": {
+        "extractor_name": "MultiScale_HOG",
+        "description": "다중 스케일 HOG 특징 추출기",
+        "image_type": "mine",
+        "total_images": 15,
+        "successful_extractions": 0,
+        "failed_extractions": 15,
+        "extraction_times": [],
+        "feature_counts": [],
+        "feature_statistics": {},
+        "errors": [
+          "이미지 0: 'MultiScaleHOGExtractor' object has no attribute 'extract_comprehensive_features'",
+          "이미지 1: 'MultiScaleHOGExtractor' object has no attribute 'extract_comprehensive_features'",
+          "이미지 2: 'MultiScaleHOGExtractor' object has no attribute 'extract_comprehensive_features'",
+          "이미지 3: 'MultiScaleHOGExtractor' object has no attribute 'extract_comprehensive_features'",
+          "이미지 4: 'MultiScaleHOGExtractor' object has no attribute 'extract_comprehensive_features'",
+          "이미지 5: 'MultiScaleHOGExtractor' object has no attribute 'extract_comprehensive_features'",
+          "이미지 6: 'MultiScaleHOGExtractor' object has no attribute 'extract_comprehensive_features'",
+          "이미지 7: 'MultiScaleHOGExtractor' object has no attribute 'extract_comprehensive_features'",
+          "이미지 8: 'MultiScaleHOGExtractor' object has no attribute 'extract_comprehensive_features'",
+          "이미지 9: 'MultiScaleHOGExtractor' object has no attribute 'extract_comprehensive_features'",
+          "이미지 10: 'MultiScaleHOGExtractor' object has no attribute 'extract_comprehensive_features'",
+          "이미지 11: 'MultiScaleHOGExtractor' object has no attribute 'extract_comprehensive_features'",
+          "이미지 12: 'MultiScaleHOGExtractor' object has no attribute 'extract_comprehensive_features'",
+          "이미지 13: 'MultiScaleHOGExtractor' object has no attribute 'extract_comprehensive_features'",
+          "이미지 14: 'MultiScaleHOGExtractor' object has no attribute 'extract_comprehensive_features'"
+        ],
+        "success_rate": 0.0,
+        "avg_extraction_time": 0.0,
+        "avg_feature_count": 0.0
+      },
+      "background": {
+        "extractor_name": "MultiScale_HOG",
+        "description": "다중 스케일 HOG 특징 추출기",
+        "image_type": "background",
+        "total_images": 15,
+        "successful_extractions": 0,
+        "failed_extractions": 15,
+        "extraction_times": [],
+        "feature_counts": [],
+        "feature_statistics": {},
+        "errors": [
+          "이미지 0: 'MultiScaleHOGExtractor' object has no attribute 'extract_comprehensive_features'",
+          "이미지 1: 'MultiScaleHOGExtractor' object has no attribute 'extract_comprehensive_features'",
+          "이미지 2: 'MultiScaleHOGExtractor' object has no attribute 'extract_comprehensive_features'",
+          "이미지 3: 'MultiScaleHOGExtractor' object has no attribute 'extract_comprehensive_features'",
+          "이미지 4: 'MultiScaleHOGExtractor' object has no attribute 'extract_comprehensive_features'",
+          "이미지 5: 'MultiScaleHOGExtractor' object has no attribute 'extract_comprehensive_features'",
+          "이미지 6: 'MultiScaleHOGExtractor' object has no attribute 'extract_comprehensive_features'",
+          "이미지 7: 'MultiScaleHOGExtractor' object has no attribute 'extract_comprehensive_features'",
+          "이미지 8: 'MultiScaleHOGExtractor' object has no attribute 'extract_comprehensive_features'",
+          "이미지 9: 'MultiScaleHOGExtractor' object has no attribute 'extract_comprehensive_features'",
+          "이미지 10: 'MultiScaleHOGExtractor' object has no attribute 'extract_comprehensive_features'",
+          "이미지 11: 'MultiScaleHOGExtractor' object has no attribute 'extract_comprehensive_features'",
+          "이미지 12: 'MultiScaleHOGExtractor' object has no attribute 'extract_comprehensive_features'",
+          "이미지 13: 'MultiScaleHOGExtractor' object has no attribute 'extract_comprehensive_features'",
+          "이미지 14: 'MultiScaleHOGExtractor' object has no attribute 'extract_comprehensive_features'"
+        ],
+        "success_rate": 0.0,
+        "avg_extraction_time": 0.0,
+        "avg_feature_count": 0.0
+      }
+    },
+    "Comprehensive_LBP": {
+      "mine": {
+        "extractor_name": "Comprehensive_LBP",
+        "description": "종합 LBP 특징 추출기",
+        "image_type": "mine",
+        "total_images": 15,
+        "successful_extractions": 15,
+        "failed_extractions": 0,
+        "extraction_times": [
+          19.88387107849121,
+          18.158912658691406,
+          15.80190658569336,
+          16.535043716430664,
+          16.412973403930664,
+          15.302896499633789,
+          15.894174575805664,
+          15.711784362792969,
+          15.304803848266602,
+          15.147209167480469,
+          18.064022064208984,
+          16.102075576782227,
+          15.722274780273438,
+          15.015840530395508,
+          15.491247177124023
+        ],
+        "feature_counts": [
+          162,
+          162,
+          162,
+          162,
+          162,
+          162,
+          162,
+          162,
+          162,
+          162,
+          162,
+          162,
+          162,
+          162,
+          162
+        ],
+        "feature_statistics": {
+          "mean": 0.0555555559694767,
+          "std": 0.0991627648472786,
+          "min": 0.0,
+          "max": 0.6086956262588501,
+          "total_features": 2430
+        },
+        "errors": [],
+        "success_rate": 1.0,
+        "avg_extraction_time": 16.303269068400066,
+        "avg_feature_count": 162.0,
+        "std_extraction_time": 1.3223147349168114,
+        "std_feature_count": 0.0
+      },
+      "background": {
+        "extractor_name": "Comprehensive_LBP",
+        "description": "종합 LBP 특징 추출기",
+        "image_type": "background",
+        "total_images": 15,
+        "successful_extractions": 15,
+        "failed_extractions": 0,
+        "extraction_times": [
+          14.710187911987305,
+          16.609907150268555,
+          16.639232635498047,
+          15.668869018554688,
+          16.9069766998291,
+          15.138864517211914,
+          24.14417266845703,
+          24.32394027709961,
+          36.12017631530762,
+          15.559911727905273,
+          17.589807510375977,
+          16.202926635742188,
+          15.10000228881836,
+          14.77813720703125,
+          15.848875045776367
+        ],
+        "feature_counts": [
+          162,
+          162,
+          162,
+          162,
+          162,
+          162,
+          162,
+          162,
+          162,
+          162,
+          162,
+          162,
+          162,
+          162,
+          162
+        ],
+        "feature_statistics": {
+          "mean": 0.0555555559694767,
+          "std": 0.10003041476011276,
+          "min": 0.0,
+          "max": 0.6086956262588501,
+          "total_features": 2430
+        },
+        "errors": [],
+        "success_rate": 1.0,
+        "avg_extraction_time": 18.35613250732422,
+        "avg_feature_count": 162.0,
+        "std_extraction_time": 5.575976904000235,
+        "std_feature_count": 0.0
+      }
+    },
+    "Advanced_Gabor": {
+      "mine": {
+        "extractor_name": "Advanced_Gabor",
+        "description": "고급 Gabor 특징 추출기",
+        "image_type": "mine",
+        "total_images": 15,
+        "successful_extractions": 15,
+        "failed_extractions": 0,
+        "extraction_times": [
+          133.12196731567383,
+          106.94408416748047,
+          105.97896575927734,
+          103.62815856933594,
+          103.78384590148926,
+          98.77300262451172,
+          98.27208518981934,
+          101.51815414428711,
+          107.14912414550781,
+          95.81804275512695,
+          100.86894035339355,
+          95.30782699584961,
+          93.93000602722168,
+          93.26982498168945,
+          97.71013259887695
+        ],
+        "feature_counts": [
+          600,
+          600,
+          600,
+          600,
+          600,
+          600,
+          600,
+          600,
+          600,
+          600,
+          600,
+          600,
+          600,
+          600,
+          600
+        ],
+        "feature_statistics": {
+          "mean": -270.80242919921875,
+          "std": 1662.3463134765625,
+          "min": -21280.478515625,
+          "max": 592.2503051757812,
+          "total_features": 9000
+        },
+        "errors": [],
+        "success_rate": 1.0,
+        "avg_extraction_time": 102.4049441019694,
+        "avg_feature_count": 600.0,
+        "std_extraction_time": 9.335622116406556,
+        "std_feature_count": 0.0
+      },
+      "background": {
+        "extractor_name": "Advanced_Gabor",
+        "description": "고급 Gabor 특징 추출기",
+        "image_type": "background",
+        "total_images": 15,
+        "successful_extractions": 15,
+        "failed_extractions": 0,
+        "extraction_times": [
+          109.75217819213867,
+          107.3460578918457,
+          104.13527488708496,
+          140.58804512023926,
+          103.3940315246582,
+          108.24322700500488,
+          105.61990737915039,
+          91.16506576538086,
+          88.74106407165527,
+          90.25311470031738,
+          87.19921112060547,
+          86.42888069152832,
+          89.53309059143066,
+          88.39201927185059,
+          92.70691871643066
+        ],
+        "feature_counts": [
+          600,
+          600,
+          600,
+          600,
+          600,
+          600,
+          600,
+          600,
+          600,
+          600,
+          600,
+          600,
+          600,
+          600,
+          600
+        ],
+        "feature_statistics": {
+          "mean": -288.8141784667969,
+          "std": 1711.0250244140625,
+          "min": -20499.94921875,
+          "max": 587.2601928710938,
+          "total_features": 9000
+        },
+        "errors": [],
+        "success_rate": 1.0,
+        "avg_extraction_time": 99.56653912862141,
+        "avg_feature_count": 600.0,
+        "std_extraction_time": 13.825440607329016,
+        "std_feature_count": 0.0
+      }
+    }
+  },
+  "mine_vs_background_comparison": {
+    "MultiScale_HOG": {
+      "extractor_name": "MultiScale_HOG",
+      "mine_vs_background_analysis": {
+        "success_rate": {
+          "mine_value": 0.0,
+          "background_value": 0.0,
+          "difference": 0.0,
+          "ratio": 0.0
+        },
+        "avg_extraction_time": {
+          "mine_value": 0.0,
+          "background_value": 0.0,
+          "difference": 0.0,
+          "ratio": 0.0
+        },
+        "avg_feature_count": {
+          "mine_value": 0.0,
+          "background_value": 0.0,
+          "difference": 0.0,
+          "ratio": 0.0
+        }
+      }
+    },
+    "Comprehensive_LBP": {
+      "extractor_name": "Comprehensive_LBP",
+      "mine_vs_background_analysis": {
+        "success_rate": {
+          "mine_value": 1.0,
+          "background_value": 1.0,
+          "difference": 0.0,
+          "ratio": 0.9999999999
+        },
+        "avg_extraction_time": {
+          "mine_value": 16.303269068400066,
+          "background_value": 18.35613250732422,
+          "difference": -2.0528634389241525,
+          "ratio": 0.8881647079964223
+        },
+        "avg_feature_count": {
+          "mine_value": 162.0,
+          "background_value": 162.0,
+          "difference": 0.0,
+          "ratio": 0.9999999999993828
+        }
+      },
+      "feature_distribution_analysis": {
+        "mean_difference": 0.0,
+        "std_ratio": 0.9913261380146476,
+        "range_difference": 0.0,
+        "discriminative_power": 0.0
+      }
+    },
+    "Advanced_Gabor": {
+      "extractor_name": "Advanced_Gabor",
+      "mine_vs_background_analysis": {
+        "success_rate": {
+          "mine_value": 1.0,
+          "background_value": 1.0,
+          "difference": 0.0,
+          "ratio": 0.9999999999
+        },
+        "avg_extraction_time": {
+          "mine_value": 102.4049441019694,
+          "background_value": 99.56653912862141,
+          "difference": 2.8384049733479912,
+          "ratio": 1.0285076191066402
+        },
+        "avg_feature_count": {
+          "mine_value": 600.0,
+          "background_value": 600.0,
+          "difference": 0.0,
+          "ratio": 0.9999999999998332
+        }
+      },
+      "feature_distribution_analysis": {
+        "mean_difference": 18.011749267578125,
+        "std_ratio": 0.9715499713662767,
+        "range_difference": 785.5194091796875,
+        "discriminative_power": 0.005339391209400733
+      }
+    }
+  },
+  "synthetic_data_comparison": {
+    "real_data_results": {
+      "MultiScale_HOG": {
+        "extractor_name": "MultiScale_HOG",
+        "description": "다중 스케일 HOG 특징 추출기",
+        "image_type": "mine",
+        "total_images": 15,
+        "successful_extractions": 0,
+        "failed_extractions": 15,
+        "extraction_times": [],
+        "feature_counts": [],
+        "feature_statistics": {},
+        "errors": [
+          "이미지 0: 'MultiScaleHOGExtractor' object has no attribute 'extract_comprehensive_features'",
+          "이미지 1: 'MultiScaleHOGExtractor' object has no attribute 'extract_comprehensive_features'",
+          "이미지 2: 'MultiScaleHOGExtractor' object has no attribute 'extract_comprehensive_features'",
+          "이미지 3: 'MultiScaleHOGExtractor' object has no attribute 'extract_comprehensive_features'",
+          "이미지 4: 'MultiScaleHOGExtractor' object has no attribute 'extract_comprehensive_features'",
+          "이미지 5: 'MultiScaleHOGExtractor' object has no attribute 'extract_comprehensive_features'",
+          "이미지 6: 'MultiScaleHOGExtractor' object has no attribute 'extract_comprehensive_features'",
+          "이미지 7: 'MultiScaleHOGExtractor' object has no attribute 'extract_comprehensive_features'",
+          "이미지 8: 'MultiScaleHOGExtractor' object has no attribute 'extract_comprehensive_features'",
+          "이미지 9: 'MultiScaleHOGExtractor' object has no attribute 'extract_comprehensive_features'",
+          "이미지 10: 'MultiScaleHOGExtractor' object has no attribute 'extract_comprehensive_features'",
+          "이미지 11: 'MultiScaleHOGExtractor' object has no attribute 'extract_comprehensive_features'",
+          "이미지 12: 'MultiScaleHOGExtractor' object has no attribute 'extract_comprehensive_features'",
+          "이미지 13: 'MultiScaleHOGExtractor' object has no attribute 'extract_comprehensive_features'",
+          "이미지 14: 'MultiScaleHOGExtractor' object has no attribute 'extract_comprehensive_features'"
+        ],
+        "success_rate": 0.0,
+        "avg_extraction_time": 0.0,
+        "avg_feature_count": 0.0
+      },
+      "Comprehensive_LBP": {
+        "extractor_name": "Comprehensive_LBP",
+        "description": "종합 LBP 특징 추출기",
+        "image_type": "mine",
+        "total_images": 15,
+        "successful_extractions": 15,
+        "failed_extractions": 0,
+        "extraction_times": [
+          19.88387107849121,
+          18.158912658691406,
+          15.80190658569336,
+          16.535043716430664,
+          16.412973403930664,
+          15.302896499633789,
+          15.894174575805664,
+          15.711784362792969,
+          15.304803848266602,
+          15.147209167480469,
+          18.064022064208984,
+          16.102075576782227,
+          15.722274780273438,
+          15.015840530395508,
+          15.491247177124023
+        ],
+        "feature_counts": [
+          162,
+          162,
+          162,
+          162,
+          162,
+          162,
+          162,
+          162,
+          162,
+          162,
+          162,
+          162,
+          162,
+          162,
+          162
+        ],
+        "feature_statistics": {
+          "mean": 0.0555555559694767,
+          "std": 0.0991627648472786,
+          "min": 0.0,
+          "max": 0.6086956262588501,
+          "total_features": 2430
+        },
+        "errors": [],
+        "success_rate": 1.0,
+        "avg_extraction_time": 16.303269068400066,
+        "avg_feature_count": 162.0,
+        "std_extraction_time": 1.3223147349168114,
+        "std_feature_count": 0.0
+      },
+      "Advanced_Gabor": {
+        "extractor_name": "Advanced_Gabor",
+        "description": "고급 Gabor 특징 추출기",
+        "image_type": "mine",
+        "total_images": 15,
+        "successful_extractions": 15,
+        "failed_extractions": 0,
+        "extraction_times": [
+          133.12196731567383,
+          106.94408416748047,
+          105.97896575927734,
+          103.62815856933594,
+          103.78384590148926,
+          98.77300262451172,
+          98.27208518981934,
+          101.51815414428711,
+          107.14912414550781,
+          95.81804275512695,
+          100.86894035339355,
+          95.30782699584961,
+          93.93000602722168,
+          93.26982498168945,
+          97.71013259887695
+        ],
+        "feature_counts": [
+          600,
+          600,
+          600,
+          600,
+          600,
+          600,
+          600,
+          600,
+          600,
+          600,
+          600,
+          600,
+          600,
+          600,
+          600
+        ],
+        "feature_statistics": {
+          "mean": -270.80242919921875,
+          "std": 1662.3463134765625,
+          "min": -21280.478515625,
+          "max": 592.2503051757812,
+          "total_features": 9000
+        },
+        "errors": [],
+        "success_rate": 1.0,
+        "avg_extraction_time": 102.4049441019694,
+        "avg_feature_count": 600.0,
+        "std_extraction_time": 9.335622116406556,
+        "std_feature_count": 0.0
+      }
+    },
+    "synthetic_data_results": {
+      "MultiScale_HOG": {
+        "extractor_name": "MultiScale_HOG",
+        "description": "다중 스케일 HOG 특징 추출기",
+        "image_type": "synthetic",
+        "total_images": 15,
+        "successful_extractions": 0,
+        "failed_extractions": 15,
+        "extraction_times": [],
+        "feature_counts": [],
+        "feature_statistics": {},
+        "errors": [
+          "이미지 0: 'MultiScaleHOGExtractor' object has no attribute 'extract_comprehensive_features'",
+          "이미지 1: 'MultiScaleHOGExtractor' object has no attribute 'extract_comprehensive_features'",
+          "이미지 2: 'MultiScaleHOGExtractor' object has no attribute 'extract_comprehensive_features'",
+          "이미지 3: 'MultiScaleHOGExtractor' object has no attribute 'extract_comprehensive_features'",
+          "이미지 4: 'MultiScaleHOGExtractor' object has no attribute 'extract_comprehensive_features'",
+          "이미지 5: 'MultiScaleHOGExtractor' object has no attribute 'extract_comprehensive_features'",
+          "이미지 6: 'MultiScaleHOGExtractor' object has no attribute 'extract_comprehensive_features'",
+          "이미지 7: 'MultiScaleHOGExtractor' object has no attribute 'extract_comprehensive_features'",
+          "이미지 8: 'MultiScaleHOGExtractor' object has no attribute 'extract_comprehensive_features'",
+          "이미지 9: 'MultiScaleHOGExtractor' object has no attribute 'extract_comprehensive_features'",
+          "이미지 10: 'MultiScaleHOGExtractor' object has no attribute 'extract_comprehensive_features'",
+          "이미지 11: 'MultiScaleHOGExtractor' object has no attribute 'extract_comprehensive_features'",
+          "이미지 12: 'MultiScaleHOGExtractor' object has no attribute 'extract_comprehensive_features'",
+          "이미지 13: 'MultiScaleHOGExtractor' object has no attribute 'extract_comprehensive_features'",
+          "이미지 14: 'MultiScaleHOGExtractor' object has no attribute 'extract_comprehensive_features'"
+        ],
+        "success_rate": 0.0,
+        "avg_extraction_time": 0.0,
+        "avg_feature_count": 0.0
+      },
+      "Comprehensive_LBP": {
+        "extractor_name": "Comprehensive_LBP",
+        "description": "종합 LBP 특징 추출기",
+        "image_type": "synthetic",
+        "total_images": 15,
+        "successful_extractions": 15,
+        "failed_extractions": 0,
+        "extraction_times": [
+          17.685890197753906,
+          17.892837524414062,
+          17.372846603393555,
+          17.37809181213379,
+          17.866849899291992,
+          18.2950496673584,
+          17.598867416381836,
+          17.96412467956543,
+          18.29981803894043,
+          17.796754837036133,
+          17.67277717590332,
+          17.847061157226562,
+          18.465757369995117,
+          18.268108367919922,
+          17.50922203063965
+        ],
+        "feature_counts": [
+          162,
+          162,
+          162,
+          162,
+          162,
+          162,
+          162,
+          162,
+          162,
+          162,
+          162,
+          162,
+          162,
+          162,
+          162
+        ],
+        "feature_statistics": {
+          "mean": 0.0555555559694767,
+          "std": 0.10609819740056992,
+          "min": 0.000244140625,
+          "max": 0.672119140625,
+          "total_features": 2430
+        },
+        "errors": [],
+        "success_rate": 1.0,
+        "avg_extraction_time": 17.860937118530273,
+        "avg_feature_count": 162.0,
+        "std_extraction_time": 0.33251364569874886,
+        "std_feature_count": 0.0
+      },
+      "Advanced_Gabor": {
+        "extractor_name": "Advanced_Gabor",
+        "description": "고급 Gabor 특징 추출기",
+        "image_type": "synthetic",
+        "total_images": 15,
+        "successful_extractions": 15,
+        "failed_extractions": 0,
+        "extraction_times": [
+          93.97602081298828,
+          93.83988380432129,
+          94.5441722869873,
+          94.62809562683105,
+          85.41989326477051,
+          85.77728271484375,
+          89.88285064697266,
+          95.14713287353516,
+          84.91182327270508,
+          128.5719871520996,
+          85.50500869750977,
+          85.64090728759766,
+          86.79699897766113,
+          107.06901550292969,
+          87.22996711730957
+        ],
+        "feature_counts": [
+          600,
+          600,
+          600,
+          600,
+          600,
+          600,
+          600,
+          600,
+          600,
+          600,
+          600,
+          600,
+          600,
+          600,
+          600
+        ],
+        "feature_statistics": {
+          "mean": -276.692138671875,
+          "std": 1741.965087890625,
+          "min": -20328.8359375,
+          "max": 1537.77685546875,
+          "total_features": 9000
+        },
+        "errors": [],
+        "success_rate": 1.0,
+        "avg_extraction_time": 93.26273600260417,
+        "avg_feature_count": 600.0,
+        "std_extraction_time": 11.07680430984804,
+        "std_feature_count": 0.0
+      }
+    },
+    "comparison_analysis": {
+      "MultiScale_HOG": {
+        "success_rate_difference": 0.0,
+        "feature_count_ratio": 0.0,
+        "extraction_time_ratio": 0.0,
+        "adaptability_score": 0.75
+      },
+      "Comprehensive_LBP": {
+        "success_rate_difference": 0.0,
+        "feature_count_ratio": 0.9999999999993828,
+        "extraction_time_ratio": 0.9127891196366487,
+        "adaptability_score": 0.9999999999996914
+      },
+      "Advanced_Gabor": {
+        "success_rate_difference": 0.0,
+        "feature_count_ratio": 0.9999999999998332,
+        "extraction_time_ratio": 1.0980263767835436,
+        "adaptability_score": 0.9999999999999166
+      }
+    }
+  }
+}

@@ -1,0 +1,396 @@
+{
+  "A_deep_ocean": {
+    "scenario_name": "A_deep_ocean",
+    "success": true,
+    "positive_stats": {
+      "mean": 0.5137832760810852,
+      "std": 0.07774023711681366,
+      "min": 0.44537675380706787,
+      "max": 0.9778907895088196,
+      "generation_time_ms": 6.392002105712891
+    },
+    "negative_stats": {
+      "mean": 0.4998339116573334,
+      "std": 0.01067898515611887,
+      "min": 0.4586544632911682,
+      "max": 0.5382638573646545,
+      "generation_time_ms": 0.9179115295410156
+    },
+    "metadata": {
+      "positive": {
+        "scenario_name": "A_deep_ocean",
+        "environment": "deep_ocean",
+        "target_present": true,
+        "mine_type": "spherical",
+        "image_size": [
+          96,
+          96
+        ],
+        "scenario_config": {
+          "depth_range": [
+            200.0,
+            1000.0
+          ],
+          "noise_level": 0.1,
+          "texture_complexity": 0.2,
+          "current_strength": 0.1,
+          "sediment_type": "fine_mud",
+          "target_visibility": 0.9,
+          "shadow_strength": 0.8
+        },
+        "acoustic_properties": {
+          "backscatter_strength": -25.0,
+          "absorption_coefficient": 0.02,
+          "bottom_roughness": 0.1,
+          "penetration_depth": 0.5
+        }
+      },
+      "negative": {
+        "scenario_name": "A_deep_ocean",
+        "environment": "deep_ocean",
+        "target_present": false,
+        "mine_type": null,
+        "image_size": [
+          96,
+          96
+        ],
+        "scenario_config": {
+          "depth_range": [
+            200.0,
+            1000.0
+          ],
+          "noise_level": 0.1,
+          "texture_complexity": 0.2,
+          "current_strength": 0.1,
+          "sediment_type": "fine_mud",
+          "target_visibility": 0.9,
+          "shadow_strength": 0.8
+        },
+        "acoustic_properties": {
+          "backscatter_strength": -25.0,
+          "absorption_coefficient": 0.02,
+          "bottom_roughness": 0.1,
+          "penetration_depth": 0.5
+        }
+      }
+    }
+  },
+  "B_shallow_coastal": {
+    "scenario_name": "B_shallow_coastal",
+    "success": true,
+    "positive_stats": {
+      "mean": 0.7652685046195984,
+      "std": 0.11170653253793716,
+      "min": 0.41490834951400757,
+      "max": 1.0,
+      "generation_time_ms": 20.613908767700195
+    },
+    "negative_stats": {
+      "mean": 0.7645807266235352,
+      "std": 0.11118175834417343,
+      "min": 0.42245379090309143,
+      "max": 1.0,
+      "generation_time_ms": 19.089937210083008
+    },
+    "metadata": {
+      "positive": {
+        "scenario_name": "B_shallow_coastal",
+        "environment": "shallow_coastal",
+        "target_present": true,
+        "mine_type": "spherical",
+        "image_size": [
+          96,
+          96
+        ],
+        "scenario_config": {
+          "depth_range": [
+            5.0,
+            50.0
+          ],
+          "noise_level": 0.6,
+          "texture_complexity": 0.8,
+          "current_strength": 0.5,
+          "sediment_type": "coarse_sand",
+          "target_visibility": 0.4,
+          "shadow_strength": 0.3
+        },
+        "acoustic_properties": {
+          "backscatter_strength": -15.0,
+          "absorption_coefficient": 0.05,
+          "bottom_roughness": 0.7,
+          "penetration_depth": 0.2
+        }
+      },
+      "negative": {
+        "scenario_name": "B_shallow_coastal",
+        "environment": "shallow_coastal",
+        "target_present": false,
+        "mine_type": null,
+        "image_size": [
+          96,
+          96
+        ],
+        "scenario_config": {
+          "depth_range": [
+            5.0,
+            50.0
+          ],
+          "noise_level": 0.6,
+          "texture_complexity": 0.8,
+          "current_strength": 0.5,
+          "sediment_type": "coarse_sand",
+          "target_visibility": 0.4,
+          "shadow_strength": 0.3
+        },
+        "acoustic_properties": {
+          "backscatter_strength": -15.0,
+          "absorption_coefficient": 0.05,
+          "bottom_roughness": 0.7,
+          "penetration_depth": 0.2
+        }
+      }
+    }
+  },
+  "C_medium_depth": {
+    "scenario_name": "C_medium_depth",
+    "success": true,
+    "positive_stats": {
+      "mean": 0.61134934425354,
+      "std": 0.06781408935785294,
+      "min": 0.4743550717830658,
+      "max": 1.0,
+      "generation_time_ms": 2.193927764892578
+    },
+    "negative_stats": {
+      "mean": 0.6004412770271301,
+      "std": 0.031397495418787,
+      "min": 0.4743550717830658,
+      "max": 0.7241469025611877,
+      "generation_time_ms": 1.0917186737060547
+    },
+    "metadata": {
+      "positive": {
+        "scenario_name": "C_medium_depth",
+        "environment": "medium_depth",
+        "target_present": true,
+        "mine_type": "spherical",
+        "image_size": [
+          96,
+          96
+        ],
+        "scenario_config": {
+          "depth_range": [
+            50.0,
+            200.0
+          ],
+          "noise_level": 0.3,
+          "texture_complexity": 0.5,
+          "current_strength": 0.3,
+          "sediment_type": "mixed_sand_mud",
+          "target_visibility": 0.7,
+          "shadow_strength": 0.6
+        },
+        "acoustic_properties": {
+          "backscatter_strength": -20.0,
+          "absorption_coefficient": 0.03,
+          "bottom_roughness": 0.4,
+          "penetration_depth": 0.3
+        }
+      },
+      "negative": {
+        "scenario_name": "C_medium_depth",
+        "environment": "medium_depth",
+        "target_present": false,
+        "mine_type": null,
+        "image_size": [
+          96,
+          96
+        ],
+        "scenario_config": {
+          "depth_range": [
+            50.0,
+            200.0
+          ],
+          "noise_level": 0.3,
+          "texture_complexity": 0.5,
+          "current_strength": 0.3,
+          "sediment_type": "mixed_sand_mud",
+          "target_visibility": 0.7,
+          "shadow_strength": 0.6
+        },
+        "acoustic_properties": {
+          "backscatter_strength": -20.0,
+          "absorption_coefficient": 0.03,
+          "bottom_roughness": 0.4,
+          "penetration_depth": 0.3
+        }
+      }
+    }
+  },
+  "D_high_current": {
+    "scenario_name": "D_high_current",
+    "success": true,
+    "positive_stats": {
+      "mean": 0.6187642216682434,
+      "std": 0.09301886707544327,
+      "min": 0.3042117655277252,
+      "max": 0.9404734969139099,
+      "generation_time_ms": 40.65203666687012
+    },
+    "negative_stats": {
+      "mean": 0.614774763584137,
+      "std": 0.09031537175178528,
+      "min": 0.3028137981891632,
+      "max": 0.9405032396316528,
+      "generation_time_ms": 40.498971939086914
+    },
+    "metadata": {
+      "positive": {
+        "scenario_name": "D_high_current",
+        "environment": "high_current",
+        "target_present": true,
+        "mine_type": "spherical",
+        "image_size": [
+          96,
+          96
+        ],
+        "scenario_config": {
+          "depth_range": [
+            20.0,
+            100.0
+          ],
+          "noise_level": 0.7,
+          "texture_complexity": 0.4,
+          "current_strength": 0.9,
+          "sediment_type": "shifting_sand",
+          "target_visibility": 0.3,
+          "shadow_strength": 0.2
+        },
+        "acoustic_properties": {
+          "backscatter_strength": -18.0,
+          "absorption_coefficient": 0.04,
+          "bottom_roughness": 0.5,
+          "penetration_depth": 0.1
+        }
+      },
+      "negative": {
+        "scenario_name": "D_high_current",
+        "environment": "high_current",
+        "target_present": false,
+        "mine_type": null,
+        "image_size": [
+          96,
+          96
+        ],
+        "scenario_config": {
+          "depth_range": [
+            20.0,
+            100.0
+          ],
+          "noise_level": 0.7,
+          "texture_complexity": 0.4,
+          "current_strength": 0.9,
+          "sediment_type": "shifting_sand",
+          "target_visibility": 0.3,
+          "shadow_strength": 0.2
+        },
+        "acoustic_properties": {
+          "backscatter_strength": -18.0,
+          "absorption_coefficient": 0.04,
+          "bottom_roughness": 0.5,
+          "penetration_depth": 0.1
+        }
+      }
+    }
+  },
+  "E_sandy_rocky": {
+    "scenario_name": "E_sandy_rocky",
+    "success": true,
+    "positive_stats": {
+      "mean": 0.5917680263519287,
+      "std": 0.12301313877105713,
+      "min": 0.3334788978099823,
+      "max": 1.0,
+      "generation_time_ms": 2.3441314697265625
+    },
+    "negative_stats": {
+      "mean": 0.5849580764770508,
+      "std": 0.1142808049917221,
+      "min": 0.3334788978099823,
+      "max": 0.9567922949790955,
+      "generation_time_ms": 1.3608932495117188
+    },
+    "metadata": {
+      "positive": {
+        "scenario_name": "E_sandy_rocky",
+        "environment": "sandy_rocky",
+        "target_present": true,
+        "mine_type": "spherical",
+        "image_size": [
+          96,
+          96
+        ],
+        "scenario_config": {
+          "depth_range": [
+            10.0,
+            80.0
+          ],
+          "noise_level": 0.4,
+          "texture_complexity": 0.9,
+          "current_strength": 0.2,
+          "sediment_type": "sand_rock_mix",
+          "target_visibility": 0.5,
+          "shadow_strength": 0.7
+        },
+        "acoustic_properties": {
+          "backscatter_strength": -12.0,
+          "absorption_coefficient": 0.06,
+          "bottom_roughness": 0.8,
+          "penetration_depth": 0.05
+        }
+      },
+      "negative": {
+        "scenario_name": "E_sandy_rocky",
+        "environment": "sandy_rocky",
+        "target_present": false,
+        "mine_type": null,
+        "image_size": [
+          96,
+          96
+        ],
+        "scenario_config": {
+          "depth_range": [
+            10.0,
+            80.0
+          ],
+          "noise_level": 0.4,
+          "texture_complexity": 0.9,
+          "current_strength": 0.2,
+          "sediment_type": "sand_rock_mix",
+          "target_visibility": 0.5,
+          "shadow_strength": 0.7
+        },
+        "acoustic_properties": {
+          "backscatter_strength": -12.0,
+          "absorption_coefficient": 0.06,
+          "bottom_roughness": 0.8,
+          "penetration_depth": 0.05
+        }
+      }
+    }
+  },
+  "batch_test": {
+    "success": true,
+    "total_samples": 10,
+    "positive_count": 5,
+    "negative_count": 5,
+    "positive_stats": {
+      "mean": 0.6253831386566162,
+      "std": 0.09404154121875763
+    },
+    "negative_stats": {
+      "mean": 0.6008615493774414,
+      "std": 0.032136220484972
+    }
+  }
+}

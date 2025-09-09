@@ -1,0 +1,31 @@
+============================================================
+🧪 다중 환경 호환성 테스트 결과
+============================================================
+
+📊 전체 통계:
+  - 총 테스트: 7
+  - 성공: 5
+  - 실패: 2
+  - 성공률: 71.4%
+
+🖥️  디바이스 정보:
+  - 자동 선택: mps
+  - CUDA 지원: False
+  - MPS 지원: True
+
+📋 테스트 상세:
+  ✅ device_detection
+  ✅ configuration_compatibility
+  ✅ fallback_mechanism
+  ❌ tensor_operations_cpu: The size of tensor a (3) must match the size of tensor b (224) at non-singleton dimension 1
+  ✅ model_loading_cpu
+  ❌ tensor_operations_mps: The size of tensor a (3) must match the size of tensor b (224) at non-singleton dimension 1
+  ✅ model_loading_mps
+
+⚡ 성능 정보:
+  - cpu:
+    • 모델 추론: 54.70ms
+  - mps:
+    • 모델 추론: 689.91ms
+
+============================================================

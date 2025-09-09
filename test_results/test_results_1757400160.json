@@ -1,0 +1,156 @@
+{
+  "device_detection": {
+    "status": "success",
+    "auto_device": "mps",
+    "cpu_device": "cpu",
+    "cuda_available": false,
+    "cuda_device": null,
+    "mps_available": true,
+    "mps_device": "mps",
+    "summary": {
+      "device_type": "mps",
+      "device_name": "Apple Silicon",
+      "memory_info": {
+        "total_mb": 16384,
+        "available_mb": 1333,
+        "used_mb": 15051
+      },
+      "performance_config": {
+        "batch_size": 24,
+        "num_workers": 4,
+        "mixed_precision": false
+      },
+      "capabilities": {
+        "gpu_count": 1,
+        "compute_capability": null,
+        "mixed_precision_support": false
+      }
+    }
+  },
+  "configuration_compatibility": {
+    "status": "success",
+    "device_configs": {
+      "cpu": {
+        "status": "success",
+        "config": {
+          "batch_size": 8,
+          "num_workers": 2,
+          "pin_memory": false,
+          "prefetch_factor": 2,
+          "persistent_workers": false,
+          "memory_limit_gb": 4.0,
+          "mixed_precision": false,
+          "compile_model": false,
+          "gradient_accumulation_steps": 1
+        },
+        "dataloader_config": {
+          "batch_size": 2,
+          "num_workers": 2,
+          "pin_memory": false,
+          "shuffle": true,
+          "drop_last": false
+        },
+        "memory_info": {
+          "total_mb": 16384,
+          "available_mb": 1333,
+          "used_mb": 15051
+        }
+      },
+      "cuda": {
+        "status": "skipped",
+        "reason": "device_not_available"
+      },
+      "mps": {
+        "status": "success",
+        "config": {
+          "batch_size": 16,
+          "num_workers": 3,
+          "pin_memory": false,
+          "prefetch_factor": 3,
+          "persistent_workers": true,
+          "memory_limit_gb": 6.0,
+          "mixed_precision": false,
+          "compile_model": false,
+          "gradient_accumulation_steps": 2
+        },
+        "dataloader_config": {
+          "batch_size": 24,
+          "num_workers": 4,
+          "pin_memory": false,
+          "shuffle": true,
+          "drop_last": false
+        },
+        "memory_info": {
+          "total_mb": 16384,
+          "available_mb": 1333,
+          "used_mb": 15051
+        }
+      },
+      "high_end_gpu": {
+        "status": "skipped",
+        "reason": "device_not_available"
+      },
+      "low_end_gpu": {
+        "status": "skipped",
+        "reason": "device_not_available"
+      }
+    }
+  },
+  "fallback_mechanism": {
+    "status": "success",
+    "fallback_tests": {
+      "invalid_device": {
+        "status": "success",
+        "fallback_device": "cpu",
+        "expected": "cpu"
+      },
+      "cuda_unavailable": {
+        "status": "success",
+        "fallback_device": "cpu",
+        "expected": "cpu"
+      }
+    }
+  },
+  "tensor_operations_cpu": {
+    "status": "error",
+    "error": "The size of tensor a (3) must match the size of tensor b (224) at non-singleton dimension 1",
+    "traceback": "Traceback (most recent call last):\n  File \"/Users/YMARX/Dropbox/2025_ECMiner/C_P02_기뢰전대/03_진행/Analysis_MD/scripts/test_multi_environment.py\", line 119, in test_tensor_operations\n    result = torch.matmul(tensor_device, tensor_device.T)\nRuntimeError: The size of tensor a (3) must match the size of tensor b (224) at non-singleton dimension 1\n",
+    "device": "cpu"
+  },
+  "model_loading_cpu": {
+    "status": "success",
+    "device": "cpu",
+    "model_load_time_ms": 1.4452934265136719,
+    "inference_time_ms": 54.7029972076416,
+    "output_shape": [
+      1,
+      2
+    ],
+    "memory_usage": {
+      "total_mb": 16384,
+      "available_mb": 1333,
+      "used_mb": 15051
+    }
+  },
+  "tensor_operations_mps": {
+    "status": "error",
+    "error": "The size of tensor a (3) must match the size of tensor b (224) at non-singleton dimension 1",
+    "traceback": "Traceback (most recent call last):\n  File \"/Users/YMARX/Dropbox/2025_ECMiner/C_P02_기뢰전대/03_진행/Analysis_MD/scripts/test_multi_environment.py\", line 119, in test_tensor_operations\n    result = torch.matmul(tensor_device, tensor_device.T)\nRuntimeError: The size of tensor a (3) must match the size of tensor b (224) at non-singleton dimension 1\n",
+    "device": "mps"
+  },
+  "model_loading_mps": {
+    "status": "success",
+    "device": "mps",
+    "model_load_time_ms": 3.0930042266845703,
+    "inference_time_ms": 689.9101734161377,
+    "output_shape": [
+      1,
+      2
+    ],
+    "memory_usage": {
+      "total_mb": 16384,
+      "available_mb": 1333,
+      "used_mb": 15051
+    }
+  }
+}

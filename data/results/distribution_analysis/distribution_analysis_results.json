@@ -1,0 +1,236 @@
+{
+  "datasets": [
+    "A_deep_ocean",
+    "B_shallow_coastal",
+    "C_medium_depth"
+  ],
+  "dataset_count": 3,
+  "individual_features": {
+    "A_deep_ocean": {
+      "data_type": "A_deep_ocean",
+      "data_shape": [
+        20,
+        64,
+        64
+      ],
+      "sample_count": 20,
+      "statistical": {
+        "mean": 0.5190691947937012,
+        "std": 0.0919729545712471,
+        "var": 0.008459024131298065,
+        "min": 0.4339083731174469,
+        "max": 0.9768398404121399,
+        "median": 0.4998314380645752,
+        "range": 0.5429314374923706,
+        "skewness": 4.329695422686485,
+        "kurtosis": 17.193385809478357,
+        "p10": 0.48560869693756104,
+        "p25": 0.4925819933414459,
+        "p75": 0.5077560544013977,
+        "p90": 0.5161908268928528,
+        "p95": 0.525597870349884,
+        "p99": 0.9585440158843994,
+        "iqr": 0.015174061059951782,
+        "iqr_normalized": 0.496174106660244
+      },
+      "texture": {
+        "gradient_mean": 0.02152004837989807,
+        "gradient_std": 0.02770424634218216,
+        "gradient_max": 0.2592276632785797,
+        "edge_density": 0.10009765625,
+        "local_var_mean": 0.0008312470745295286,
+        "local_var_std": 0.0024178000167012215,
+        "local_var_max": 0.012275908142328262,
+        "horizontal_uniformity": 39.48547323466797,
+        "vertical_uniformity": 28.017793671810836,
+        "directional_ratio": 0.7095721860712516
+      },
+      "spatial": {
+        "center_edge_contrast": 0.015295803546905518,
+        "center_mean": 0.5292746424674988,
+        "edge_mean": 0.5139788389205933,
+        "quadrant_mean_var": 0.0011812582379207015,
+        "quadrant_std_mean": 0.034219495952129364,
+        "spatial_uniformity": 846.5548711048594
+      }
+    },
+    "B_shallow_coastal": {
+      "data_type": "B_shallow_coastal",
+      "data_shape": [
+        20,
+        64,
+        64
+      ],
+      "sample_count": 20,
+      "statistical": {
+        "mean": 0.7740501761436462,
+        "std": 0.1082625463604927,
+        "var": 0.011720779351890087,
+        "min": 0.4580005407333374,
+        "max": 1.0,
+        "median": 0.7732846736907959,
+        "range": 0.5419994592666626,
+        "skewness": 0.011189769569498586,
+        "kurtosis": -0.5439779708723966,
+        "p10": 0.6327307820320129,
+        "p25": 0.6939363330602646,
+        "p75": 0.8525999188423157,
+        "p90": 0.9180026650428772,
+        "p95": 0.956896960735321,
+        "p99": 1.0,
+        "iqr": 0.1586635857820511,
+        "iqr_normalized": 0.556183750223958
+      },
+      "texture": {
+        "gradient_mean": 0.13274365663528442,
+        "gradient_std": 0.08619824051856995,
+        "gradient_max": 0.49368298053741455,
+        "edge_density": 0.10009765625,
+        "local_var_mean": 0.00694518955424428,
+        "local_var_std": 0.00321689760312438,
+        "local_var_max": 0.015023457817733288,
+        "horizontal_uniformity": 19.488388151961658,
+        "vertical_uniformity": 33.32726905637536,
+        "directional_ratio": 1.7101090521984101
+      },
+      "spatial": {
+        "center_edge_contrast": 0.06992226839065552,
+        "center_mean": 0.8244836330413818,
+        "edge_mean": 0.7545613646507263,
+        "quadrant_mean_var": 0.00016893415886443108,
+        "quadrant_std_mean": 0.10513385385274887,
+        "spatial_uniformity": 5919.462438950853
+      }
+    },
+    "C_medium_depth": {
+      "data_type": "C_medium_depth",
+      "data_shape": [
+        20,
+        64,
+        64
+      ],
+      "sample_count": 20,
+      "statistical": {
+        "mean": 0.6145889759063721,
+        "std": 0.07747597247362137,
+        "var": 0.006002525798976421,
+        "min": 0.4764452576637268,
+        "max": 1.0,
+        "median": 0.6016281247138977,
+        "range": 0.5235547423362732,
+        "skewness": 3.3649251201873076,
+        "kurtosis": 12.29495221523415,
+        "p10": 0.5590571165084839,
+        "p25": 0.5791076421737671,
+        "p75": 0.6239765882492065,
+        "p90": 0.649189293384552,
+        "p95": 0.6787007451057434,
+        "p99": 0.9734908664226524,
+        "iqr": 0.04486894607543945,
+        "iqr_normalized": 0.4978127410297995
+      },
+      "texture": {
+        "gradient_mean": 0.054737288504838943,
+        "gradient_std": 0.03362872824072838,
+        "gradient_max": 0.2866908609867096,
+        "edge_density": 0.10009765625,
+        "local_var_mean": 0.0013467768440023065,
+        "local_var_std": 0.0015140025643631816,
+        "local_var_max": 0.008661481551826,
+        "horizontal_uniformity": 45.45185944157319,
+        "vertical_uniformity": 39.274322038029744,
+        "directional_ratio": 0.864086141734343
+      },
+      "spatial": {
+        "center_edge_contrast": 0.02169102430343628,
+        "center_mean": 0.601279079914093,
+        "edge_mean": 0.6229701042175293,
+        "quadrant_mean_var": 0.0007334604160860181,
+        "quadrant_std_mean": 0.04498077183961868,
+        "spatial_uniformity": 1363.3999077909777
+      }
+    }
+  },
+  "pairwise_comparisons": {
+    "A_deep_ocean_vs_B_shallow_coastal": {
+      "dataset1": "A_deep_ocean",
+      "dataset2": "B_shallow_coastal",
+      "size1": 81920,
+      "size2": 81920,
+      "mean_difference": 0.25498098134994507,
+      "std_difference": 0.016289591789245605,
+      "variance_ratio": 0.7217117399077044,
+      "ks_statistic": 0.9488,
+      "ks_p_value": 0.0,
+      "distributions_similar": false,
+      "histogram_distance": 46.75444699915726,
+      "histogram_correlation": -0.3949759805946416,
+      "wasserstein_distance": 22.95340000000001,
+      "similarity_score": 0.38415084989718506
+    },
+    "A_deep_ocean_vs_C_medium_depth": {
+      "dataset1": "A_deep_ocean",
+      "dataset2": "C_medium_depth",
+      "size1": 81920,
+      "size2": 81920,
+      "mean_difference": 0.0955197811126709,
+      "std_difference": 0.014496982097625732,
+      "variance_ratio": 1.4092440871834535,
+      "ks_statistic": 0.9371,
+      "ks_p_value": 0.0,
+      "distributions_similar": false,
+      "histogram_distance": 51.602794474619294,
+      "histogram_correlation": -0.13884822245182027,
+      "wasserstein_distance": 8.858200000000004,
+      "similarity_score": 0.38092272223650503
+    },
+    "B_shallow_coastal_vs_C_medium_depth": {
+      "dataset1": "B_shallow_coastal",
+      "dataset2": "C_medium_depth",
+      "size1": 81920,
+      "size2": 81920,
+      "mean_difference": 0.15946120023727417,
+      "std_difference": 0.030786573886871338,
+      "variance_ratio": 1.9526411962485275,
+      "ks_statistic": 0.7741,
+      "ks_p_value": 0.0,
+      "distributions_similar": false,
+      "histogram_distance": 27.512917047875476,
+      "histogram_correlation": -0.30094812061901555,
+      "wasserstein_distance": 14.2328,
+      "similarity_score": 0.3627416697543864
+    }
+  },
+  "summary": {
+    "dataset_stats": {
+      "A_deep_ocean": {
+        "mean": 0.5190691947937012,
+        "std": 0.0919729545712471,
+        "min": 0.4339083731174469,
+        "max": 0.9768398404121399,
+        "size": 81920
+      },
+      "B_shallow_coastal": {
+        "mean": 0.7740501761436462,
+        "std": 0.1082625463604927,
+        "min": 0.4580005407333374,
+        "max": 1.0,
+        "size": 81920
+      },
+      "C_medium_depth": {
+        "mean": 0.6145889759063721,
+        "std": 0.07747597247362137,
+        "min": 0.4764452576637268,
+        "max": 1.0,
+        "size": 81920
+      }
+    },
+    "average_similarity": 0.3759384139626922,
+    "similarity_range": [
+      0.3627416697543864,
+      0.38415084989718506
+    ],
+    "most_similar_pair": "A_deep_ocean_vs_B_shallow_coastal",
+    "least_similar_pair": "B_shallow_coastal_vs_C_medium_depth"
+  }
+}

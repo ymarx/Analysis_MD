@@ -1,0 +1,691 @@
+{
+  "distribution_analysis": {
+    "datasets": [
+      "Legacy_Synthetic",
+      "A_deep_ocean",
+      "B_shallow_coastal",
+      "C_medium_depth",
+      "D_high_current",
+      "E_sandy_rocky"
+    ],
+    "dataset_count": 6,
+    "individual_features": {
+      "Legacy_Synthetic": {
+        "data_type": "Legacy_Synthetic",
+        "data_shape": [
+          20,
+          64,
+          64
+        ],
+        "sample_count": 20,
+        "statistical": {
+          "mean": 0.5025176405906677,
+          "std": 0.121869295835495,
+          "var": 0.014852126128971577,
+          "min": 0.0,
+          "max": 1.0,
+          "median": 0.5001257658004761,
+          "range": 1.0,
+          "skewness": 0.295861644246486,
+          "kurtosis": 1.161942747531989,
+          "p10": 0.3573455512523651,
+          "p25": 0.4263061359524727,
+          "p75": 0.5738240778446198,
+          "p90": 0.6469955205917359,
+          "p95": 0.7022016018629075,
+          "p99": 0.8555101901292795,
+          "iqr": 0.14751794189214706,
+          "iqr_normalized": 0.5092972810515878
+        },
+        "texture": {
+          "gradient_mean": 0.04238862544298172,
+          "gradient_std": 0.027621008455753326,
+          "gradient_max": 0.24618959426879883,
+          "edge_density": 0.10009765625,
+          "local_var_mean": 0.0008363531087525189,
+          "local_var_std": 0.0009931647218763828,
+          "local_var_max": 0.005398205015808344,
+          "horizontal_uniformity": 40.92592507800521,
+          "vertical_uniformity": 80.02186712711799,
+          "directional_ratio": 1.9552854736233485
+        },
+        "spatial": {
+          "center_edge_contrast": 0.049067914485931396,
+          "center_mean": 0.5414588451385498,
+          "edge_mean": 0.4923909306526184,
+          "quadrant_mean_var": 6.386409950209782e-05,
+          "quadrant_std_mean": 0.052925340831279755,
+          "spatial_uniformity": 15658.22491781412
+        }
+      },
+      "A_deep_ocean": {
+        "data_type": "A_deep_ocean",
+        "data_shape": [
+          20,
+          64,
+          64
+        ],
+        "sample_count": 20,
+        "statistical": {
+          "mean": 0.5149492025375366,
+          "std": 0.08347607403993607,
+          "var": 0.006968255154788494,
+          "min": 0.43619993329048157,
+          "max": 0.9759544134140015,
+          "median": 0.4995706081390381,
+          "range": 0.5397545099258423,
+          "skewness": 4.821959260127079,
+          "kurtosis": 21.84681499797987,
+          "p10": 0.48487186431884766,
+          "p25": 0.4916035234928131,
+          "p75": 0.5072563886642456,
+          "p90": 0.515373706817627,
+          "p95": 0.5232205986976624,
+          "p99": 0.9538857340812683,
+          "iqr": 0.015652865171432495,
+          "iqr_normalized": 0.5131776915031006
+        },
+        "texture": {
+          "gradient_mean": 0.021721385419368744,
+          "gradient_std": 0.028968939557671547,
+          "gradient_max": 0.3192621171474457,
+          "edge_density": 0.10009765625,
+          "local_var_mean": 0.000844386056996882,
+          "local_var_std": 0.002612417796626687,
+          "local_var_max": 0.012583136558532715,
+          "horizontal_uniformity": 45.40108817671372,
+          "vertical_uniformity": 34.01954066718727,
+          "directional_ratio": 0.7493111262074005
+        },
+        "spatial": {
+          "center_edge_contrast": 0.0126991868019104,
+          "center_mean": 0.5036463737487793,
+          "edge_mean": 0.5163455605506897,
+          "quadrant_mean_var": 0.0006002667360007763,
+          "quadrant_std_mean": 0.038908977061510086,
+          "spatial_uniformity": 1665.9257850432148
+        }
+      },
+      "B_shallow_coastal": {
+        "data_type": "B_shallow_coastal",
+        "data_shape": [
+          20,
+          64,
+          64
+        ],
+        "sample_count": 20,
+        "statistical": {
+          "mean": 0.8204938173294067,
+          "std": 0.11456584185361862,
+          "var": 0.013125332072377205,
+          "min": 0.46927207708358765,
+          "max": 1.0,
+          "median": 0.8185675740242004,
+          "range": 0.5307279229164124,
+          "skewness": -0.20513422306951287,
+          "kurtosis": -0.5970425843383853,
+          "p10": 0.662909746170044,
+          "p25": 0.7414248585700989,
+          "p75": 0.9099316000938416,
+          "p90": 0.9947039544582383,
+          "p95": 1.0,
+          "p99": 1.0,
+          "iqr": 0.16850674152374268,
+          "iqr_normalized": 0.5078652286980013
+        },
+        "texture": {
+          "gradient_mean": 0.13090015947818756,
+          "gradient_std": 0.08008599281311035,
+          "gradient_max": 0.47943535447120667,
+          "edge_density": 0.10009765625,
+          "local_var_mean": 0.008155952207744122,
+          "local_var_std": 0.003731607925146818,
+          "local_var_max": 0.02100020833313465,
+          "horizontal_uniformity": 18.054172953710545,
+          "vertical_uniformity": 28.810480223222168,
+          "directional_ratio": 1.5957795599430111
+        },
+        "spatial": {
+          "center_edge_contrast": 0.08847343921661377,
+          "center_mean": 0.8809208869934082,
+          "edge_mean": 0.7924474477767944,
+          "quadrant_mean_var": 0.00038856995524838567,
+          "quadrant_std_mean": 0.11234413832426071,
+          "spatial_uniformity": 2573.5385073890216
+        }
+      },
+      "C_medium_depth": {
+        "data_type": "C_medium_depth",
+        "data_shape": [
+          20,
+          64,
+          64
+        ],
+        "sample_count": 20,
+        "statistical": {
+          "mean": 0.6119906306266785,
+          "std": 0.07054399698972702,
+          "var": 0.0049764555878937244,
+          "min": 0.493438720703125,
+          "max": 1.0,
+          "median": 0.6010184288024902,
+          "range": 0.506561279296875,
+          "skewness": 3.5883003919077496,
+          "kurtosis": 14.831225870133096,
+          "p10": 0.5612468719482422,
+          "p25": 0.5789075642824173,
+          "p75": 0.6236028075218201,
+          "p90": 0.6478278636932373,
+          "p95": 0.6689354181289673,
+          "p99": 0.9622600448131543,
+          "iqr": 0.04469524323940277,
+          "iqr_normalized": 0.5162246618682784
+        },
+        "texture": {
+          "gradient_mean": 0.05542390048503876,
+          "gradient_std": 0.034443777054548264,
+          "gradient_max": 0.3758227229118347,
+          "edge_density": 0.10009765625,
+          "local_var_mean": 0.0013316445983946323,
+          "local_var_std": 0.0014705663779750466,
+          "local_var_max": 0.008292445912957191,
+          "horizontal_uniformity": 55.25244232153282,
+          "vertical_uniformity": 44.68394236441626,
+          "directional_ratio": 0.808723383800764
+        },
+        "spatial": {
+          "center_edge_contrast": 0.04895663261413574,
+          "center_mean": 0.6484122276306152,
+          "edge_mean": 0.5994555950164795,
+          "quadrant_mean_var": 0.00017350574489682913,
+          "quadrant_std_mean": 0.04906706139445305,
+          "spatial_uniformity": 5763.494599243182
+        }
+      },
+      "D_high_current": {
+        "data_type": "D_high_current",
+        "data_shape": [
+          20,
+          64,
+          64
+        ],
+        "sample_count": 20,
+        "statistical": {
+          "mean": 0.5988064408302307,
+          "std": 0.11975963413715363,
+          "var": 0.014342370443046093,
+          "min": 0.2612614631652832,
+          "max": 0.9532360434532166,
+          "median": 0.6126607060432434,
+          "range": 0.6919745802879333,
+          "skewness": -0.6462101768768502,
+          "kurtosis": 0.4511226380092985,
+          "p10": 0.4465644359588623,
+          "p25": 0.5252911448478699,
+          "p75": 0.6875115036964417,
+          "p90": 0.7407444715499878,
+          "p95": 0.7627378106117249,
+          "p99": 0.8290397524833679,
+          "iqr": 0.16222035884857178,
+          "iqr_normalized": 0.5514322495320353
+        },
+        "texture": {
+          "gradient_mean": 0.12358587980270386,
+          "gradient_std": 0.09693247824907303,
+          "gradient_max": 0.5423298478126526,
+          "edge_density": 0.10009765625,
+          "local_var_mean": 0.007683247327804565,
+          "local_var_std": 0.004827628843486309,
+          "local_var_max": 0.028790313750505447,
+          "horizontal_uniformity": 17.666146658599356,
+          "vertical_uniformity": 28.135679415184132,
+          "directional_ratio": 1.5926325026733328
+        },
+        "spatial": {
+          "center_edge_contrast": 0.045178234577178955,
+          "center_mean": 0.6286823749542236,
+          "edge_mean": 0.5835041403770447,
+          "quadrant_mean_var": 0.0003230372676625848,
+          "quadrant_std_mean": 0.11556458473205566,
+          "spatial_uniformity": 3095.617102243442
+        }
+      },
+      "E_sandy_rocky": {
+        "data_type": "E_sandy_rocky",
+        "data_shape": [
+          20,
+          64,
+          64
+        ],
+        "sample_count": 20,
+        "statistical": {
+          "mean": 0.6202653050422668,
+          "std": 0.12328514456748962,
+          "var": 0.015199226327240467,
+          "min": 0.39384573698043823,
+          "max": 1.0,
+          "median": 0.5789622664451599,
+          "range": 0.6061542630195618,
+          "skewness": 0.8698512852430234,
+          "kurtosis": 0.0675884420521422,
+          "p10": 0.49366599321365356,
+          "p25": 0.5283000469207764,
+          "p75": 0.7168550491333008,
+          "p90": 0.8017060160636902,
+          "p95": 0.837459921836853,
+          "p99": 1.0,
+          "iqr": 0.18855500221252441,
+          "iqr_normalized": 0.6121120249465363
+        },
+        "texture": {
+          "gradient_mean": 0.09485843777656555,
+          "gradient_std": 0.07599435746669769,
+          "gradient_max": 0.4303191602230072,
+          "edge_density": 0.10009765625,
+          "local_var_mean": 0.008283523842692375,
+          "local_var_std": 0.005307788494974375,
+          "local_var_max": 0.02584293857216835,
+          "horizontal_uniformity": 20.74759986405013,
+          "vertical_uniformity": 24.816265128974234,
+          "directional_ratio": 1.1961029343199445
+        },
+        "spatial": {
+          "center_edge_contrast": 0.0799940824508667,
+          "center_mean": 0.6763105392456055,
+          "edge_mean": 0.5963164567947388,
+          "quadrant_mean_var": 0.0002615102275740355,
+          "quadrant_std_mean": 0.11724013090133667,
+          "spatial_uniformity": 3823.9407570505705
+        }
+      }
+    },
+    "pairwise_comparisons": {
+      "Legacy_Synthetic_vs_A_deep_ocean": {
+        "dataset1": "Legacy_Synthetic",
+        "dataset2": "A_deep_ocean",
+        "size1": 81920,
+        "size2": 81920,
+        "mean_difference": 0.012431561946868896,
+        "std_difference": 0.03839322179555893,
+        "variance_ratio": 2.131398117020095,
+        "ks_statistic": 0.3933,
+        "ks_p_value": 0.0,
+        "distributions_similar": false,
+        "histogram_distance": 29.02939794440036,
+        "histogram_correlation": 0.4551014331119587,
+        "wasserstein_distance": 3.886200000000002,
+        "similarity_score": 0.5167775343749077
+      },
+      "Legacy_Synthetic_vs_B_shallow_coastal": {
+        "dataset1": "Legacy_Synthetic",
+        "dataset2": "B_shallow_coastal",
+        "size1": 81920,
+        "size2": 81920,
+        "mean_difference": 0.317976176738739,
+        "std_difference": 0.007303453981876373,
+        "variance_ratio": 1.1315619242176955,
+        "ks_statistic": 0.8302,
+        "ks_p_value": 0.0,
+        "distributions_similar": false,
+        "histogram_distance": 15.091227774728102,
+        "histogram_correlation": -0.36858237035784847,
+        "wasserstein_distance": 15.388800000000003,
+        "similarity_score": 0.3849417264774798
+      },
+      "Legacy_Synthetic_vs_C_medium_depth": {
+        "dataset1": "Legacy_Synthetic",
+        "dataset2": "C_medium_depth",
+        "size1": 81920,
+        "size2": 81920,
+        "mean_difference": 0.10947299003601074,
+        "std_difference": 0.051325298845767975,
+        "variance_ratio": 2.984478725511914,
+        "ks_statistic": 0.6212,
+        "ks_p_value": 0.0,
+        "distributions_similar": false,
+        "histogram_distance": 17.595864591413434,
+        "histogram_correlation": 0.36020122544268396,
+        "wasserstein_distance": 5.431800000000001,
+        "similarity_score": 0.37460444447816177
+      },
+      "Legacy_Synthetic_vs_D_high_current": {
+        "dataset1": "Legacy_Synthetic",
+        "dataset2": "D_high_current",
+        "size1": 81920,
+        "size2": 81920,
+        "mean_difference": 0.09628880023956299,
+        "std_difference": 0.0021096616983413696,
+        "variance_ratio": 1.0355419339080345,
+        "ks_statistic": 0.3621,
+        "ks_p_value": 0.0,
+        "distributions_similar": false,
+        "histogram_distance": 8.154493228398525,
+        "histogram_correlation": 0.5595788182720068,
+        "wasserstein_distance": 4.6872,
+        "similarity_score": 0.5120928725278212
+      },
+      "Legacy_Synthetic_vs_E_sandy_rocky": {
+        "dataset1": "Legacy_Synthetic",
+        "dataset2": "E_sandy_rocky",
+        "size1": 81920,
+        "size2": 81920,
+        "mean_difference": 0.11774766445159912,
+        "std_difference": 0.001415848731994629,
+        "variance_ratio": 0.9771632918339312,
+        "ks_statistic": 0.374,
+        "ks_p_value": 0.0,
+        "distributions_similar": false,
+        "histogram_distance": 7.565239244503712,
+        "histogram_correlation": 0.6742500676626249,
+        "wasserstein_distance": 6.290800000000004,
+        "similarity_score": 0.52988410514314
+      },
+      "A_deep_ocean_vs_B_shallow_coastal": {
+        "dataset1": "A_deep_ocean",
+        "dataset2": "B_shallow_coastal",
+        "size1": 81920,
+        "size2": 81920,
+        "mean_difference": 0.3055446147918701,
+        "std_difference": 0.031089767813682556,
+        "variance_ratio": 0.5309012422141567,
+        "ks_statistic": 0.9565,
+        "ks_p_value": 0.0,
+        "distributions_similar": false,
+        "histogram_distance": 47.05772576848732,
+        "histogram_correlation": -0.2874491259137225,
+        "wasserstein_distance": 26.87199999999999,
+        "similarity_score": 0.3242167913332341
+      },
+      "A_deep_ocean_vs_C_medium_depth": {
+        "dataset1": "A_deep_ocean",
+        "dataset2": "C_medium_depth",
+        "size1": 81920,
+        "size2": 81920,
+        "mean_difference": 0.09704142808914185,
+        "std_difference": 0.012932077050209045,
+        "variance_ratio": 1.4002445900885325,
+        "ks_statistic": 0.9533,
+        "ks_p_value": 0.0,
+        "distributions_similar": false,
+        "histogram_distance": 51.61019925656583,
+        "histogram_correlation": -0.14105913945462917,
+        "wasserstein_distance": 8.5608,
+        "similarity_score": 0.3835136587265115
+      },
+      "A_deep_ocean_vs_D_high_current": {
+        "dataset1": "A_deep_ocean",
+        "dataset2": "D_high_current",
+        "size1": 81920,
+        "size2": 81920,
+        "mean_difference": 0.08385723829269409,
+        "std_difference": 0.03628356009721756,
+        "variance_ratio": 0.485851005862281,
+        "ks_statistic": 0.7078,
+        "ks_p_value": 0.0,
+        "distributions_similar": false,
+        "histogram_distance": 37.34559986435663,
+        "histogram_correlation": 0.17121069803102396,
+        "wasserstein_distance": 8.253599999999995,
+        "similarity_score": 0.36221879458332873
+      },
+      "A_deep_ocean_vs_E_sandy_rocky": {
+        "dataset1": "A_deep_ocean",
+        "dataset2": "E_sandy_rocky",
+        "size1": 81920,
+        "size2": 81920,
+        "mean_difference": 0.10531610250473022,
+        "std_difference": 0.03980907052755356,
+        "variance_ratio": 0.4584611715698766,
+        "ks_statistic": 0.7339,
+        "ks_p_value": 0.0,
+        "distributions_similar": false,
+        "histogram_distance": 38.911060234561845,
+        "histogram_correlation": 0.32578462090330457,
+        "wasserstein_distance": 9.16880000000001,
+        "similarity_score": 0.38202491356797524
+      },
+      "B_shallow_coastal_vs_C_medium_depth": {
+        "dataset1": "B_shallow_coastal",
+        "dataset2": "C_medium_depth",
+        "size1": 81920,
+        "size2": 81920,
+        "mean_difference": 0.20850318670272827,
+        "std_difference": 0.0440218448638916,
+        "variance_ratio": 2.6374859730605738,
+        "ks_statistic": 0.8441,
+        "ks_p_value": 0.0,
+        "distributions_similar": false,
+        "histogram_distance": 30.614802786391056,
+        "histogram_correlation": -0.38811139840652026,
+        "wasserstein_distance": 19.5004,
+        "similarity_score": 0.3516490678927932
+      },
+      "B_shallow_coastal_vs_D_high_current": {
+        "dataset1": "B_shallow_coastal",
+        "dataset2": "D_high_current",
+        "size1": 81920,
+        "size2": 81920,
+        "mean_difference": 0.22168737649917603,
+        "std_difference": 0.005193792283535004,
+        "variance_ratio": 0.915143841318549,
+        "ks_statistic": 0.66,
+        "ks_p_value": 0.0,
+        "distributions_similar": false,
+        "histogram_distance": 15.407499424594304,
+        "histogram_correlation": -0.22141416786521964,
+        "wasserstein_distance": 14.593799999999996,
+        "similarity_score": 0.3707253550517424
+      },
+      "B_shallow_coastal_vs_E_sandy_rocky": {
+        "dataset1": "B_shallow_coastal",
+        "dataset2": "E_sandy_rocky",
+        "size1": 81920,
+        "size2": 81920,
+        "mean_difference": 0.2002285122871399,
+        "std_difference": 0.008719302713871002,
+        "variance_ratio": 0.8635526377088263,
+        "ks_statistic": 0.6063,
+        "ks_p_value": 0.0,
+        "distributions_similar": false,
+        "histogram_distance": 17.684552151954897,
+        "histogram_correlation": -0.3328218131900673,
+        "wasserstein_distance": 16.505200000000002,
+        "similarity_score": 0.3964253256526288
+      },
+      "C_medium_depth_vs_D_high_current": {
+        "dataset1": "C_medium_depth",
+        "dataset2": "D_high_current",
+        "size1": 81920,
+        "size2": 81920,
+        "mean_difference": 0.013184189796447754,
+        "std_difference": 0.049215637147426605,
+        "variance_ratio": 0.34697580661145044,
+        "ks_statistic": 0.2737,
+        "ks_p_value": 1e-323,
+        "distributions_similar": false,
+        "histogram_distance": 17.57371430922468,
+        "histogram_correlation": 0.5990039470568059,
+        "wasserstein_distance": 4.466800000000001,
+        "similarity_score": 0.5381726547241936
+      },
+      "C_medium_depth_vs_E_sandy_rocky": {
+        "dataset1": "C_medium_depth",
+        "dataset2": "E_sandy_rocky",
+        "size1": 81920,
+        "size2": 81920,
+        "mean_difference": 0.008274674415588379,
+        "std_difference": 0.052741147577762604,
+        "variance_ratio": 0.3274150570567714,
+        "ks_statistic": 0.322,
+        "ks_p_value": 1e-323,
+        "distributions_similar": false,
+        "histogram_distance": 20.833654310612545,
+        "histogram_correlation": 0.437861718724429,
+        "wasserstein_distance": 5.198600000000001,
+        "similarity_score": 0.5040352887671361
+      },
+      "D_high_current_vs_E_sandy_rocky": {
+        "dataset1": "D_high_current",
+        "dataset2": "E_sandy_rocky",
+        "size1": 81920,
+        "size2": 81920,
+        "mean_difference": 0.021458864212036133,
+        "std_difference": 0.0035255104303359985,
+        "variance_ratio": 0.9436250266882864,
+        "ks_statistic": 0.125,
+        "ks_p_value": 1.8539931053655691e-68,
+        "distributions_similar": false,
+        "histogram_distance": 8.360677547678112,
+        "histogram_correlation": 0.6467072205789592,
+        "wasserstein_distance": 2.729000000000002,
+        "similarity_score": 0.6089941821702607
+      }
+    },
+    "summary": {
+      "dataset_stats": {
+        "Legacy_Synthetic": {
+          "mean": 0.5025176405906677,
+          "std": 0.121869295835495,
+          "min": 0.0,
+          "max": 1.0,
+          "size": 81920
+        },
+        "A_deep_ocean": {
+          "mean": 0.5149492025375366,
+          "std": 0.08347607403993607,
+          "min": 0.43619993329048157,
+          "max": 0.9759544134140015,
+          "size": 81920
+        },
+        "B_shallow_coastal": {
+          "mean": 0.8204938173294067,
+          "std": 0.11456584185361862,
+          "min": 0.46927207708358765,
+          "max": 1.0,
+          "size": 81920
+        },
+        "C_medium_depth": {
+          "mean": 0.6119906306266785,
+          "std": 0.07054399698972702,
+          "min": 0.493438720703125,
+          "max": 1.0,
+          "size": 81920
+        },
+        "D_high_current": {
+          "mean": 0.5988064408302307,
+          "std": 0.11975963413715363,
+          "min": 0.2612614631652832,
+          "max": 0.9532360434532166,
+          "size": 81920
+        },
+        "E_sandy_rocky": {
+          "mean": 0.6202653050422668,
+          "std": 0.12328514456748962,
+          "min": 0.39384573698043823,
+          "max": 1.0,
+          "size": 81920
+        }
+      },
+      "average_similarity": 0.4360184476980878,
+      "similarity_range": [
+        0.3242167913332341,
+        0.6089941821702607
+      ],
+      "most_similar_pair": "D_high_current_vs_E_sandy_rocky",
+      "least_similar_pair": "A_deep_ocean_vs_B_shallow_coastal"
+    }
+  },
+  "quality_metrics": {
+    "Legacy_Synthetic": {
+      "dynamic_range": 1.0,
+      "signal_noise_ratio": 4.123414652831412,
+      "contrast_ratio": 0.3913387492299081,
+      "data_sparsity": 0.001025390625,
+      "saturation_ratio": 0.00546875,
+      "entropy": -32.84460209140458,
+      "uniformity_score": 8.205512244276004,
+      "texture_complexity": 0.1786298006772995,
+      "edge_sharpness": 0.36787391901016236,
+      "texture_uniformity": 9.741056240220876
+    },
+    "A_deep_ocean": {
+      "dynamic_range": 0.5397545099258423,
+      "signal_noise_ratio": 6.168823915632349,
+      "contrast_ratio": 0.042363524436950684,
+      "data_sparsity": 0.0,
+      "saturation_ratio": 0.03255615234375,
+      "entropy": -250.0829909843626,
+      "uniformity_score": 11.979480471537734,
+      "texture_complexity": 0.02764142118394375,
+      "edge_sharpness": 0.04308099225163455,
+      "texture_uniformity": 16.271056950040883
+    },
+    "B_shallow_coastal": {
+      "dynamic_range": 0.5307279229164124,
+      "signal_noise_ratio": 7.161766573160431,
+      "contrast_ratio": 0.3681213855743408,
+      "data_sparsity": 0.0,
+      "saturation_ratio": 0.280419921875,
+      "entropy": -97.02888963879204,
+      "uniformity_score": 8.728605166667782,
+      "texture_complexity": 0.13167986273765564,
+      "edge_sharpness": 0.27176135182380673,
+      "texture_uniformity": 12.486470001814062
+    },
+    "C_medium_depth": {
+      "dynamic_range": 0.506561279296875,
+      "signal_noise_ratio": 8.675304148817501,
+      "contrast_ratio": 0.1203342080116272,
+      "data_sparsity": 0.0,
+      "saturation_ratio": 0.0303955078125,
+      "entropy": -172.90233355695153,
+      "uniformity_score": 14.175550596148815,
+      "texture_complexity": 0.058882635086774826,
+      "edge_sharpness": 0.11629177778959274,
+      "texture_uniformity": 19.3674753862167
+    },
+    "D_high_current": {
+      "dynamic_range": 0.6919745802879333,
+      "signal_noise_ratio": 5.000069052018364,
+      "contrast_ratio": 0.3543213903903961,
+      "data_sparsity": 0.0,
+      "saturation_ratio": 0.0004150390625,
+      "entropy": -57.962698025910356,
+      "uniformity_score": 8.350058902315562,
+      "texture_complexity": 0.1265762746334076,
+      "edge_sharpness": 0.3143170952796935,
+      "texture_uniformity": 10.096022749946309
+    },
+    "E_sandy_rocky": {
+      "dynamic_range": 0.6061542630195618,
+      "signal_noise_ratio": 5.031143912068031,
+      "contrast_ratio": 0.36393243074417114,
+      "data_sparsity": 0.0,
+      "saturation_ratio": 0.0209228515625,
+      "entropy": -73.37011208162615,
+      "uniformity_score": 8.11127733756637,
+      "texture_complexity": 0.09628364443778992,
+      "edge_sharpness": 0.2627800703048706,
+      "texture_uniformity": 12.837406343566952
+    }
+  },
+  "metadata": {
+    "analysis_type": "real_vs_synthetic_comparison",
+    "datasets_analyzed": [
+      "Legacy_Synthetic",
+      "A_deep_ocean",
+      "B_shallow_coastal",
+      "C_medium_depth",
+      "D_high_current",
+      "E_sandy_rocky"
+    ],
+    "total_samples": {
+      "Legacy_Synthetic": 20,
+      "A_deep_ocean": 20,
+      "B_shallow_coastal": 20,
+      "C_medium_depth": 20,
+      "D_high_current": 20,
+      "E_sandy_rocky": 20
+    }
+  }
+}

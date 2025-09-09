@@ -1,0 +1,37 @@
+# 이미지 크기: 64x64
+# 값 범위: 0.480 ~ 1.000
+# 평균: 0.625, 표준편차: 0.094
+
+ASCII 시각화 (32x32 다운샘플링):
+OooooOOOOOooOOOoOooOOOoOoOOoOOOo
+oooooOoOOOOooOoOoOooOOOooOooOOoo
+OoooOOoOOOoOOOooOooooOoooooOOoOo
+OooOooOoOOoOOoOoooOOooooOOOOoooo
+OoOoOooOOOOoOOOOOOOOOooOooOoOoOO
+oooOOoOoOooOooOoOOOOOoOOOOoOOooO
+OoOOOOOoOoOooOooOOooooOooOOooOOO
+OoooOooOOooOoOOoooooooOooooOOoOO
+oOOoOooOOoOOOOOOOooOOooOoooooOOO
+OOoOooOooOoOOOO########oOoOoooOo
+OOOooOOOOoOoOO##########ooOOOooo
+oOooOooOooooo############OoOoOOo
+oOOooooOOooOO############oOOOOoo
+OoOOooOOOoOOo############oOOoooO
+OooOOooooooOoo##########oOoooooo
+oOOOoooOOOOOoOO########OOOOoOOoo
+OOooOoOoOOoooOOoOoOOooOooOoooOOO
+OOOoOoOOOoOOoOooooOoOoOOoOOOOoOo
+OOOOoooooOooOoooOooooOOoOOOOoooo
+OooOoOoOOOOooOOoOOoOoOOOoOOOOooo
+OOoOooOooOooOOOoOOoOooOOOOOoooOo
+OoOooOoOOOOoOoooooOOoooOOOOOOOOO
+oOOoOoooOOOOOooOooOoOOOoooOOOoOO
+ooOoOOoooOoOOoOooooOooooOOOOOoOO
+OoOOoOoOOOooOooOooOoOoOOOoOoOOoO
+oOoOOOOoOooOoOoOoOOoooOOOoOoOOoO
+OOoooooOOoOoOOOoOOOoOoOoOOOOOOoo
+OoOOoOoOOooOOOOooOoooOooOooOOooO
+oOOOoOOooOoooOOoOOOOOOOoooOOooOO
+oooOOOoooOooOOOooOoOOoOooooOooOO
+OoOoOoOOOOOOOoOoOOOOOoOooOOoooOO
+OOOOoooooOoooOoooOOooOoOOoOooOOO

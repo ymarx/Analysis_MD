@@ -1,0 +1,114 @@
+# Runpod GPU 클라우드 환경 설정
+environment:
+  name: "runpod"
+  provider: "runpod"
+  api_endpoint: "https://api.runpod.io/graphql"
+
+# GPU 템플릿별 설정
+templates:
+  rtx_4090:
+    gpu_type: "RTX 4090"
+    gpu_memory_gb: 24
+    system_memory_gb: 32
+    vcpus: 16
+    batch_size: 64
+    num_workers: 8
+    hourly_cost_usd: 0.69
+    
+  rtx_3090:
+    gpu_type: "RTX 3090"
+    gpu_memory_gb: 24
+    system_memory_gb: 32
+    vcpus: 8
+    batch_size: 48
+    num_workers: 6
+    hourly_cost_usd: 0.44
+    
+  a40:
+    gpu_type: "A40"
+    gpu_memory_gb: 48
+    system_memory_gb: 64
+    vcpus: 20
+    batch_size: 96
+    num_workers: 12
+    hourly_cost_usd: 1.29
+    
+  a100_40gb:
+    gpu_type: "A100-40GB"
+    gpu_memory_gb: 40
+    system_memory_gb: 80
+    vcpus: 20
+    batch_size: 128
+    num_workers: 16
+    hourly_cost_usd: 1.89
+    
+  a100_80gb:
+    gpu_type: "A100-80GB"
+    gpu_memory_gb: 80
+    system_memory_gb: 128
+    vcpus: 32
+    batch_size: 256
+    num_workers: 24
+    hourly_cost_usd: 2.99
+
+# 스토리지 설정
+storage:
+  container_disk_gb: 50  # 컨테이너 디스크 크기
+  network_storage_gb: 100  # 네트워크 스토리지
+  data_persistence: true
+  input_data_path: "/workspace/data/input/"
+  output_data_path: "/workspace/data/output/"
+  model_checkpoint_path: "/workspace/checkpoints/"
+  
+# 네트워크 설정
+networking:
+  public_ip: true
+  ssh_access: true
+  jupyter_port: 8888
+  tensorboard_port: 6006
+  custom_ports: [8080, 5000]
+  
+# 컨테이너 설정
+container:
+  base_image: "runpod/pytorch:2.1.0-py3.10-cuda11.8.0-devel-ubuntu22.04"
+  custom_image: "mine-detection:runpod-latest"
+  start_script: "/workspace/scripts/runpod_startup.sh"
+  
+# 환경 변수
+environment_variables:
+  CUDA_VISIBLE_DEVICES: "0"
+  PYTHONUNBUFFERED: "1"
+  TORCH_CUDA_ARCH_LIST: "8.6+PTX"  # RTX 3090/4090 지원
+  RUNPOD_POD_ID: "${RUNPOD_POD_ID}"
+  
+# 비용 최적화
+cost_optimization:
+  spot_instances: true   # Runpod Spot 사용으로 비용 절약
+  auto_terminate: true   # 작업 완료 시 자동 종료
+  idle_timeout_minutes: 30  # 30분 유휴 시 종료
+  
+# 모니터링 설정
+monitoring:
+  gpu_utilization_tracking: true
+  memory_usage_tracking: true
+  cost_tracking: true
+  webhook_notifications: false
+  
+# 데이터 동기화
+data_sync:
+  upload_method: "rsync"  # rsync, scp, sftp 중 선택
+  download_results: true
+  compression: true
+  
+# Jupyter 설정
+jupyter:
+  enabled: true
+  password: null  # 설정하면 패스워드 보호
+  lab_interface: true
+  extensions: ["tensorboard", "git"]
+  
+# 보안 설정
+security:
+  ssh_key_path: "~/.ssh/runpod_key"
+  firewall_enabled: false
+  public_datasets_only: true

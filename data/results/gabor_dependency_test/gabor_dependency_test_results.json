@@ -1,0 +1,14 @@
+{
+  "GaborFeatureExtractor": {
+    "success_rate": 1.0,
+    "avg_feature_count": 600.0,
+    "avg_extraction_time": 180.58059215545654,
+    "description": "기본 Gabor 특징 추출기"
+  },
+  "AdaptiveGaborExtractor": {
+    "success_rate": 1.0,
+    "avg_feature_count": 2352.0,
+    "avg_extraction_time": 485.73267459869385,
+    "description": "적응형 Gabor 특징 추출기"
+  }
+}

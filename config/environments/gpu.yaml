@@ -1,0 +1,58 @@
+# GPU 환경 최적화 설정
+environment:
+  name: "gpu"
+  device: "auto"  # cuda, mps, auto 중 선택
+  force_cpu: false
+
+# 모델 설정
+model:
+  mixed_precision: true
+  compile_optimization: true
+  gradient_checkpointing: false
+  memory_efficient: true
+
+# 데이터 처리 설정
+data_processing:
+  batch_size: 32  # GPU 메모리에 따라 자동 조정
+  num_workers: 4
+  pin_memory: true
+  prefetch_factor: 4
+  persistent_workers: true
+  
+# 메모리 관리
+memory:
+  limit_percentage: 80  # GPU 메모리의 80% 사용
+  clear_cache_frequency: 100  # 100 배치마다 캐시 정리
+  gradient_accumulation_steps: 1
+
+# 성능 최적화
+performance:
+  dataloader_optimization: true
+  tensor_core_usage: true  # NVIDIA Tensor Cores 활용
+  dynamic_loss_scaling: true
+  
+# 훈련 설정
+training:
+  learning_rate: 0.001
+  weight_decay: 0.0001
+  scheduler: "cosine_annealing"
+  warmup_epochs: 5
+  
+# 로깅 및 모니터링
+monitoring:
+  gpu_memory_tracking: true
+  performance_profiling: false
+  tensorboard_logging: true
+  
+# 하드웨어별 세부 설정
+hardware_specific:
+  nvidia:
+    # CUDA 관련 설정
+    cuda_benchmark: true
+    cuda_deterministic: false
+    use_tf32: true  # A100에서 TensorFloat-32 사용
+    
+  apple_silicon:
+    # MPS 관련 설정
+    fallback_to_cpu: true  # MPS 실패 시 CPU로 폴백
+    memory_fraction: 0.8

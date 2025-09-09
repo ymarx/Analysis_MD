@@ -1,0 +1,65 @@
+# 로컬 개발 환경 설정 (기존 기능 보존)
+environment:
+  name: "local"
+  device: "auto"  # 자동 감지
+  fallback_to_cpu: true
+
+# 기본 설정 (기존 코드와 호환)
+model:
+  mixed_precision: false  # CPU 호환성을 위해 비활성화
+  compile_optimization: false
+  gradient_checkpointing: false
+  memory_efficient: false
+
+# 데이터 처리 설정
+data_processing:
+  batch_size: 8  # CPU 친화적 배치 크기
+  num_workers: 2
+  pin_memory: false
+  prefetch_factor: 2
+  persistent_workers: false
+
+# 메모리 관리 (보수적 설정)
+memory:
+  limit_percentage: 70  # 시스템 메모리의 70% 사용
+  clear_cache_frequency: 50
+  gradient_accumulation_steps: 1
+
+# 성능 설정 (안정성 우선)
+performance:
+  dataloader_optimization: false
+  tensor_core_usage: false
+  dynamic_loss_scaling: false
+
+# 훈련 설정
+training:
+  learning_rate: 0.001
+  weight_decay: 0.0001
+  scheduler: "step_lr"
+  warmup_epochs: 0
+
+# 로깅 설정
+monitoring:
+  gpu_memory_tracking: false
+  performance_profiling: false
+  tensorboard_logging: false
+  console_logging: true
+
+# 파일 시스템 설정
+filesystem:
+  data_root: "./data"
+  output_root: "./output"
+  checkpoint_root: "./checkpoints"
+  log_root: "./logs"
+
+# 디버깅 설정
+debugging:
+  verbose_logging: true
+  save_intermediate_results: true
+  profiling_enabled: false
+
+# 호환성 설정
+compatibility:
+  legacy_mode: true  # 기존 코드와의 완벽한 호환성
+  strict_validation: false
+  error_on_warning: false

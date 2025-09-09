@@ -1,0 +1,37 @@
+{
+  "MultiScale_HOG": {
+    "name": "MultiScale_HOG",
+    "success_rate": 1.0,
+    "feature_count": 24600,
+    "extraction_time_ms": 816.3931369781494,
+    "classification_accuracy": 0.7333333333333333,
+    "accuracy_std": 0.12472191289246475,
+    "description": "다중 스케일 HOG (3가지 스케일)"
+  },
+  "Comprehensive_LBP": {
+    "name": "Comprehensive_LBP",
+    "success_rate": 1.0,
+    "feature_count": 162,
+    "extraction_time_ms": 947.0889568328857,
+    "classification_accuracy": 0.8333333333333334,
+    "accuracy_std": 0.04714045207910316,
+    "description": "종합 LBP (지형 적응형 + 회전 불변)"
+  },
+  "Advanced_Gabor": {
+    "name": "Advanced_Gabor",
+    "success_rate": 1.0,
+    "feature_count": 600,
+    "extraction_time_ms": 3639.0249729156494,
+    "classification_accuracy": 1.0,
+    "accuracy_std": 0.0,
+    "description": "고급 Gabor 필터 뱅크 (4주파수 × 6방향)"
+  },
+  "metadata": {
+    "test_date": "2025-09-09T13:08:16.379927",
+    "num_samples": 30,
+    "positive_samples": 15,
+    "negative_samples": 15,
+    "image_size": "96x96",
+    "test_type": "advanced_features"
+  }
+}

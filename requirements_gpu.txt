@@ -1,0 +1,57 @@
+# GPU 환경용 의존성 패키지
+# PyTorch GPU 버전 (CUDA 11.8)
+torch>=2.1.0
+torchvision>=0.16.0
+torchaudio>=2.1.0
+
+# 기본 과학 계산 패키지 (호환성 보장)
+numpy>=1.24,<2.0
+scipy>=1.10,<2.0
+matplotlib>=3.7,<4.0
+pandas>=1.5,<3.0
+scikit-learn>=1.3,<2.0
+
+# 컴퓨터 비전 및 이미지 처리
+opencv-python>=4.8,<5.0
+pillow>=10.0,<11.0
+albumentations>=1.3,<2.0
+
+# 유틸리티 패키지
+tqdm>=4.64,<5.0
+pyyaml>=6.0,<7.0
+seaborn>=0.12,<1.0
+
+# GPU 최적화 및 모니터링
+tensorboard>=2.14,<3.0
+wandb>=0.15,<1.0
+gpustat>=1.1,<2.0
+
+# 딥러닝 확장 패키지
+timm>=0.9,<1.0
+einops>=0.7,<1.0
+transformers>=4.30,<5.0
+
+# 해양 데이터 처리 (기존)
+pyxtf>=1.4,<2.0
+utm>=0.7,<1.0
+geopy>=2.3,<3.0
+
+# 개발 및 분석 도구
+jupyterlab>=4.0,<5.0
+ipywidgets>=8.0,<9.0
+plotly>=5.15,<6.0
+folium>=0.14,<1.0
+
+# 메모리 프로파일링
+memory-profiler>=0.60,<1.0
+psutil>=5.9,<6.0
+
+# 병렬 처리
+joblib>=1.3,<2.0
+
+# 고성능 데이터 로딩
+lmdb>=1.4,<2.0
+
+# 추가 최적화
+accelerate>=0.20,<1.0
+bitsandbytes>=0.40,<1.0
