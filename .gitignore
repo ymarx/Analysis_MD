@@ -50,11 +50,37 @@ ENV/
 *.tif
 *.TIF
 
-# Large datasets
-datasets/
+# Large datasets - keep folder structure but ignore contents
+datasets/*
+!datasets/.gitkeep
+!datasets/*/
+!datasets/*/.gitkeep
 data/raw/
 data/processed/
 outputs/
+
+# Sample data
+[샘플]데이터/
+**/[샘플]데이터/
+
+# Large binary files
+*.xtf
+*.XTF
+*.dylib
+*.so
+*.dll
+
+# Specific large file patterns in datasets
+datasets/**/*.xtf
+datasets/**/*.XTF
+datasets/**/*.bmp
+datasets/**/*.BMP
+datasets/**/*.jpg
+datasets/**/*.JPG
+datasets/**/*.jpeg
+datasets/**/*.JPEG
+datasets/**/*.png
+datasets/**/*.PNG
 
 # Logs
 logs/
