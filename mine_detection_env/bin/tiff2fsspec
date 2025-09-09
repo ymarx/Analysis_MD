@@ -1,7 +1,0 @@
-#!/Users/YMARX/Dropbox/2025_ECMiner/C_P02_기뢰전대/03_진행/Analysis_MD/mine_detection_env/bin/python
-import sys
-from tifffile.tiff2fsspec import main
-if __name__ == '__main__':
-    if sys.argv[0].endswith('.exe'):
-        sys.argv[0] = sys.argv[0][:-4]
-    sys.exit(main())
