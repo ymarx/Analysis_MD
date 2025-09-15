@@ -92,33 +92,37 @@ class XTFIntensityExtractor:
         try:
             logger.info(f"XTF 파일에서 강도 데이터 추출 시작: {xtf_path}")
             
-            with pyxtf.xtf_read(xtf_path) as xtf_file:
-                # 메타데이터 추출
-                metadata = self._extract_metadata(xtf_file, xtf_path)
-                
-                # 강도 데이터 추출
-                intensity_data = self._extract_ping_data(xtf_file, ping_range)
-                
-                # 결과 구성
-                result = {
-                    'metadata': metadata,
-                    'ping_data': intensity_data,
-                    'intensity_images': self._create_intensity_images(intensity_data),
-                    'navigation_data': self._extract_navigation_data(intensity_data)
-                }
-                
-                # 선택적 저장
-                if output_dir:
-                    self._save_extracted_data(result, output_dir, xtf_path)
-                
-                logger.info(f"강도 데이터 추출 완료: {len(intensity_data)} pings")
-                return result
+            # pyxtf를 사용하여 파일 읽기
+            file_header, packets = pyxtf.xtf_read(str(xtf_path))
+            
+            # 메타데이터 추출
+            metadata = self._extract_metadata(file_header, packets, xtf_path)
+            
+            # 강도 데이터 추출
+            intensity_data = self._extract_ping_data(packets, ping_range)
+            
+            # 결과 구성
+            result = {
+                'metadata': metadata,
+                'ping_data': intensity_data,
+                'intensity_images': self._create_intensity_images(intensity_data),
+                'navigation_data': self._extract_navigation_data(intensity_data)
+            }
+            
+            # 자동으로 data/processed/xtf_extracted에 저장
+            if not output_dir:
+                output_dir = "data/processed/xtf_extracted"
+            self._save_extracted_data(result, output_dir, xtf_path)
+            
+            logger.info(f"강도 데이터 추출 완료: {len(intensity_data)} pings")
+            logger.info(f"데이터 저장 위치: {output_dir}")
+            return result
                 
         except Exception as e:
             logger.error(f"XTF 강도 데이터 추출 실패: {e}")
             return self._create_dummy_intensity_data(xtf_path)
     
-    def _extract_metadata(self, xtf_file, file_path: str) -> IntensityMetadata:
+    def _extract_metadata(self, file_header, packets, file_path: str) -> IntensityMetadata:
         """XTF 파일 메타데이터 추출"""
         try:
             # XTF 헤더에서 기본 정보 추출
@@ -171,57 +175,91 @@ class XTFIntensityExtractor:
                 timestamp_range=(0.0, 0.0)
             )
     
-    def _extract_ping_data(self, xtf_file, ping_range: Optional[Tuple[int, int]]) -> List[IntensityPing]:
+    def _extract_ping_data(self, packets, ping_range: Optional[Tuple[int, int]]) -> List[IntensityPing]:
         """개별 ping 데이터 추출"""
         ping_data = []
         ping_counter = 0
         
         try:
-            for packet in xtf_file:
+            # 소나 데이터 패킷만 필터링 (packets는 딕셔너리)
+            sonar_packets = []
+            if isinstance(packets, dict):
+                # XTFHeaderType.sonar (키 0) 에서 소나 패킷 추출
+                try:
+                    import pyxtf
+                    if pyxtf.XTFHeaderType.sonar in packets:
+                        sonar_packets = packets[pyxtf.XTFHeaderType.sonar]
+                except:
+                    # 숫자 키로도 시도
+                    if 0 in packets:
+                        sonar_packets = packets[0]
+            elif isinstance(packets, list):
+                # 리스트인 경우
+                for packet in packets:
+                    if hasattr(packet, 'data') and packet.data is not None:
+                        sonar_packets.append(packet)
+            
+            logger.info(f"소나 데이터 패킷 발견: {len(sonar_packets)}개")
+            
+            for packet in sonar_packets:
                 # ping 범위 필터링
                 if ping_range and (ping_counter < ping_range[0] or ping_counter >= ping_range[1]):
                     ping_counter += 1
                     continue
-                
-                # 사이드스캔 소나 데이터 패킷 확인
-                if hasattr(packet, 'data') and hasattr(packet, 'ping_number'):
-                    try:
-                        # 기본 정보 추출
-                        ping_num = getattr(packet, 'ping_number', ping_counter)
-                        timestamp = getattr(packet, 'time', 0.0)
-                        latitude = getattr(packet, 'SensorXCoordinate', 0.0)
-                        longitude = getattr(packet, 'SensorYCoordinate', 0.0)
-                        heading = getattr(packet, 'heading', 0.0)
-                        
-                        # 강도 데이터 추출
-                        if hasattr(packet, 'data'):
+                try:
+                    # 기본 정보 추출 - 다양한 속성명 시도
+                    ping_num = getattr(packet, 'PingNumber', getattr(packet, 'ping_number', ping_counter))
+                    
+                    # 타임스탬프 추출
+                    timestamp = 0.0
+                    if hasattr(packet, 'TimeStamp'):
+                        timestamp = packet.TimeStamp
+                    elif hasattr(packet, 'time'):
+                        timestamp = packet.time
+                    
+                    # 좌표 정보 추출
+                    latitude = getattr(packet, 'SensorYcoordinate', getattr(packet, 'SensorY', 0.0))
+                    longitude = getattr(packet, 'SensorXcoordinate', getattr(packet, 'SensorX', 0.0))
+                    heading = getattr(packet, 'heading', getattr(packet, 'Heading', 0.0))
+                    
+                    # 강도 데이터 추출 - data는 리스트 형태 [PORT, STARBOARD]
+                    port_intensity = np.array([], dtype=np.float32)
+                    starboard_intensity = np.array([], dtype=np.float32)
+                    
+                    if hasattr(packet, 'data') and packet.data is not None:
+                        if isinstance(packet.data, list) and len(packet.data) >= 2:
+                            # PORT(0)과 STARBOARD(1) 채널 데이터 분리
+                            if packet.data[0] is not None:
+                                port_intensity = np.array(packet.data[0], dtype=np.float32)
+                            if packet.data[1] is not None:
+                                starboard_intensity = np.array(packet.data[1], dtype=np.float32)
+                        else:
+                            # 단일 데이터인 경우 절반으로 나누기
                             data_array = np.array(packet.data, dtype=np.float32)
-                            
-                            # Port/Starboard 채널 분리 (일반적으로 절반씩)
                             mid_point = len(data_array) // 2
                             port_intensity = data_array[:mid_point]
                             starboard_intensity = data_array[mid_point:]
-                            
-                            # 거리 정보 (샘플 인덱스 기반)
-                            port_range = np.arange(len(port_intensity), dtype=np.float32)
-                            starboard_range = np.arange(len(starboard_intensity), dtype=np.float32)
-                            
-                            ping_obj = IntensityPing(
-                                ping_number=ping_num,
-                                timestamp=timestamp,
-                                latitude=latitude,
-                                longitude=longitude,
-                                heading=heading,
-                                port_intensity=port_intensity,
-                                starboard_intensity=starboard_intensity,
-                                port_range=port_range,
-                                starboard_range=starboard_range
-                            )
-                            
-                            ping_data.append(ping_obj)
-                        
-                    except Exception as e:
-                        logger.warning(f"Ping {ping_counter} 처리 중 오류: {e}")
+                    
+                    # 거리 정보 (샘플 인덱스 기반)
+                    port_range = np.arange(len(port_intensity), dtype=np.float32)
+                    starboard_range = np.arange(len(starboard_intensity), dtype=np.float32)
+                    
+                    ping_obj = IntensityPing(
+                        ping_number=ping_num,
+                        timestamp=timestamp,
+                        latitude=latitude,
+                        longitude=longitude,
+                        heading=heading,
+                        port_intensity=port_intensity,
+                        starboard_intensity=starboard_intensity,
+                        port_range=port_range,
+                        starboard_range=starboard_range
+                    )
+                    
+                    ping_data.append(ping_obj)
+                    
+                except Exception as e:
+                    logger.warning(f"Ping {ping_counter} 처리 중 오류: {e}")
                 
                 ping_counter += 1
                 
@@ -234,6 +272,8 @@ class XTFIntensityExtractor:
             
         except Exception as e:
             logger.error(f"Ping 데이터 추출 중 오류: {e}")
+            import traceback
+            traceback.print_exc()
         
         return ping_data
     

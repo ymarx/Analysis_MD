@@ -94,11 +94,15 @@ class XTFReader:
             
             logger.info(f"XTF 파일 로드 시작: {self.filepath}")
             
-            # pyxtf를 사용하여 파일 읽기
-            self.file_header, self.packets = pyxtf.xtf_read(str(self.filepath), verbose=False)
+            # pyxtf를 사용하여 파일 읽기 (verbose=False는 pyxtf 최신 버전에서 지원하지 않을 수 있음)
+            try:
+                self.file_header, self.packets = pyxtf.xtf_read(str(self.filepath))
+            except TypeError:
+                # verbose 파라미터가 지원되지 않는 경우
+                self.file_header, self.packets = pyxtf.xtf_read(str(self.filepath))
             
             self._is_loaded = True
-            logger.info("XTF 파일 로드 완료")
+            logger.info(f"XTF 파일 로드 완료 - {len(self.packets)} 패킷")
             
             # 메타데이터 생성
             self._create_metadata()
@@ -114,7 +118,18 @@ class XTFReader:
         if not self._is_loaded:
             return
         
-        sonar_packets = self.packets.get(pyxtf.XTFHeaderType.sonar, [])
+        # 소나 데이터 패킷 찾기 (packets는 딕셔너리임)
+        sonar_packets = []
+        if isinstance(self.packets, dict):
+            # XTFHeaderType.sonar (키 0) 에서 소나 패킷 추출
+            from pyxtf import XTFHeaderType
+            if XTFHeaderType.sonar in self.packets:
+                sonar_packets = self.packets[XTFHeaderType.sonar]
+        elif isinstance(self.packets, list):
+            # 리스트인 경우 (이전 방식)
+            for packet in self.packets:
+                if hasattr(packet, 'data') and packet.data is not None:
+                    sonar_packets.append(packet)
         
         # 주파수 정보 수집
         frequency_info = {}
@@ -122,34 +137,63 @@ class XTFReader:
         coordinates = {'lat': [], 'lon': []}
         
         for packet in sonar_packets:
-            if hasattr(packet, 'SonarFreq'):
-                frequency_info[packet.channel_number] = packet.SonarFreq
+            # 채널 번호와 주파수 정보
+            if hasattr(packet, 'ChannelNumber'):
+                channel_num = packet.ChannelNumber
+                if hasattr(packet, 'SonarFreq'):
+                    frequency_info[channel_num] = packet.SonarFreq
             
-            # 타임스탬프 수집
-            if hasattr(packet, 'ping_time_year'):
-                try:
-                    timestamp = datetime(
-                        packet.ping_time_year,
-                        packet.ping_time_month, 
-                        packet.ping_time_day,
-                        packet.ping_time_hour,
-                        packet.ping_time_minute,
-                        packet.ping_time_second
-                    )
-                    timestamps.append(timestamp)
-                except:
-                    pass
+            # 타임스탬프 수집 - 다양한 속성명 시도
+            timestamp_attrs = ['ping_time_year', 'TimeStamp', 'time_year']
+            for attr in timestamp_attrs:
+                if hasattr(packet, attr):
+                    try:
+                        if attr == 'TimeStamp':
+                            # TimeStamp가 있는 경우 바로 사용
+                            timestamps.append(datetime.fromtimestamp(getattr(packet, attr)))
+                        else:
+                            # 개별 시간 구성요소로 datetime 생성
+                            timestamp = datetime(
+                                getattr(packet, 'ping_time_year', 2024),
+                                getattr(packet, 'ping_time_month', 1),
+                                getattr(packet, 'ping_time_day', 1),
+                                getattr(packet, 'ping_time_hour', 0),
+                                getattr(packet, 'ping_time_minute', 0),
+                                getattr(packet, 'ping_time_second', 0)
+                            )
+                            timestamps.append(timestamp)
+                        break
+                    except:
+                        continue
             
-            # 좌표 정보 수집
-            if hasattr(packet, 'SensorXcoordinate') and hasattr(packet, 'SensorYcoordinate'):
-                coordinates['lat'].append(packet.SensorYcoordinate)
-                coordinates['lon'].append(packet.SensorXcoordinate)
+            # 좌표 정보 수집 - 다양한 속성명 시도
+            coord_attrs = [('SensorXcoordinate', 'SensorYcoordinate'), ('SensorX', 'SensorY')]
+            for x_attr, y_attr in coord_attrs:
+                if hasattr(packet, x_attr) and hasattr(packet, y_attr):
+                    coordinates['lat'].append(getattr(packet, y_attr))
+                    coordinates['lon'].append(getattr(packet, x_attr))
+                    break
         
-        # 메타데이터 생성
+        # 메타데이터 생성 - 안전한 속성 접근
+        num_sonar_channels = 0
+        num_bathymetry_channels = 0
+        
+        if self.file_header:
+            # 다양한 속성명 시도
+            for attr_name in ['NumSonarChannels', 'NumberOfSonarChannels', 'num_sonar_channels']:
+                if hasattr(self.file_header, attr_name):
+                    num_sonar_channels = getattr(self.file_header, attr_name)
+                    break
+            
+            for attr_name in ['NumBathymetryChannels', 'NumberOfBathymetryChannels', 'num_bathymetry_channels']:
+                if hasattr(self.file_header, attr_name):
+                    num_bathymetry_channels = getattr(self.file_header, attr_name)
+                    break
+        
         self.metadata = XTFMetadata(
             filename=self.filepath.name,
-            num_sonar_channels=self.file_header.NumSonarChannels if self.file_header else 0,
-            num_bathymetry_channels=self.file_header.NumBathymetryChannels if self.file_header else 0,
+            num_sonar_channels=num_sonar_channels,
+            num_bathymetry_channels=num_bathymetry_channels,
             total_pings=len(sonar_packets),
             frequency_info=frequency_info,
             time_range=(min(timestamps), max(timestamps)) if timestamps else (None, None),
@@ -172,11 +216,22 @@ class XTFReader:
             logger.error("파일이 로드되지 않았습니다. load_file()을 먼저 호출하세요.")
             return []
         
-        if pyxtf.XTFHeaderType.sonar not in self.packets:
+        # 소나 데이터 패킷 찾기
+        sonar_packets = []
+        if isinstance(self.packets, dict):
+            # XTFHeaderType.sonar (키 0) 에서 소나 패킷 추출
+            from pyxtf import XTFHeaderType
+            if XTFHeaderType.sonar in self.packets:
+                sonar_packets = self.packets[XTFHeaderType.sonar]
+        elif isinstance(self.packets, list):
+            # 리스트인 경우
+            for packet in self.packets:
+                if hasattr(packet, 'data') and packet.data is not None:
+                    sonar_packets.append(packet)
+        
+        if not sonar_packets:
             logger.error("소나 데이터를 찾을 수 없습니다.")
             return []
-        
-        sonar_packets = self.packets[pyxtf.XTFHeaderType.sonar]
         
         # ping 수 제한 적용
         if self.max_pings:
@@ -188,33 +243,49 @@ class XTFReader:
         
         for i, packet in enumerate(sonar_packets):
             try:
-                # 타임스탬프 생성
-                timestamp = None
-                if hasattr(packet, 'ping_time_year'):
+                # 타임스탬프 생성 - 다양한 방법 시도
+                timestamp = datetime.now()  # 기본값
+                if hasattr(packet, 'TimeStamp'):
+                    try:
+                        timestamp = datetime.fromtimestamp(packet.TimeStamp)
+                    except:
+                        pass
+                elif hasattr(packet, 'ping_time_year'):
                     try:
                         timestamp = datetime(
-                            packet.ping_time_year,
-                            packet.ping_time_month,
-                            packet.ping_time_day, 
-                            packet.ping_time_hour,
-                            packet.ping_time_minute,
-                            packet.ping_time_second
+                            getattr(packet, 'ping_time_year', 2024),
+                            getattr(packet, 'ping_time_month', 1),
+                            getattr(packet, 'ping_time_day', 1),
+                            getattr(packet, 'ping_time_hour', 0),
+                            getattr(packet, 'ping_time_minute', 0),
+                            getattr(packet, 'ping_time_second', 0)
                         )
                     except:
-                        timestamp = datetime.now()
+                        pass
                 
-                # PingData 객체 생성
+                # 데이터 처리 - data는 리스트 형태 (PORT, STARBOARD)
+                combined_data = np.array([])
+                if hasattr(packet, 'data') and packet.data is not None:
+                    if isinstance(packet.data, list) and len(packet.data) >= 2:
+                        # PORT(0)과 STARBOARD(1) 채널 데이터 결합
+                        port_data = np.array(packet.data[0], dtype=np.float32) if packet.data[0] is not None else np.array([])
+                        starboard_data = np.array(packet.data[1], dtype=np.float32) if packet.data[1] is not None else np.array([])
+                        combined_data = np.concatenate([port_data, starboard_data])
+                    else:
+                        combined_data = np.array(packet.data, dtype=np.float32)
+                
+                # PingData 객체 생성 - 다양한 속성명 시도
                 ping_data = PingData(
-                    ping_number=i,
+                    ping_number=getattr(packet, 'PingNumber', i),
                     timestamp=timestamp,
-                    latitude=getattr(packet, 'SensorYcoordinate', 0.0),
-                    longitude=getattr(packet, 'SensorXcoordinate', 0.0),
-                    frequency=getattr(packet, 'SonarFreq', 0.0),
-                    channel=getattr(packet, 'channel_number', 0),
-                    data=np.array(packet.data) if hasattr(packet, 'data') else np.array([]),
-                    range_samples=len(packet.data) if hasattr(packet, 'data') else 0,
-                    ship_x=getattr(packet, 'SensorXcoordinate', 0.0),
-                    ship_y=getattr(packet, 'SensorYcoordinate', 0.0)
+                    latitude=getattr(packet, 'SensorYcoordinate', getattr(packet, 'SensorY', 0.0)),
+                    longitude=getattr(packet, 'SensorXcoordinate', getattr(packet, 'SensorX', 0.0)),
+                    frequency=getattr(packet, 'SonarFreq', getattr(packet, 'Frequency', 0.0)),
+                    channel=0,  # 결합된 데이터이므로 채널 0으로 설정
+                    data=combined_data,
+                    range_samples=len(combined_data),
+                    ship_x=getattr(packet, 'SensorXcoordinate', getattr(packet, 'SensorX', 0.0)),
+                    ship_y=getattr(packet, 'SensorYcoordinate', getattr(packet, 'SensorY', 0.0))
                 )
                 
                 self.ping_data.append(ping_data)

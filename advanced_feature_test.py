@@ -17,6 +17,7 @@ import warnings
 warnings.filterwarnings('ignore')
 
 # 프로젝트 경로 추가
+
 sys.path.append(str(Path(__file__).parent))
 
 # 로깅 설정
