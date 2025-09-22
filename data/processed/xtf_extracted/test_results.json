@@ -1,0 +1,55 @@
+{
+  "test_time": "2025-09-12 13:29:58",
+  "total_files": 3,
+  "successful_files": 3,
+  "files": [
+    {
+      "filename": "Pohang_Eardo_1_Edgetech4205_800_050_20241012110900_001_04.xtf",
+      "success": true,
+      "processing_time": 0.35042786598205566,
+      "ping_count": 100,
+      "matrix_shape": [
+        100,
+        6832
+      ],
+      "coordinate_range": {
+        "lat_min": 36.098733333333335,
+        "lat_max": 36.09874333333333,
+        "lon_min": 129.51517333333334,
+        "lon_max": 129.51529333333335
+      }
+    },
+    {
+      "filename": "Pohang_Eardo_1_Edgetech4205_800_050_20241012181900_001_04.xtf",
+      "success": true,
+      "processing_time": 0.38263797760009766,
+      "ping_count": 100,
+      "matrix_shape": [
+        100,
+        6832
+      ],
+      "coordinate_range": {
+        "lat_min": 36.098753333333335,
+        "lat_max": 36.098753333333335,
+        "lon_min": 129.50765333333334,
+        "lon_max": 129.50773333333333
+      }
+    },
+    {
+      "filename": "Pohang_Eardo_1_Klein3900_900_050_20241011171100_001_04.xtf",
+      "success": true,
+      "processing_time": 0.40412378311157227,
+      "ping_count": 100,
+      "matrix_shape": [
+        100,
+        6400
+      ],
+      "coordinate_range": {
+        "lat_min": 36.09867838459968,
+        "lat_max": 36.09868440126634,
+        "lon_min": 129.5148799878767,
+        "lon_max": 129.5150347545434
+      }
+    }
+  ]
+}

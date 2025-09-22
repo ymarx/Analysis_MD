@@ -56,7 +56,7 @@ datasets/*
 !datasets/*/
 !datasets/*/.gitkeep
 data/raw/
-data/processed/
+# data/processed/ # Commented out to include processed data in git
 outputs/
 
 # Sample data

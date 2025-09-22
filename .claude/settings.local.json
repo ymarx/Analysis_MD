@@ -22,7 +22,14 @@
       "Bash(for:*)",
       "Bash(do echo \"=== $dir ===\")",
       "Bash(find:*)",
-      "Bash(done)"
+      "Bash(done)",
+      "Bash(conda list:*)",
+      "Bash(/opt/anaconda3/bin/conda list)",
+      "Read(//Users/YMARX/**)",
+      "WebSearch",
+      "Bash(claude mcp add:*)",
+      "Bash(claude mcp:*)",
+      "Bash(git add:*)"
     ],
     "deny": [],
     "ask": []

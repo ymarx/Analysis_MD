@@ -1,0 +1,377 @@
+[
+  {
+    "object_id": 1,
+    "pixel_x": 758,
+    "pixel_y": 146,
+    "bbox": {
+      "x": 747,
+      "y": 129,
+      "width": 23,
+      "height": 35
+    },
+    "gps_point_id": "PH_01",
+    "latitude": 36.5933983,
+    "longitude": 129.50929621666666,
+    "mapping_confidence": 0.581
+  },
+  {
+    "object_id": 2,
+    "pixel_x": 732,
+    "pixel_y": 146,
+    "bbox": {
+      "x": 720,
+      "y": 128,
+      "width": 24,
+      "height": 36
+    },
+    "gps_point_id": "PH_02",
+    "latitude": 36.593362,
+    "longitude": 129.50949343333335,
+    "mapping_confidence": 0.586
+  },
+  {
+    "object_id": 3,
+    "pixel_x": 831,
+    "pixel_y": 150,
+    "bbox": {
+      "x": 806,
+      "y": 124,
+      "width": 50,
+      "height": 53
+    },
+    "gps_point_id": "PH_03",
+    "latitude": 36.5933256,
+    "longitude": 129.50969281666667,
+    "mapping_confidence": 0.765
+  },
+  {
+    "object_id": 4,
+    "pixel_x": 770,
+    "pixel_y": 221,
+    "bbox": {
+      "x": 757,
+      "y": 204,
+      "width": 27,
+      "height": 35
+    },
+    "gps_point_id": "PH_04",
+    "latitude": 36.5933309,
+    "longitude": 129.50989436666666,
+    "mapping_confidence": 0.595
+  },
+  {
+    "object_id": 5,
+    "pixel_x": 744,
+    "pixel_y": 221,
+    "bbox": {
+      "x": 732,
+      "y": 203,
+      "width": 24,
+      "height": 36
+    },
+    "gps_point_id": "PH_05",
+    "latitude": 36.5933049,
+    "longitude": 129.5100916,
+    "mapping_confidence": 0.586
+  },
+  {
+    "object_id": 6,
+    "pixel_x": 843,
+    "pixel_y": 248,
+    "bbox": {
+      "x": 815,
+      "y": 201,
+      "width": 57,
+      "height": 94
+    },
+    "gps_point_id": "PH_06",
+    "latitude": 36.5932997,
+    "longitude": 129.5102953,
+    "mapping_confidence": 1.0
+  },
+  {
+    "object_id": 7,
+    "pixel_x": 755,
+    "pixel_y": 271,
+    "bbox": {
+      "x": 743,
+      "y": 253,
+      "width": 25,
+      "height": 36
+    },
+    "gps_point_id": "PH_07",
+    "latitude": 36.5933259,
+    "longitude": 129.51049688333333,
+    "mapping_confidence": 0.59
+  },
+  {
+    "object_id": 8,
+    "pixel_x": 729,
+    "pixel_y": 271,
+    "bbox": {
+      "x": 717,
+      "y": 253,
+      "width": 24,
+      "height": 36
+    },
+    "gps_point_id": "PH_08",
+    "latitude": 36.5933,
+    "longitude": 129.51069196666666,
+    "mapping_confidence": 0.586
+  },
+  {
+    "object_id": 9,
+    "pixel_x": 1010,
+    "pixel_y": 289,
+    "bbox": {
+      "x": 999,
+      "y": 272,
+      "width": 23,
+      "height": 35
+    },
+    "gps_point_id": "PH_09",
+    "latitude": 36.5933053,
+    "longitude": 129.51089566666667,
+    "mapping_confidence": 0.581
+  },
+  {
+    "object_id": 10,
+    "pixel_x": 984,
+    "pixel_y": 290,
+    "bbox": {
+      "x": 972,
+      "y": 272,
+      "width": 24,
+      "height": 36
+    },
+    "gps_point_id": "PH_10",
+    "latitude": 36.5932793,
+    "longitude": 129.51109505,
+    "mapping_confidence": 0.586
+  },
+  {
+    "object_id": 11,
+    "pixel_x": 933,
+    "pixel_y": 290,
+    "bbox": {
+      "x": 902,
+      "y": 261,
+      "width": 63,
+      "height": 59
+    },
+    "gps_point_id": "PH_11",
+    "latitude": 36.5932846,
+    "longitude": 129.5112966,
+    "mapping_confidence": 0.872
+  },
+  {
+    "object_id": 12,
+    "pixel_x": 934,
+    "pixel_y": 400,
+    "bbox": {
+      "x": 902,
+      "y": 376,
+      "width": 64,
+      "height": 49
+    },
+    "gps_point_id": "PH_12",
+    "latitude": 36.5932691,
+    "longitude": 129.5114917,
+    "mapping_confidence": 0.814
+  },
+  {
+    "object_id": 13,
+    "pixel_x": 1010,
+    "pixel_y": 402,
+    "bbox": {
+      "x": 999,
+      "y": 385,
+      "width": 22,
+      "height": 34
+    },
+    "gps_point_id": "PH_13",
+    "latitude": 36.593264,
+    "longitude": 129.51169325,
+    "mapping_confidence": 0.575
+  },
+  {
+    "object_id": 14,
+    "pixel_x": 983,
+    "pixel_y": 402,
+    "bbox": {
+      "x": 971,
+      "y": 384,
+      "width": 24,
+      "height": 36
+    },
+    "gps_point_id": "PH_14",
+    "latitude": 36.5932484,
+    "longitude": 129.51189478333333,
+    "mapping_confidence": 0.586
+  },
+  {
+    "object_id": 15,
+    "pixel_x": 975,
+    "pixel_y": 537,
+    "bbox": {
+      "x": 963,
+      "y": 519,
+      "width": 25,
+      "height": 36
+    },
+    "gps_point_id": "PH_15",
+    "latitude": 36.5932643,
+    "longitude": 129.51208778333333,
+    "mapping_confidence": 0.59
+  },
+  {
+    "object_id": 16,
+    "pixel_x": 949,
+    "pixel_y": 537,
+    "bbox": {
+      "x": 937,
+      "y": 519,
+      "width": 24,
+      "height": 36
+    },
+    "gps_point_id": "PH_16",
+    "latitude": 36.5932486,
+    "longitude": 129.5122936,
+    "mapping_confidence": 0.586
+  },
+  {
+    "object_id": 17,
+    "pixel_x": 873,
+    "pixel_y": 539,
+    "bbox": {
+      "x": 849,
+      "y": 511,
+      "width": 49,
+      "height": 57
+    },
+    "gps_point_id": "PH_17",
+    "latitude": 36.5932539,
+    "longitude": 129.51249301666667,
+    "mapping_confidence": 0.779
+  },
+  {
+    "object_id": 18,
+    "pixel_x": 854,
+    "pixel_y": 603,
+    "bbox": {
+      "x": 820,
+      "y": 578,
+      "width": 68,
+      "height": 50
+    },
+    "gps_point_id": "PH_18",
+    "latitude": 36.5932278,
+    "longitude": 129.51269455,
+    "mapping_confidence": 0.84
+  },
+  {
+    "object_id": 19,
+    "pixel_x": 944,
+    "pixel_y": 605,
+    "bbox": {
+      "x": 933,
+      "y": 588,
+      "width": 22,
+      "height": 35
+    },
+    "gps_point_id": "PH_19",
+    "latitude": 36.5932331,
+    "longitude": 129.5128961,
+    "mapping_confidence": 0.577
+  },
+  {
+    "object_id": 20,
+    "pixel_x": 970,
+    "pixel_y": 605,
+    "bbox": {
+      "x": 958,
+      "y": 587,
+      "width": 25,
+      "height": 36
+    },
+    "gps_point_id": "PH_20",
+    "latitude": 36.593249,
+    "longitude": 129.51308908333334,
+    "mapping_confidence": 0.59
+  },
+  {
+    "object_id": 21,
+    "pixel_x": 866,
+    "pixel_y": 722,
+    "bbox": {
+      "x": 841,
+      "y": 690,
+      "width": 51,
+      "height": 65
+    },
+    "gps_point_id": "PH_21",
+    "latitude": 36.5932229,
+    "longitude": 129.5132949,
+    "mapping_confidence": 0.832
+  },
+  {
+    "object_id": 22,
+    "pixel_x": 945,
+    "pixel_y": 723,
+    "bbox": {
+      "x": 934,
+      "y": 706,
+      "width": 22,
+      "height": 35
+    },
+    "gps_point_id": "PH_22",
+    "latitude": 36.5931865,
+    "longitude": 129.51349211666667,
+    "mapping_confidence": 0.577
+  },
+  {
+    "object_id": 23,
+    "pixel_x": 971,
+    "pixel_y": 723,
+    "bbox": {
+      "x": 959,
+      "y": 705,
+      "width": 25,
+      "height": 36
+    },
+    "gps_point_id": "PH_23",
+    "latitude": 36.5932231,
+    "longitude": 129.5136938,
+    "mapping_confidence": 0.59
+  },
+  {
+    "object_id": 24,
+    "pixel_x": 966,
+    "pixel_y": 816,
+    "bbox": {
+      "x": 954,
+      "y": 799,
+      "width": 24,
+      "height": 35
+    },
+    "gps_point_id": "PH_24",
+    "latitude": 36.593197,
+    "longitude": 129.5138931,
+    "mapping_confidence": 0.584
+  },
+  {
+    "object_id": 25,
+    "pixel_x": 940,
+    "pixel_y": 816,
+    "bbox": {
+      "x": 929,
+      "y": 799,
+      "width": 22,
+      "height": 35
+    },
+    "gps_point_id": "PH_25",
+    "latitude": 36.593171,
+    "longitude": 129.51409248333334,
+    "mapping_confidence": 0.577
+  }
+]

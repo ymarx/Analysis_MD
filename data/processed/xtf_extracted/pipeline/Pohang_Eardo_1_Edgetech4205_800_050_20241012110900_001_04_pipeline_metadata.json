@@ -1,0 +1,93 @@
+{
+  "file_info": {
+    "filename": "Pohang_Eardo_1_Edgetech4205_800_050_20241012110900_001_04.xtf",
+    "filepath": "datasets/Pohang_Eardo_1_Edgetech4205_800_050_20241012110900_001_04/original/Pohang_Eardo_1_Edgetech4205_800_050_20241012110900_001_04.xtf",
+    "processing_method": "pipeline"
+  },
+  "reader_data": {
+    "summary": {
+      "filename": "Pohang_Eardo_1_Edgetech4205_800_050_20241012110900_001_04.xtf",
+      "total_pings": 7974,
+      "num_sonar_channels": 2,
+      "frequency_info": {},
+      "coordinate_bounds": {
+        "lat": [
+          36.098636666666664,
+          36.098753333333335
+        ],
+        "lon": [
+          12.514938333333333,
+          129.51529333333335
+        ]
+      },
+      "time_range": [
+        null,
+        null
+      ],
+      "is_loaded": true,
+      "is_parsed": true
+    },
+    "ping_count": 200,
+    "intensity_matrix_shape": [
+      200,
+      6832
+    ],
+    "coordinate_stats": {
+      "latitude_range": [
+        36.09873,
+        36.09874333333333
+      ],
+      "longitude_range": [
+        129.51506666666666,
+        129.51529333333335
+      ],
+      "total_records": 200
+    }
+  },
+  "extractor_data": {
+    "metadata": {
+      "file_path": "datasets/Pohang_Eardo_1_Edgetech4205_800_050_20241012110900_001_04/original/Pohang_Eardo_1_Edgetech4205_800_050_20241012110900_001_04.xtf",
+      "ping_count": 200,
+      "timestamp_range": [
+        1757667038.260944,
+        1757667038.264916
+      ],
+      "coordinate_bounds": {
+        "latitude": [
+          36.09873,
+          36.09874333333333
+        ],
+        "longitude": [
+          129.51506666666666,
+          129.51529333333335
+        ]
+      },
+      "intensity_range": [
+        0.0,
+        32512.0
+      ],
+      "processing_method": "XTF_Reader_to_Intensity_Extractor_Pipeline"
+    },
+    "image_info": {
+      "combined": [
+        200,
+        6832
+      ],
+      "port": [
+        200,
+        3416
+      ],
+      "starboard": [
+        200,
+        3416
+      ]
+    },
+    "navigation_data_keys": [
+      "timestamps",
+      "latitudes",
+      "longitudes",
+      "headings",
+      "ping_numbers"
+    ]
+  }
+}
