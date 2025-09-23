@@ -36,7 +36,8 @@
       "Bash(timeout:*)",
       "Bash(grep:*)",
       "Bash(git lfs track:*)",
-      "Bash(git reset:*)"
+      "Bash(git reset:*)",
+      "Bash(git check-ignore:*)"
     ],
     "deny": [],
     "ask": []
