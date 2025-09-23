@@ -43,8 +43,8 @@ ENV/
 *.JPG
 *.jpeg
 *.JPEG
-*.png
-*.PNG
+# *.png  # Allow analysis result visualizations
+# *.PNG  # Allow analysis result visualizations
 *.tiff
 *.TIFF
 *.tif
