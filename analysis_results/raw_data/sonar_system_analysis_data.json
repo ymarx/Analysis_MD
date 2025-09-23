@@ -1,0 +1,503 @@
+{
+  "analysis_timestamp": "2025-09-22T16:15:18.950344",
+  "individual_analysis": {
+    "EdgeTech_4205_1": {
+      "manufacturer": "EdgeTech",
+      "model": "4205",
+      "frequency": "800 kHz",
+      "file_characteristics": {
+        "total_pings": 7974,
+        "sonar_channels": 2,
+        "bathymetry_channels": 0,
+        "frequency_info": {},
+        "coordinate_bounds": {
+          "lat": [
+            36.098636666666664,
+            36.098753333333335
+          ],
+          "lon": [
+            12.514938333333333,
+            129.51529333333335
+          ]
+        },
+        "time_range": [
+          null,
+          null
+        ]
+      },
+      "packet_structure": {
+        "ping_number_range": {
+          "min": 224619,
+          "max": 225618
+        },
+        "samples_per_ping": {
+          "min": 6832,
+          "max": 6832,
+          "typical": 6832
+        },
+        "coordinate_precision": {
+          "lat_precision": 14,
+          "lon_precision": 14
+        },
+        "timestamp_format": "datetime"
+      },
+      "data_format": {
+        "combined_shape": [
+          500,
+          6832
+        ],
+        "port_shape": [
+          500,
+          3416
+        ],
+        "starboard_shape": [
+          500,
+          3416
+        ],
+        "data_type": "float32",
+        "value_range": {
+          "combined": [
+            0.0,
+            1.0
+          ],
+          "port": [
+            0.0,
+            1.0
+          ],
+          "starboard": [
+            0.0,
+            1.0
+          ]
+        }
+      },
+      "performance_metrics": {
+        "data_completeness": {
+          "pings_with_coordinates": 1.0,
+          "pings_with_intensity": 1.0
+        },
+        "intensity_statistics": {
+          "mean": 2777.852783203125,
+          "std": 3686.776611328125,
+          "dynamic_range": 32512.0,
+          "signal_to_noise_estimate": 95.1792984008789
+        },
+        "spatial_coverage": {
+          "lat_range_km": 0.0055499999993955385,
+          "lon_range_km": 10493.568223836452,
+          "center_lat": 36.09871386,
+          "center_lon": 126.23876100666665,
+          "coverage_area_km2": 58.23930363594935
+        },
+        "temporal_consistency": {
+          "ping_sequence_consistent": true,
+          "ping_number_gaps": 0,
+          "average_ping_interval": 0.999
+        }
+      },
+      "unique_features": [
+        "edgetech_format",
+        "dual_frequency_capable",
+        "chirp_sonar",
+        "high_resolution_bathymetry",
+        "high_sample_rate",
+        "high_range_resolution",
+        "standard_dynamic_range"
+      ]
+    },
+    "EdgeTech_4205_2": {
+      "manufacturer": "EdgeTech",
+      "model": "4205",
+      "frequency": "800 kHz",
+      "file_characteristics": {
+        "total_pings": 7083,
+        "sonar_channels": 2,
+        "bathymetry_channels": 0,
+        "frequency_info": {},
+        "coordinate_bounds": {
+          "lat": [
+            36.09865666666666,
+            36.098753333333335
+          ],
+          "lon": [
+            129.50765333333334,
+            129.51502666666667
+          ]
+        },
+        "time_range": [
+          null,
+          null
+        ]
+      },
+      "packet_structure": {
+        "ping_number_range": {
+          "min": 948643,
+          "max": 949642
+        },
+        "samples_per_ping": {
+          "min": 6832,
+          "max": 6832,
+          "typical": 6832
+        },
+        "coordinate_precision": {
+          "lat_precision": 15,
+          "lon_precision": 14
+        },
+        "timestamp_format": "datetime"
+      },
+      "data_format": {
+        "combined_shape": [
+          500,
+          6832
+        ],
+        "port_shape": [
+          500,
+          3416
+        ],
+        "starboard_shape": [
+          500,
+          3416
+        ],
+        "data_type": "float32",
+        "value_range": {
+          "combined": [
+            0.0,
+            1.0
+          ],
+          "port": [
+            0.0,
+            1.0
+          ],
+          "starboard": [
+            0.0,
+            1.0
+          ]
+        }
+      },
+      "performance_metrics": {
+        "data_completeness": {
+          "pings_with_coordinates": 1.0,
+          "pings_with_intensity": 1.0
+        },
+        "intensity_statistics": {
+          "mean": 2687.441162109375,
+          "std": 3498.168701171875,
+          "dynamic_range": 32512.0,
+          "signal_to_noise_estimate": 95.55779266357422
+        },
+        "spatial_coverage": {
+          "lat_range_km": 0.0007400000004977869,
+          "lon_range_km": 0.09327583600768087,
+          "center_lat": 36.098750053333326,
+          "center_lon": 129.50815419999998,
+          "coverage_area_km2": 6.902411869211534e-05
+        },
+        "temporal_consistency": {
+          "ping_sequence_consistent": true,
+          "ping_number_gaps": 0,
+          "average_ping_interval": 0.999
+        }
+      },
+      "unique_features": [
+        "edgetech_format",
+        "dual_frequency_capable",
+        "chirp_sonar",
+        "high_resolution_bathymetry",
+        "high_sample_rate",
+        "high_range_resolution",
+        "standard_dynamic_range"
+      ]
+    },
+    "Klein_3900": {
+      "manufacturer": "Klein",
+      "model": "3900",
+      "frequency": "900 kHz",
+      "file_characteristics": {
+        "total_pings": 5137,
+        "sonar_channels": 2,
+        "bathymetry_channels": 0,
+        "frequency_info": {},
+        "coordinate_bounds": {
+          "lat": [
+            36.09866393459968,
+            36.09873775126635
+          ],
+          "lon": [
+            129.50672838787642,
+            129.5150347545434
+          ]
+        },
+        "time_range": [
+          null,
+          null
+        ]
+      },
+      "packet_structure": {
+        "ping_number_range": {
+          "min": 474996,
+          "max": 475995
+        },
+        "samples_per_ping": {
+          "min": 6400,
+          "max": 6400,
+          "typical": 6400
+        },
+        "coordinate_precision": {
+          "lat_precision": 14,
+          "lon_precision": 13
+        },
+        "timestamp_format": "datetime"
+      },
+      "data_format": {
+        "combined_shape": [
+          500,
+          6400
+        ],
+        "port_shape": [
+          500,
+          3200
+        ],
+        "starboard_shape": [
+          500,
+          3200
+        ],
+        "data_type": "float32",
+        "value_range": {
+          "combined": [
+            0.0,
+            1.0
+          ],
+          "port": [
+            0.0,
+            1.0
+          ],
+          "starboard": [
+            0.0,
+            1.0
+          ]
+        }
+      },
+      "performance_metrics": {
+        "data_completeness": {
+          "pings_with_coordinates": 1.0,
+          "pings_with_intensity": 1.0
+        },
+        "intensity_statistics": {
+          "mean": 654.6279296875,
+          "std": 518.1980590820312,
+          "dynamic_range": 4095.0,
+          "signal_to_noise_estimate": 744.941650390625
+        },
+        "spatial_coverage": {
+          "lat_range_km": 0.0022717999994696925,
+          "lon_range_km": 0.13142937376313155,
+          "center_lat": 36.09867036529967,
+          "center_lon": 129.51430265459337,
+          "coverage_area_km2": 0.00029858125124538427
+        },
+        "temporal_consistency": {
+          "ping_sequence_consistent": true,
+          "ping_number_gaps": 0,
+          "average_ping_interval": 0.999
+        }
+      },
+      "unique_features": [
+        "klein_format",
+        "dual_frequency_capable",
+        "sidescan_bathymetry",
+        "backscatter_analysis",
+        "standard_range_resolution",
+        "standard_dynamic_range"
+      ]
+    }
+  },
+  "comparative_analysis": {
+    "manufacturer_comparison": {
+      "EdgeTech": {
+        "count": 2,
+        "models": [
+          "4205"
+        ],
+        "frequencies": [
+          "800 kHz"
+        ],
+        "avg_pings": 7528.5,
+        "unique_features": [
+          "standard_dynamic_range",
+          "high_range_resolution",
+          "edgetech_format",
+          "chirp_sonar",
+          "dual_frequency_capable",
+          "high_resolution_bathymetry",
+          "high_sample_rate"
+        ]
+      },
+      "Klein": {
+        "count": 1,
+        "models": [
+          "3900"
+        ],
+        "frequencies": [
+          "900 kHz"
+        ],
+        "avg_pings": 5137.0,
+        "unique_features": [
+          "standard_range_resolution",
+          "standard_dynamic_range",
+          "sidescan_bathymetry",
+          "backscatter_analysis",
+          "klein_format",
+          "dual_frequency_capable"
+        ]
+      }
+    },
+    "performance_comparison": {
+      "data_completeness": {
+        "coordinate_completeness": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "intensity_completeness": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      "intensity_quality": {
+        "dynamic_range": [
+          32512.0,
+          32512.0,
+          4095.0
+        ],
+        "snr_estimate": [
+          95.1792984008789,
+          95.55779266357422,
+          744.941650390625
+        ]
+      },
+      "spatial_coverage": [
+        58.23930363594935,
+        6.902411869211534e-05,
+        0.00029858125124538427
+      ]
+    },
+    "data_format_comparison": {
+      "sample_counts": {
+        "combined_width": [
+          6832,
+          6832,
+          6400
+        ],
+        "port_width": [
+          3416,
+          3416,
+          3200
+        ],
+        "starboard_width": [
+          3416,
+          3416,
+          3200
+        ]
+      },
+      "value_ranges": {
+        "max_values": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      }
+    },
+    "feature_comparison": {
+      "standard_dynamic_range": {
+        "EdgeTech_4205_1": true,
+        "EdgeTech_4205_2": true,
+        "Klein_3900": true
+      },
+      "standard_range_resolution": {
+        "EdgeTech_4205_1": false,
+        "EdgeTech_4205_2": false,
+        "Klein_3900": true
+      },
+      "sidescan_bathymetry": {
+        "EdgeTech_4205_1": false,
+        "EdgeTech_4205_2": false,
+        "Klein_3900": true
+      },
+      "high_range_resolution": {
+        "EdgeTech_4205_1": true,
+        "EdgeTech_4205_2": true,
+        "Klein_3900": false
+      },
+      "edgetech_format": {
+        "EdgeTech_4205_1": true,
+        "EdgeTech_4205_2": true,
+        "Klein_3900": false
+      },
+      "backscatter_analysis": {
+        "EdgeTech_4205_1": false,
+        "EdgeTech_4205_2": false,
+        "Klein_3900": true
+      },
+      "klein_format": {
+        "EdgeTech_4205_1": false,
+        "EdgeTech_4205_2": false,
+        "Klein_3900": true
+      },
+      "chirp_sonar": {
+        "EdgeTech_4205_1": true,
+        "EdgeTech_4205_2": true,
+        "Klein_3900": false
+      },
+      "dual_frequency_capable": {
+        "EdgeTech_4205_1": true,
+        "EdgeTech_4205_2": true,
+        "Klein_3900": true
+      },
+      "high_resolution_bathymetry": {
+        "EdgeTech_4205_1": true,
+        "EdgeTech_4205_2": true,
+        "Klein_3900": false
+      },
+      "high_sample_rate": {
+        "EdgeTech_4205_1": true,
+        "EdgeTech_4205_2": true,
+        "Klein_3900": false
+      }
+    },
+    "recommendations": {
+      "processing_optimization": [
+        "고해상도 데이터(>6500 samples)에 대해 메모리 효율적 처리 필요"
+      ],
+      "quality_improvement": [],
+      "feature_utilization": [
+        "다중 제조사 데이터 융합을 통한 성능 향상 가능"
+      ],
+      "system_specific": {
+        "EdgeTech_4205_1": [
+          "듀얼 주파수 데이터 융합 처리 권장"
+        ],
+        "EdgeTech_4205_2": [
+          "듀얼 주파수 데이터 융합 처리 권장"
+        ],
+        "Klein_3900": [
+          "듀얼 주파수 데이터 융합 처리 권장"
+        ]
+      }
+    }
+  },
+  "summary": {
+    "total_systems_analyzed": 3,
+    "manufacturers": [
+      "Klein",
+      "EdgeTech"
+    ],
+    "models": [
+      "3900",
+      "4205"
+    ],
+    "frequencies": [
+      "900 kHz",
+      "800 kHz"
+    ]
+  }
+}

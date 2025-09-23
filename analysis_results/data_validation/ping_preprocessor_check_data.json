@@ -1,0 +1,91 @@
+{
+  "ping_analysis": {
+    "Pohang_Eardo_1_Edgetech4205_800_050_20241012110900_001_04.xtf": {
+      "file_type": "EdgeTech 4205",
+      "frequency": "800 kHz",
+      "file_size_mb": 107.07373046875,
+      "total_pings_metadata": 7974,
+      "parseable_pings_sample": 7974,
+      "parseable_pings_extended": 7974,
+      "sample_ping_info": {
+        "ping_number": 224619,
+        "range_samples": 6832,
+        "latitude": 36.09874333333333,
+        "longitude": 129.51529333333335,
+        "data_size": 6832
+      }
+    },
+    "Pohang_Eardo_1_Klein3900_900_050_20241011171100_001_04.xtf": {
+      "file_type": "Klein 3900",
+      "frequency": "900 kHz",
+      "file_size_mb": 69.6063232421875,
+      "total_pings_metadata": 5137,
+      "parseable_pings_sample": 5137,
+      "parseable_pings_extended": 5137,
+      "sample_ping_info": {
+        "ping_number": 474996,
+        "range_samples": 6400,
+        "latitude": 36.09868440126634,
+        "longitude": 129.5150347545434,
+        "data_size": 6400
+      }
+    },
+    "Pohang_Eardo_1_Edgetech4205_800_050_20241012181900_001_04.xtf": {
+      "file_type": "EdgeTech 4205",
+      "frequency": "800 kHz",
+      "file_size_mb": 95.109619140625,
+      "total_pings_metadata": 7083,
+      "parseable_pings_sample": 7083,
+      "parseable_pings_extended": 7083,
+      "sample_ping_info": {
+        "ping_number": 948643,
+        "range_samples": 6832,
+        "latitude": 36.098753333333335,
+        "longitude": 129.50765333333334,
+        "data_size": 6832
+      }
+    }
+  },
+  "preprocessor_analysis": {
+    "modules_available": {
+      "src.data_processing.xtf_reader": true,
+      "src.data_processing.xtf_intensity_extractor": true
+    },
+    "functionality_tests": {
+      "xtf_reader": {
+        "file_load": true,
+        "ping_parsing": true,
+        "intensity_extraction": true,
+        "georeferencing": true,
+        "ping_count": 500,
+        "matrix_shape": [
+          500,
+          6400
+        ]
+      },
+      "intensity_extractor": {
+        "data_extraction": true,
+        "metadata_valid": true,
+        "ping_data_valid": true,
+        "images_valid": true,
+        "navigation_valid": true,
+        "extracted_pings": 200
+      }
+    },
+    "performance_tests": {
+      "processing_time_seconds": 0.18084025382995605,
+      "pings_per_second": 5529.74229366156,
+      "memory_usage_mb": 48.828125,
+      "throughput_mb_per_second": 270.0069479326934
+    }
+  },
+  "summary": {
+    "total_files": 3,
+    "successful_files": 3,
+    "total_pings": 20194,
+    "edgetech_pings": 15057,
+    "klein_pings": 5137,
+    "preprocessor_ok": true
+  },
+  "analysis_timestamp": "2025-09-22T16:22:29.706163"
+}

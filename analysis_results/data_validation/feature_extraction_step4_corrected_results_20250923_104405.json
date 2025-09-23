@@ -1,0 +1,54 @@
+{
+  "test_timestamp": "2025-09-23T10:44:05.458181",
+  "test_description": "4단계 특징 추출 모듈들 포괄적 테스트 (수정된 버전)",
+  "results": {
+    "import_results": {
+      "HOG": true,
+      "LBP": true,
+      "Gabor": true,
+      "SFS": true,
+      "Ensemble": true
+    },
+    "extraction_results": {
+      "HOG": {
+        "success": false,
+        "error": "특징 추출 실패 - 사용 가능한 메서드 없음"
+      },
+      "LBP": {
+        "success": false,
+        "error": "특징 추출 실패 - 사용 가능한 메서드 없음"
+      },
+      "Gabor": {
+        "success": false,
+        "error": "특징 추출 실패 - 사용 가능한 메서드 없음"
+      },
+      "SFS": {
+        "success": false,
+        "error": "특징 추출 실패 - 사용 가능한 메서드 없음"
+      }
+    },
+    "ensemble_results": {
+      "success": false,
+      "error": "앙상블 특징 추출 실패"
+    },
+    "pipeline_simulation": {
+      "success": true,
+      "feature_matrix_shape": [
+        3,
+        14
+      ],
+      "feature_stats": {
+        "mean": 32.6714088143276,
+        "std": 112.75974692348076,
+        "min": -255.88413659954676,
+        "max": 344.58952724690835
+      },
+      "feature_types": [
+        "basic_stats",
+        "texture",
+        "spatial"
+      ],
+      "samples_processed": 3
+    }
+  }
+}

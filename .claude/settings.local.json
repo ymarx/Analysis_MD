@@ -29,7 +29,14 @@
       "WebSearch",
       "Bash(claude mcp add:*)",
       "Bash(claude mcp:*)",
-      "Bash(git add:*)"
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+      "Bash(git push:*)",
+      "Bash(xargs ls:*)",
+      "Bash(timeout:*)",
+      "Bash(grep:*)",
+      "Bash(git lfs track:*)",
+      "Bash(git reset:*)"
     ],
     "deny": [],
     "ask": []

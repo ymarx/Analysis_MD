@@ -1,0 +1,23 @@
+{
+  "file_path": "datasets/Pohang_Eardo_1_Klein3900_900_050_20241011171100_001_04/original/Pohang_Eardo_1_Klein3900_900_050_20241011171100_001_04.xtf",
+  "ping_count": 5137,
+  "channel_count": 2,
+  "frequency": 0.0,
+  "range_resolution": 0.0,
+  "sample_rate": 0.0,
+  "timestamp_range": [
+    0.0,
+    0.0
+  ],
+  "coordinate_bounds": {
+    "longitude": [
+      129.5148799878767,
+      129.5150347545434
+    ],
+    "latitude": [
+      36.09867838459968,
+      36.09868440126634
+    ]
+  },
+  "intensity_range": null
+}

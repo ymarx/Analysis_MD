@@ -1,0 +1,17 @@
+{
+  "intensity": null,
+  "port_intensity": null,
+  "starboard_intensity": null,
+  "navigation": {},
+  "metadata": {},
+  "processing_info": {
+    "sample_rate": 0.05,
+    "channels": [
+      "port",
+      "starboard"
+    ],
+    "normalized": true,
+    "extractor_type": "fallback",
+    "ping_count": 0
+  }
+}

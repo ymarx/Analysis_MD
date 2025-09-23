@@ -1,321 +1,205 @@
-# 🌊 사이드스캔 소나 기물 탐지 분석 시스템
+# 기뢰 탐지 분석 프로젝트 (Mine Detection Analysis)
 
-해저에 설치된 기뢰 형상 물체(기물)를 사이드스캔 소나 데이터에서 자동으로 탐지하는 **Multi-Environment AI 시스템**입니다.
+해저 사이드스캔 소나 데이터를 활용한 기뢰 및 해저 객체 탐지 시스템
 
 [![Python 3.9+](https://img.shields.io/badge/python-3.9+-blue.svg)](https://www.python.org/downloads/)
-[![PyTorch](https://img.shields.io/badge/PyTorch-2.1+-orange.svg)](https://pytorch.org/)
-[![CUDA](https://img.shields.io/badge/CUDA-11.8+-green.svg)](https://developer.nvidia.com/cuda-downloads)
+[![scikit-learn](https://img.shields.io/badge/scikit--learn-1.3+-orange.svg)](https://scikit-learn.org/)
+[![OpenCV](https://img.shields.io/badge/OpenCV-4.8+-green.svg)](https://opencv.org/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-## 🎯 프로젝트 개요
+## 🚀 프로젝트 개요
 
-**🆕 Multi-Environment Support (2025-09-09 업데이트)**
+이 프로젝트는 사이드스캔 소나 데이터(XTF 파일)를 분석하여 해저에 있는 기뢰나 기타 객체를 자동으로 탐지하는 머신러닝 파이프라인입니다.
 
-본 시스템은 **로컬 CPU**, **로컬 GPU**, **클라우드 환경**에서 모두 동작하는 적응형 AI 플랫폼입니다:
+### 🆕 주요 업데이트 (2024-09-16)
+- **🔧 통합 파이프라인**: 모듈화된 단계별 실행
+- **📍 좌표 매핑 검증**: 98.4% 정확도 달성
+- **🎯 앙상블 최적화**: Optuna 기반 하이퍼파라미터 튜닝
+- **🗺️ 지형 분석**: 해저 지형 특성 고려 분류
 
 ### 핵심 기능
-- **🔄 자동 환경 감지**: CPU → GPU → 클라우드 자동 최적화
-- **📁 XTF 파일 파싱**: 사이드스캔 소나 raw 데이터 읽기 및 처리
-- **🗺️ 좌표 매핑**: 기물 위치와 소나 데이터 간의 정확한 매핑
-- **🎨 전처리 파이프라인**: 워터컬럼 제거, 정규화, 노이즈 제거, 대비 향상
-- **🏔️ 지형 분류**: 모래, 뻘, 암반 등 지형별 적응형 처리
-- **🤖 CNN 기물 탐지**: ResNet + CBAM 어텐션 메커니즘
-- **📊 종합 평가**: 다중 지표 성능 분석
-- **☁️ 클라우드 배포**: Runpod GPU 클라우드 자동 배포
-
-### 지원 환경
-| 환경 | 성능 | 설정 시간 | 비용 |
-|------|------|----------|------|
-| **로컬 CPU** | 기준 (1x) | 0분 | 무료 |
-| **로컬 GPU** | 5-15배 | 30분 | GPU 구매비 |
-| **Runpod RTX 4090** | 15-25배 | 5분 | $0.35-0.69/시간 |
-| **Runpod A100-80GB** | 20-50배 | 5분 | $1.5-3/시간 |
+- **📁 XTF 파일 읽기**: 사이드스캔 소나 데이터 파싱
+- **📊 강도 데이터 추출**: 포트/스타보드 채널 처리
+- **🗺️ 좌표 매핑**: 픽셀 ↔ GPS 좌표 정확한 변환
+- **🏷️ 레이블 생성**: 어노테이션 기반 자동 샘플링
+- **🔍 특징 추출**: 통계/텍스처/형태/주파수 특징
+- **🤖 앙상블 분류**: 다중 모델 최적화 및 스태킹
+- **🏔️ 지형 분석**: 해저 지형적 맥락 고려
 
 ## 📁 프로젝트 구조
 
 ```
-sidescan_sonar_detection/
-├── config/                    # 설정 파일
-│   ├── __init__.py
-│   ├── settings.py           # 전역 설정 관리
-│   └── paths.py              # 파일 경로 관리
-├── src/                      # 소스 코드
-│   ├── data_processing/      # 데이터 처리 모듈
-│   │   ├── xtf_reader.py     # XTF 파일 파싱
-│   │   ├── coordinate_mapper.py  # 좌표 매핑
-│   │   └── preprocessor.py   # 전처리 파이프라인
-│   ├── feature_extraction/   # 특징 추출 (예정)
-│   ├── models/              # 탐지 모델 (예정)
-│   ├── evaluation/          # 성능 평가 (예정)
-│   ├── utils/               # 유틸리티 (예정)
-│   └── interactive/         # 인터랙티브 도구 (예정)
-├── notebooks/               # Jupyter 노트북
-│   └── 01_exploratory_analysis.ipynb
-├── [샘플]데이터/            # 샘플 데이터
-├── datasets/                # 연구용 데이터셋
-├── data/                    # 처리된 데이터 (자동 생성)
-│   ├── processed/
-│   ├── augmented/
-│   └── annotations/
-├── outputs/                 # 출력 결과 (자동 생성)
-│   ├── models/
-│   ├── figures/
-│   └── results/
-├── main.py                  # 메인 실행 파일
-├── requirements.txt         # 패키지 의존성
-└── README.md               # 이 파일
+Analysis_MD/
+├── pipeline/                      # 📦 통합 파이프라인 (신규)
+│   ├── unified_pipeline.py       # 메인 실행 파일
+│   └── modules/                   # 모듈별 구성요소
+│       ├── xtf_reader.py         # XTF 파일 읽기
+│       ├── xtf_extractor.py      # 강도 데이터 추출
+│       ├── coordinate_mapper.py   # 좌표 매핑
+│       ├── label_generator.py     # 레이블 생성
+│       ├── feature_extractor.py   # 특징 추출
+│       ├── ensemble_optimizer.py  # 앙상블 최적화
+│       ├── mine_classifier.py     # 분류기
+│       └── terrain_analyzer.py    # 지형 분석
+├── data/
+│   ├── processed/                 # 처리된 데이터
+│   │   ├── coordinate_mappings/   # 좌표 매핑 결과
+│   │   ├── features/             # 추출된 특징
+│   │   └── xtf_extracted/        # XTF 추출 데이터
+│   └── raw/                      # 원본 데이터
+├── datasets/                     # 데이터셋
+│   ├── Location_MDGPS.xlsx       # GPS 좌표 데이터
+│   ├── PH_annotation.png         # 어노테이션 이미지
+│   └── Pohang_*/                 # XTF 원본 데이터
+├── src/                          # 기존 소스 코드
+├── config/                       # 설정 파일
+├── deprecated/                   # 더 이상 사용하지 않는 파일들
+├── real_data_pipeline.py         # ✅ 활성 - 실제 데이터 파이프라인
+├── process_edgetech_complete.py  # ✅ 활성 - 에지텍 처리
+└── README.md                     # 이 파일
 ```
 
-## 🚀 빠른 시작
+## 🔧 설치 및 설정
 
-### ⚡ 자동 설치 및 실행 (권장)
+### 필수 패키지 설치
 
 ```bash
-# 1. 저장소 클론
-git clone https://github.com/your-repo/mine-detection.git
-cd mine-detection
-
-# 2. 자동 환경 설치
-chmod +x scripts/install.sh
-./scripts/install.sh --auto
-
-# 3. 환경 활성화
-source mine_detection_env/bin/activate
-
-# 4. 자동 환경 감지 실행
-python main.py --device auto
+pip install -r requirements.txt
 ```
 
-### 🖥️ 환경별 실행
+주요 의존성:
+- numpy, pandas, scikit-learn
+- opencv-python, pillow
+- matplotlib, seaborn
+- optuna (앙상블 최적화용)
+- pyxtf (XTF 파일 처리용, 선택적)
 
-#### 로컬 CPU (기존 방식, 변경 없음)
+## 🚀 사용법
+
+### 1. 통합 파이프라인 (추천)
+
+**전체 파이프라인 실행:**
 ```bash
-python main.py
+python pipeline/unified_pipeline.py \
+    --xtf datasets/Pohang_*/original/*.XTF \
+    --gps datasets/Location_MDGPS.xlsx \
+    --annotation datasets/PH_annotation.png \
+    --output results/
 ```
 
-#### 로컬 GPU (자동 감지)
+**모듈별 실행:**
 ```bash
-python main.py --device auto  # CUDA/MPS 자동 감지
-python main.py --device cuda  # NVIDIA GPU 직접 지정
-python main.py --device mps   # Apple Silicon 직접 지정
+# 특정 단계만 실행
+python pipeline/unified_pipeline.py \
+    --mode modular \
+    --steps read extract map feature classify \
+    --xtf datasets/Pohang_*/original/*.XTF
 ```
 
-#### Runpod 클라우드 배포
+### 2. 개별 파이프라인
+
+**실제 데이터 처리:**
 ```bash
-# API 키 설정
-export RUNPOD_API_KEY="your-api-key"
-
-# 자동 배포 (RTX 4090)
-python scripts/deploy_runpod.py --action deploy --gpu-type "RTX 4090"
-
-# 고성능 배포 (A100-80GB)
-python scripts/deploy_runpod.py --action deploy --gpu-type "A100-80GB"
+python real_data_pipeline.py
 ```
 
-### 🔍 성능 벤치마크
-
+**에지텍 데이터 처리:**
 ```bash
-# 현재 환경 성능 측정
-python scripts/benchmark_performance.py --save
-
-# 모든 환경 비교 (GPU 있는 경우)
-python scripts/benchmark_performance.py --device auto --full
+python process_edgetech_complete.py
 ```
 
-## 📊 주요 기능
+## 📊 파이프라인 단계별 설명
 
-### XTF 파일 처리
+### 1. XTF 읽기 (XTF Reader)
+- 사이드스캔 소나 XTF 파일 읽기
+- 메타데이터 및 네비게이션 정보 추출
+
+### 2. 데이터 추출 (XTF Extractor)
+- 포트/스타보드 채널 강도 데이터 추출
+- 데이터 전처리 및 정규화
+
+### 3. 좌표 매핑 (Coordinate Mapper)
+- 픽셀 좌표 ↔ GPS 좌표 변환
+- 어노테이션 이미지와 실제 좌표 매핑
+- **중요**: 180도 회전 + 좌우 반전 변환 적용
+
+### 4. 레이블 생성 (Label Generator)
+- 어노테이션 기반 positive/negative 샘플 생성
+- 배경 영역 자동 샘플링
+
+### 5. 특징 추출 (Feature Extractor)
+- **통계적 특징**: 평균, 표준편차, 왜도, 첨도
+- **텍스처 특징**: LBP, GLCM, Gabor 필터
+- **형태학적 특징**: 침식, 팽창, 영역 특성
+- **주파수 특징**: FFT, 스펙트럼 분석
+
+### 6. 앙상블 최적화 (Ensemble Optimizer)
+- 개별 모델 하이퍼파라미터 최적화 (Optuna)
+- 보팅 앙상블 조합 최적화
+- 스태킹 앙상블 구성
+
+### 7. 분류 (Mine Classifier)
+- 최적화된 앙상블 모델 사용
+- 확률 예측 및 성능 평가
+
+### 8. 지형 분석 (Terrain Analyzer)
+- 해저 지형 특성 분석
+- 지형적 맥락을 고려한 분류 개선
+
+## 📈 성능 지표
+
+현재 달성된 성능:
+- **좌표 매핑 정확도**: 98.4% (상관계수 0.9839)
+- **특징 추출**: 13개 방법으로 100+ 특징
+- **앙상블 최적화**: 5개 기본 모델 + 스태킹
+
+## 🔬 데이터 분석
+
+### 좌표 변환 분석
+- **원본 → 어노테이션**: 180도 회전 + 좌우 반전
+- **GPS 진행방향**: 서→동 (PH_01 → PH_25)
+- **매핑 신뢰도**: 평균 0.83, 선형 관계 R² = 0.968
+
+### 데이터 통계
+- **GPS 포인트**: 25개 (PH_01 ~ PH_25)
+- **이미지 크기**: 1024 × 3862 픽셀
+- **좌표 범위**: 위도 36.593°N, 경도 129.509°~129.514°E
+
+## 🛠 개발자 가이드
+
+### 새로운 특징 추가
 ```python
-from src.data_processing.xtf_reader import XTFReader
-
-# XTF 파일 로드
-reader = XTFReader('path/to/file.xtf')
-reader.load_file()
-ping_data = reader.parse_pings()
-
-# Intensity 매트릭스 추출
-intensity_matrix = reader.extract_intensity_matrix(channel=0)
+# pipeline/modules/feature_extractor.py
+def _extract_custom_features(self, patches):
+    # 새로운 특징 추출 로직
+    return features, feature_names
 ```
 
-### 좌표 매핑
+### 새로운 분류기 추가
 ```python
-from src.data_processing.coordinate_mapper import CoordinateMapper, CoordinateTransformer
-
-# 좌표 변환기 초기화
-transformer = CoordinateTransformer(utm_zone=52)
-mapper = CoordinateMapper(transformer)
-
-# 픽셀 <-> 지리좌표 변환
-pixel_coords = mapper.geo_to_pixel(longitude, latitude)
-geo_coords = mapper.pixel_to_geo(ping_idx, sample_idx)
+# pipeline/modules/ensemble_optimizer.py
+def _optimize_custom_model(self, features, labels):
+    # 새로운 모델 최적화 로직
+    return {'score': score, 'params': params, 'model': model}
 ```
 
-### 전처리 파이프라인
-```python
-from src.data_processing.preprocessor import Preprocessor, PreprocessingConfig
+## 📋 주의사항
 
-# 전처리 설정
-config = PreprocessingConfig(
-    remove_water_column=True,
-    normalize_intensity=True,
-    apply_denoising=True,
-    enhance_contrast=True
-)
+1. **XTF 파일 크기**: 대용량 파일의 경우 메모리 사용량 주의
+2. **좌표 변환**: 어노테이션 이미지는 원본 대비 변환된 상태
+3. **GPU 사용**: scikit-learn 기반이므로 CPU 최적화됨
+4. **데이터 경로**: 절대 경로 사용 권장
 
-# 전처리 실행
-preprocessor = Preprocessor(config)
-result = preprocessor.process(intensity_data)
-```
+## 🔄 업데이트 내역
 
-## 🗂️ 데이터 형식
+- **v1.0.0** (2024-09-16): 통합 파이프라인 및 모듈화 완료
+- **v0.9.0**: 좌표 매핑 시스템 검증 완료
+- **v0.8.0**: 기본 특징 추출 및 분류 파이프라인
 
-### 입력 데이터
-- **XTF 파일**: 사이드스캔 소나 raw 데이터
-- **BMP 이미지**: 변환된 이미지 데이터 (참조용)
-- **Excel 파일**: 기물 위치 좌표 정보
+## 📧 문의
 
-### 출력 데이터
-- **처리된 intensity 데이터**: NumPy 배열 형태
-- **기물 마스크**: 바이너리 마스크
-- **바운딩 박스**: JSON/CSV 형태의 좌표 정보
-- **메타데이터**: 처리 결과 및 품질 메트릭
-
-## ⚙️ 설정 옵션
-
-### XTF 처리 설정
-```python
-XTF_CONFIG = {
-    'max_pings_per_load': 1000,  # 메모리 효율성을 위한 배치 크기
-    'channels': {'port': 0, 'starboard': 1}
-}
-```
-
-### 전처리 설정
-```python
-preprocess_config = PreprocessingConfig(
-    remove_water_column=True,     # 워터컬럼 제거
-    water_column_width=50,        # 워터컬럼 폭
-    normalize_intensity=True,     # 강도 정규화
-    normalization_method='minmax', # 정규화 방법
-    apply_denoising=True,         # 노이즈 제거
-    denoising_method='gaussian',  # 노이즈 제거 방법
-    enhance_contrast=True,        # 대비 향상
-    contrast_method='clahe',      # 대비 향상 방법
-    terrain_adaptive=True         # 지형별 적응형 처리
-)
-```
-
-## 📈 성능 최적화
-
-### 메모리 관리
-- `max_pings_per_load` 설정으로 메모리 사용량 제한
-- 배치 처리로 대용량 파일 처리
-- 처리된 데이터 캐싱으로 반복 작업 최소화
-
-### 처리 속도
-- NumPy 벡터화 연산 활용
-- OpenCV 최적화된 이미지 처리
-- 병렬 처리 지원 (향후 구현 예정)
-
-## 🔧 문제 해결
-
-### 일반적인 문제들
-
-1. **XTF 파일 로드 실패**
-   - `pyxtf` 라이브러리 설치 확인
-   - 파일 경로 및 권한 확인
-
-2. **좌표 매핑 오류**
-   - UTM 존 설정 확인 (한국: 52존)
-   - 위경도 데이터 형식 확인
-
-3. **메모리 부족**
-   - `max_pings_per_load` 값 감소
-   - 배치 크기 조정
-
-### 로그 확인
-```bash
-# 디버그 모드로 실행
-python main.py --mode sample --log-level DEBUG
-```
-
-## 🧪 테스트
-
-```bash
-# 테스트 실행 (향후 구현 예정)
-pytest tests/
-```
-
-## 📖 추가 문서
-
-- [API 문서](docs/api/) (향후 제공)
-- [알고리즘 가이드](docs/algorithms/) (향후 제공)
-- [성능 벤치마크](docs/benchmarks/) (향후 제공)
-
-## 🤝 기여하기
-
-1. 이슈 등록으로 문제점 보고
-2. 개선 사항 제안
-3. 코드 리뷰 및 피드백
-
-## 📋 개발 현황
-
-### Phase 1: 데이터 처리 (완료 ✅)
-- [x] XTF 파일 리더 및 파서
-- [x] 좌표 매핑 시스템  
-- [x] 기본 전처리 파이프라인
-- [x] 탐색적 분석 노트북
-
-### Phase 2: AI 모델 (완료 ✅)
-- [x] 특징 추출 모듈 (HOG, LBP, Gabor, SfS)
-- [x] 데이터 증강 시스템
-- [x] CNN 기반 탐지 모델 (ResNet + CBAM)
-- [x] 종합 평가 시스템
-
-### Phase 3: Multi-Environment (완료 ✅)
-- [x] 자동 디바이스 감지 및 관리
-- [x] GPU 최적화 (CUDA, MPS)
-- [x] Runpod 클라우드 자동 배포
-- [x] 성능 벤치마킹 시스템
-- [x] Docker 컨테이너화
-
-### Phase 4: 향상된 기능 (예정 🔄)
-- [ ] 지형 적응형 처리 고도화
-- [ ] 앙상블 모델 (CNN + 전통적 특징)
-- [ ] 실시간 처리 파이프라인
-- [ ] 웹 기반 인터페이스
-- [ ] REST API 서버
-
-## 🛠️ 기술 스택
-
-### 🧠 AI/ML
-- **PyTorch 2.1+**: 딥러닝 프레임워크
-- **OpenCV 4.8+**: 컴퓨터 비전
-- **scikit-learn**: 전통적 ML 알고리즘
-- **NumPy 1.26**: 수치 계산 (호환성 최적화)
-
-### 🖥️ 컴퓨팅 환경
-- **CUDA 11.8**: NVIDIA GPU 가속
-- **Apple MPS**: Apple Silicon 최적화  
-- **Docker**: 컨테이너화 배포
-- **Runpod API**: 클라우드 GPU 관리
-
-### 📊 데이터 처리
-- **pyxtf**: 사이드스캔 소나 데이터 파싱
-- **UTM**: 좌표계 변환
-- **pandas/matplotlib**: 데이터 분석 및 시각화
-
-## 📚 문서
-
-- **[설치 가이드](docs/installation_guide.md)**: 환경별 상세 설치 방법
-- **[사용법 가이드](docs/usage_guide.md)**: 모듈별 사용법 및 고급 기능  
-- **[배포 계획서](docs/gpu_cloud_deployment_plan.md)**: GPU/클라우드 배포 전략
-- **[API 문서](docs/api/)**: 코드 레퍼런스 (향후 제공)
-
-## 📞 문의
-
-프로젝트 관련 문의사항이 있으시면 이슈를 등록해 주세요.
+프로젝트 관련 문의: YMARX
 
 ---
 
-**© 2024 사이드스캔 소나 기물 탐지 연구팀**
+**🚀 다음 단계**: `datasets`의 simulation 데이터를 활용한 특징 추출 및 탐지 성능 평가

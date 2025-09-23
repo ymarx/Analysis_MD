@@ -1,0 +1,260 @@
+{
+  "evidence": {
+    "coordinate_analysis": {
+      "original_xtf_location": "포항 근해 (36.098°N, 129.515°E)",
+      "location_mdgps_distance": "약 55km 거리 차이",
+      "coordinate_system": "WGS84 십진도"
+    },
+    "terrain_similarity": {
+      "max_similarity": 0.887,
+      "average_similarity": 0.828,
+      "all_comparisons_high": true,
+      "assessment": "매우 높은 지형 유사도"
+    },
+    "file_patterns": {
+      "Pohang_Eardo_1_Edgetech4205_800_050_20241012110900_001_04.xtf": {
+        "full_path": "datasets/Pohang_Eardo_1_Edgetech4205_800_050_20241012110900_001_04/original/Pohang_Eardo_1_Edgetech4205_800_050_20241012110900_001_04.xtf",
+        "filename": "Pohang_Eardo_1_Edgetech4205_800_050_20241012110900_001_04.xtf",
+        "extension": ".xtf",
+        "contains_pohang": true,
+        "contains_eardo": true,
+        "contains_edgetech": true,
+        "contains_klein": false,
+        "contains_date": true,
+        "file_category": "original_sonar_data",
+        "extracted_date": "2024-10-12"
+      },
+      "Pohang_Eardo_1_Klein3900_900_050_20241011171100_001_04.xtf": {
+        "full_path": "datasets/Pohang_Eardo_1_Klein3900_900_050_20241011171100_001_04/original/Pohang_Eardo_1_Klein3900_900_050_20241011171100_001_04.xtf",
+        "filename": "Pohang_Eardo_1_Klein3900_900_050_20241011171100_001_04.xtf",
+        "extension": ".xtf",
+        "contains_pohang": true,
+        "contains_eardo": true,
+        "contains_edgetech": false,
+        "contains_klein": true,
+        "contains_date": true,
+        "file_category": "original_sonar_data",
+        "extracted_date": "2024-10-11"
+      },
+      "Pohang_Eardo_1_Edgetech4205_800_050_20241012181900_001_04.xtf": {
+        "full_path": "datasets/Pohang_Eardo_1_Edgetech4205_800_050_20241012181900_001_04/original/Pohang_Eardo_1_Edgetech4205_800_050_20241012181900_001_04.xtf",
+        "filename": "Pohang_Eardo_1_Edgetech4205_800_050_20241012181900_001_04.xtf",
+        "extension": ".xtf",
+        "contains_pohang": true,
+        "contains_eardo": true,
+        "contains_edgetech": true,
+        "contains_klein": false,
+        "contains_date": true,
+        "file_category": "original_sonar_data",
+        "extracted_date": "2024-10-12"
+      },
+      "Pohang_Eardo_1_Edgetech4205_800_050_20241012110900_001_04_IMG_00.BMP": {
+        "full_path": "datasets/Pohang_Eardo_1_Edgetech4205_800_050_20241012110900_001_04/original/Pohang_Eardo_1_Edgetech4205_800_050_20241012110900_001_04_IMG_00.BMP",
+        "filename": "Pohang_Eardo_1_Edgetech4205_800_050_20241012110900_001_04_IMG_00.BMP",
+        "extension": ".BMP",
+        "contains_pohang": true,
+        "contains_eardo": true,
+        "contains_edgetech": true,
+        "contains_klein": false,
+        "contains_date": true,
+        "file_category": "other",
+        "extracted_date": "2024-10-12"
+      },
+      "Pohang_Eardo_1_Klein3900_900_050_20241011171100_001_04_IMG_00.BMP": {
+        "full_path": "datasets/Pohang_Eardo_1_Klein3900_900_050_20241011171100_001_04/original/Pohang_Eardo_1_Klein3900_900_050_20241011171100_001_04_IMG_00.BMP",
+        "filename": "Pohang_Eardo_1_Klein3900_900_050_20241011171100_001_04_IMG_00.BMP",
+        "extension": ".BMP",
+        "contains_pohang": true,
+        "contains_eardo": true,
+        "contains_edgetech": false,
+        "contains_klein": true,
+        "contains_date": true,
+        "file_category": "other",
+        "extracted_date": "2024-10-11"
+      },
+      "Pohang_Eardo_1_Edgetech4205_800_050_20241012181900_001_04_IMG_00.BMP": {
+        "full_path": "datasets/Pohang_Eardo_1_Edgetech4205_800_050_20241012181900_001_04/original/Pohang_Eardo_1_Edgetech4205_800_050_20241012181900_001_04_IMG_00.BMP",
+        "filename": "Pohang_Eardo_1_Edgetech4205_800_050_20241012181900_001_04_IMG_00.BMP",
+        "extension": ".BMP",
+        "contains_pohang": true,
+        "contains_eardo": true,
+        "contains_edgetech": true,
+        "contains_klein": false,
+        "contains_date": true,
+        "file_category": "other",
+        "extracted_date": "2024-10-12"
+      },
+      "PH_annotation.bmp": {
+        "full_path": "datasets/PH_annotation.bmp",
+        "filename": "PH_annotation.bmp",
+        "extension": ".bmp",
+        "contains_pohang": true,
+        "contains_eardo": false,
+        "contains_edgetech": false,
+        "contains_klein": false,
+        "contains_date": false,
+        "file_category": "annotation"
+      },
+      "PH_annotation.png": {
+        "full_path": "datasets/PH_annotation.png",
+        "filename": "PH_annotation.png",
+        "extension": ".png",
+        "contains_pohang": true,
+        "contains_eardo": false,
+        "contains_edgetech": false,
+        "contains_klein": false,
+        "contains_date": false,
+        "file_category": "annotation"
+      },
+      "Location_MDGPS.xlsx": {
+        "full_path": "datasets/Location_MDGPS.xlsx",
+        "filename": "Location_MDGPS.xlsx",
+        "extension": ".xlsx",
+        "contains_pohang": false,
+        "contains_eardo": false,
+        "contains_edgetech": false,
+        "contains_klein": false,
+        "contains_date": false,
+        "file_category": "location_reference"
+      }
+    },
+    "annotation_metadata": {
+      "datasets/PH_annotation.bmp": {
+        "file_size": 11864118,
+        "creation_time": "2025-09-11T17:24:56.608168",
+        "modification_time": "2025-09-09T17:56:18",
+        "access_time": "2025-09-12T03:03:00.907963",
+        "image_metadata": {
+          "format": "BMP",
+          "mode": "RGB",
+          "size": [
+            1024,
+            3862
+          ]
+        },
+        "opencv_shape": [
+          3862,
+          1024,
+          3
+        ],
+        "opencv_dtype": "uint8",
+        "brightness_stats": {
+          "mean": 28.99771359965691,
+          "std": 24.23014422941951,
+          "min": 0,
+          "max": 204
+        }
+      },
+      "datasets/PH_annotation.png": {
+        "file_size": 3092367,
+        "creation_time": "2025-09-11T17:48:01.961543",
+        "modification_time": "2025-09-11T17:48:01.961543",
+        "access_time": "2025-09-12T08:04:17.918370",
+        "image_metadata": {
+          "format": "PNG",
+          "mode": "RGB",
+          "size": [
+            1024,
+            3862
+          ]
+        },
+        "opencv_shape": [
+          3862,
+          1024,
+          3
+        ],
+        "opencv_dtype": "uint8",
+        "brightness_stats": {
+          "mean": 28.99771359965691,
+          "std": 24.23014422941951,
+          "min": 0,
+          "max": 204
+        }
+      }
+    },
+    "location_data": {
+      "total_records": 25,
+      "columns": [
+        "정점",
+        "위도",
+        "경도"
+      ],
+      "data_types": {
+        "정점": "object",
+        "위도": "object",
+        "경도": "object"
+      },
+      "sample_records": [
+        {
+          "정점": "PH_01",
+          "위도": "36.5933983 N",
+          "경도": "129 30.557773 E"
+        },
+        {
+          "정점": "PH_02",
+          "위도": "36.5933620 N",
+          "경도": "129 30.569606 E"
+        },
+        {
+          "정점": "PH_03",
+          "위도": "36.5933256 N",
+          "경도": "129 30.581569 E"
+        }
+      ],
+      "coordinate_columns": [
+        "위도",
+        "경도"
+      ]
+    }
+  },
+  "scenarios": {
+    "시나리오1": {
+      "description": "PH_annotation과 original XTF는 같은 장소, Location_MDGPS는 다른 장소",
+      "supporting_evidence": [
+        "PH_annotation과 Original BMP 간 매우 높은 지형 유사도 (0.887)",
+        "파일명에 'PH'와 'Pohang' 공통 요소 존재",
+        "이미지 크기와 형식 유사성 (1024px 폭 동일)",
+        "밝기 패턴 매우 유사 (0.975+ 유사도)"
+      ],
+      "contradicting_evidence": [
+        "Original XTF와 Location_MDGPS 간 55km 좌표 차이 확인됨"
+      ],
+      "probability": 0.85
+    },
+    "시나리오2": {
+      "description": "모두 다 다른 장소",
+      "supporting_evidence": [
+        "Original XTF와 Location_MDGPS 간 55km 좌표 차이",
+        "서로 다른 데이터 수집 시점 가능성"
+      ],
+      "contradicting_evidence": [
+        "PH_annotation과 Original BMP 간 매우 높은 지형 유사도 (0.887)",
+        "우연히 이 정도 유사도가 나올 확률 매우 낮음",
+        "파일명 패턴에서 공통 요소 발견"
+      ],
+      "probability": 0.05
+    },
+    "시나리오3": {
+      "description": "PH_annotation과 Location_MDGPS는 같은 장소, original XTF는 다른 장소",
+      "supporting_evidence": [
+        "PH_annotation에 'PH' 접두사로 특정 위치 지시 가능성"
+      ],
+      "contradicting_evidence": [
+        "PH_annotation과 Original BMP 간 매우 높은 지형 유사도 (0.887)",
+        "Original XTF 좌표가 포항(PH) 근해로 지리적으로 일치"
+      ],
+      "probability": 0.05
+    },
+    "시나리오4": {
+      "description": "다른 가능성 (추가 탐색 필요)",
+      "supporting_evidence": [
+        "데이터 출처나 수집 목적에 대한 추가 정보 필요",
+        "시간적 변화나 조사 방법 차이 가능성",
+        "좌표계 변환이나 기준점 차이 가능성"
+      ],
+      "contradicting_evidence": [],
+      "probability": 0.05
+    }
+  },
+  "analysis_timestamp": "2025-09-22T17:02:19.216056"
+}

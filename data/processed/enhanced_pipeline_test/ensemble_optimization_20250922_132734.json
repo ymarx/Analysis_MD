@@ -1,0 +1,102 @@
+{
+  "best_config": {
+    "type": "individual",
+    "score": 0.7066666666666668,
+    "config": [
+      "svm",
+      {
+        "score": 0.7066666666666668,
+        "params": {
+          "C": 6.255170158114853,
+          "gamma": "auto",
+          "kernel": "poly"
+        },
+        "model": "SVC(C=6.255170158114853, gamma='auto', kernel='poly')"
+      }
+    ]
+  },
+  "individual_results": {
+    "random_forest": {
+      "score": 0.6,
+      "params": {
+        "n_estimators": 138,
+        "max_depth": 20,
+        "min_samples_split": 7,
+        "min_samples_leaf": 2
+      },
+      "model": "RandomForestClassifier(max_depth=20, min_samples_leaf=2, min_samples_split=7,\n                       n_estimators=138)"
+    },
+    "gradient_boosting": {
+      "score": 0.5466666666666666,
+      "params": {
+        "n_estimators": 152,
+        "learning_rate": 0.012821006371020599,
+        "max_depth": 6,
+        "min_samples_split": 3,
+        "min_samples_leaf": 3
+      },
+      "model": "GradientBoostingClassifier(learning_rate=0.012821006371020599, max_depth=6,\n                           min_samples_leaf=3, min_samples_split=3,\n                           n_estimators=152)"
+    },
+    "svm": {
+      "score": 0.7066666666666668,
+      "params": {
+        "C": 6.255170158114853,
+        "gamma": "auto",
+        "kernel": "poly"
+      },
+      "model": "SVC(C=6.255170158114853, gamma='auto', kernel='poly')"
+    },
+    "logistic_regression": {
+      "score": 0.4666666666666666,
+      "params": {
+        "C": 1.0,
+        "random_state": 42,
+        "max_iter": 1000
+      },
+      "model": "LogisticRegression(max_iter=1000, random_state=42)"
+    },
+    "mlp": {
+      "score": 0.6000000000000001,
+      "params": {
+        "hidden_layer_sizes": [
+          100,
+          50
+        ],
+        "learning_rate_init": 0.001,
+        "random_state": 42,
+        "max_iter": 500
+      },
+      "model": "MLPClassifier(hidden_layer_sizes=(100, 50), max_iter=500, random_state=42)"
+    }
+  },
+  "ensemble_results": {
+    "score": 0.6666666666666666,
+    "combination": [
+      "svm",
+      "mlp",
+      "random_forest"
+    ],
+    "model": "VotingClassifier(estimators=[('svm',\n                              SVC(C=6.255170158114853, gamma='auto',\n                                  kernel='poly')),\n                             ('mlp',\n                              MLPClassifier(hidden_layer_sizes=(100, 50),\n                                            max_iter=500, random_state=42)),\n                             ('random_forest',\n                              RandomForestClassifier(max_depth=20,\n                                                     min_samples_leaf=2,\n                                                     min_samples_split=7,\n                                                     n_estimators=138))])"
+  },
+  "stacking_results": {
+    "score": 0.4666666666666666,
+    "base_models": [
+      "random_forest",
+      "gradient_boosting",
+      "svm",
+      "logistic_regression",
+      "mlp"
+    ],
+    "meta_model": "rf",
+    "model": "StackingClassifier(cv=3,\n                   estimators=[('random_forest',\n                                RandomForestClassifier(max_depth=20,\n                                                       min_samples_leaf=2,\n                                                       min_samples_split=7,\n                                                       n_estimators=138)),\n                               ('gradient_boosting',\n                                GradientBoostingClassifier(learning_rate=0.012821006371020599,\n                                                           max_depth=6,\n                                                           min_samples_leaf=3,\n                                                           min_samples_split=3,\n                                                           n_estimators=152)),\n                               ('svm',\n                                SVC(C=6.255170158114853, gamma='auto',\n                                    kernel='poly')),\n                               ('logistic_regression',\n                                LogisticRegression(max_iter=1000,\n                                                   random_state=42)),\n                               ('mlp',\n                                MLPClassifier(hidden_layer_sizes=(100, 50),\n                                              max_iter=500, random_state=42))],\n                   final_estimator=RandomForestClassifier(n_estimators=50,\n                                                          random_state=42))"
+  },
+  "optimization_info": {
+    "method": "optuna",
+    "cv_folds": 5,
+    "max_trials": 100,
+    "feature_shape": [
+      12,
+      13
+    ]
+  }
+}

@@ -1,0 +1,75 @@
+{
+  "annotation_data": {
+    "marker_count": 91,
+    "shape": [
+      3862,
+      1024
+    ],
+    "path": "datasets/PH_annotation.bmp"
+  },
+  "gps_data": {
+    "count": 25,
+    "bounds": {
+      "lat_min": 36.593171,
+      "lat_max": 36.5933983,
+      "lon_min": 129.50929621666666,
+      "lon_max": 129.51409248333334,
+      "center_lat": 36.593271008,
+      "center_lon": 129.51169360666665
+    },
+    "validation": {
+      "total_count": 25,
+      "valid_count": 25,
+      "invalid_count": 0,
+      "validation_errors": [],
+      "coordinate_ranges": {
+        "latitude": {
+          "min": 36.593171,
+          "max": 36.5933983
+        },
+        "longitude": {
+          "min": 129.50929621666666,
+          "max": 129.51409248333334
+        }
+      }
+    }
+  },
+  "analysis_result": {
+    "annotation_markers": 91,
+    "gps_locations": 25,
+    "count_match": false,
+    "spatial_analysis": {
+      "annotation_distribution": {
+        "x_range": [
+          4,
+          1010
+        ],
+        "y_range": [
+          27,
+          3664
+        ],
+        "x_mean": 659.8241758241758,
+        "y_mean": 1382.5274725274726,
+        "x_std": 382.64063975974807,
+        "y_std": 1019.2363478417279
+      },
+      "gps_distribution": {
+        "lat_range": [
+          36.593171,
+          36.5933983
+        ],
+        "lon_range": [
+          129.50929621666666,
+          129.51409248333334
+        ],
+        "lat_mean": 36.593271008,
+        "lon_mean": 129.51169360666665,
+        "lat_std": 5.318911858569443e-05,
+        "lon_std": 0.0014416823886007938
+      }
+    },
+    "correspondence_score": 0.14624824771217404,
+    "distance_correlation": 0.20892606816024864
+  },
+  "analysis_timestamp": "2025-09-22T15:28:08.573300"
+}

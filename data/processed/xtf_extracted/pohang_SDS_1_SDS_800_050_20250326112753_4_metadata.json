@@ -1,0 +1,23 @@
+{
+  "file_path": "datasets/Pohang_Eardo_1_Edgetech4205_800_050_20241012110900_001_04/simulation/spd5_alt15/pohang_SDS_1_SDS_800_050_20250326112753_4.xtf",
+  "ping_count": 4245,
+  "channel_count": 2,
+  "frequency": 0.0,
+  "range_resolution": 0.0,
+  "sample_rate": 0.0,
+  "timestamp_range": [
+    0.0,
+    0.0
+  ],
+  "coordinate_bounds": {
+    "longitude": [
+      129.5150761814975,
+      129.51526476392496
+    ],
+    "latitude": [
+      36.09874147461853,
+      36.098743088788105
+    ]
+  },
+  "intensity_range": null
+}

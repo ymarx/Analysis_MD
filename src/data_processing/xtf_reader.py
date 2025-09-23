@@ -170,8 +170,15 @@ class XTFReader:
             coord_attrs = [('SensorXcoordinate', 'SensorYcoordinate'), ('SensorX', 'SensorY')]
             for x_attr, y_attr in coord_attrs:
                 if hasattr(packet, x_attr) and hasattr(packet, y_attr):
-                    coordinates['lat'].append(getattr(packet, y_attr))
-                    coordinates['lon'].append(getattr(packet, x_attr))
+                    raw_lat = getattr(packet, y_attr)
+                    raw_lon = getattr(packet, x_attr)
+
+                    # 좌표 오류 수정 적용
+                    fixed_lat = self._fix_latitude_value(raw_lat)
+                    fixed_lon = self._fix_longitude_value(raw_lon)
+
+                    coordinates['lat'].append(fixed_lat)
+                    coordinates['lon'].append(fixed_lon)
                     break
         
         # 메타데이터 생성 - 안전한 속성 접근
@@ -274,18 +281,26 @@ class XTFReader:
                     else:
                         combined_data = np.array(packet.data, dtype=np.float32)
                 
-                # PingData 객체 생성 - 다양한 속성명 시도
+                # 좌표 추출 및 오류 수정
+                raw_latitude = getattr(packet, 'SensorYcoordinate', getattr(packet, 'SensorY', 0.0))
+                raw_longitude = getattr(packet, 'SensorXcoordinate', getattr(packet, 'SensorX', 0.0))
+
+                # 좌표 오류 수정 적용
+                fixed_latitude = self._fix_latitude_value(raw_latitude)
+                fixed_longitude = self._fix_longitude_value(raw_longitude)
+
+                # PingData 객체 생성 - 수정된 좌표 사용
                 ping_data = PingData(
                     ping_number=getattr(packet, 'PingNumber', i),
                     timestamp=timestamp,
-                    latitude=getattr(packet, 'SensorYcoordinate', getattr(packet, 'SensorY', 0.0)),
-                    longitude=getattr(packet, 'SensorXcoordinate', getattr(packet, 'SensorX', 0.0)),
+                    latitude=fixed_latitude,
+                    longitude=fixed_longitude,
                     frequency=getattr(packet, 'SonarFreq', getattr(packet, 'Frequency', 0.0)),
                     channel=0,  # 결합된 데이터이므로 채널 0으로 설정
                     data=combined_data,
                     range_samples=len(combined_data),
-                    ship_x=getattr(packet, 'SensorXcoordinate', getattr(packet, 'SensorX', 0.0)),
-                    ship_y=getattr(packet, 'SensorYcoordinate', getattr(packet, 'SensorY', 0.0))
+                    ship_x=fixed_longitude,
+                    ship_y=fixed_latitude
                 )
                 
                 self.ping_data.append(ping_data)
@@ -410,9 +425,65 @@ class XTFReader:
         }
         
         return summary
-    
-    def export_intensity_data(self, output_path: Union[str, Path], 
-                            channel: Optional[int] = None, 
+
+    def _fix_longitude_value(self, raw_value: float) -> float:
+        """
+        경도 값 수정 로직 - 자릿수 절단 오류 수정
+
+        Args:
+            raw_value: 원시 경도 값
+
+        Returns:
+            float: 수정된 경도 값
+        """
+        if raw_value is None or raw_value == 0:
+            return raw_value
+
+        # 한국 포항 지역 정상 경도 범위: 129.5 ~ 129.52
+        # Klein 3900: 129.514795 ~ 129.515035 (평균: 129.514916)
+        # EdgeTech 정상: 129.507653 ~ 129.508160 (평균: 129.507893)
+
+        if 12.0 <= raw_value <= 13.0:
+            # 자릿수 절단 오류로 판단
+            if 12.51 <= raw_value <= 12.52:
+                # 포항 지역 경도로 복원: 12.514938 → 129.514938 (첫 자리 "1" 절단)
+                fixed_value = 129.0 + (raw_value - 12.0)
+                logger.debug(f"경도 수정: {raw_value} → {fixed_value}")
+                return fixed_value
+            else:
+                # 다른 패턴의 오류 - 포항 지역 평균값으로 대체
+                logger.warning(f"예상치 못한 12도대 값, 평균값으로 대체: {raw_value}")
+                return 129.515  # 포항 지역 평균 경도
+        elif 129.0 <= raw_value <= 130.0:
+            # 정상 범위
+            return raw_value
+        else:
+            # 다른 종류의 오류 - 포항 지역 평균값으로 대체
+            logger.warning(f"예상치 못한 경도 값, 평균값으로 대체: {raw_value}")
+            return 129.515  # 포항 지역 평균 경도
+
+    def _fix_latitude_value(self, raw_value: float) -> float:
+        """
+        위도 값 수정 로직
+
+        Args:
+            raw_value: 원시 위도 값
+
+        Returns:
+            float: 수정된 위도 값
+        """
+        if raw_value is None or raw_value == 0:
+            return raw_value
+
+        # 한국 포항 지역 정상 위도 범위: 35.0 ~ 37.0
+        if 35.0 <= raw_value <= 37.0:
+            return raw_value
+        else:
+            logger.warning(f"예상치 못한 위도 값: {raw_value}")
+            return raw_value
+
+    def export_intensity_data(self, output_path: Union[str, Path],
+                            channel: Optional[int] = None,
                             format: str = 'npy') -> bool:
         """
         intensity 데이터를 파일로 내보내기

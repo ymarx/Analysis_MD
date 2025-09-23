@@ -1,0 +1,24 @@
+{
+  "test_timestamp": "2025-09-23T10:40:30.747509",
+  "test_description": "3단계 데이터 증강 기능 포괄적 테스트",
+  "results": {
+    "initialization": true,
+    "functions": {
+      "rotation": true,
+      "noise": true,
+      "brightness": true,
+      "combined": true
+    },
+    "batch_processing": false,
+    "batch_count": 0,
+    "mine_simulation": true,
+    "total_mine_data": 275,
+    "augmentation_stats": {
+      "rotation": 75,
+      "noise": 75,
+      "brightness": 75,
+      "combined": 100
+    },
+    "visualization": true
+  }
+}

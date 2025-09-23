@@ -1,0 +1,181 @@
+{
+  "test_timestamp": "2025-09-23T10:38:41.958515",
+  "test_description": "1단계 XTF 데이터 추출 포괄적 테스트",
+  "total_files_tested": 3,
+  "results": [
+    {
+      "filename": "Pohang_Eardo_1_Edgetech4205_800_050_20241012110900_001_04.xtf",
+      "filepath": "datasets/Pohang_Eardo_1_Edgetech4205_800_050_20241012110900_001_04/original/Pohang_Eardo_1_Edgetech4205_800_050_20241012110900_001_04.xtf",
+      "size_mb": 107.07373046875,
+      "pipeline_success": true,
+      "pipeline_result": {
+        "ping_count": 200,
+        "intensity_shape": [
+          200,
+          6832
+        ],
+        "coordinate_stats": {
+          "latitude_range": [
+            0,
+            0
+          ],
+          "longitude_range": [
+            0,
+            0
+          ],
+          "total_records": 0
+        },
+        "summary": {
+          "filename": "Pohang_Eardo_1_Edgetech4205_800_050_20241012110900_001_04.xtf",
+          "total_pings": 200,
+          "processed_pings": 200,
+          "num_sonar_channels": 2,
+          "frequency_info": {},
+          "coordinate_bounds": {
+            "lat": [
+              0,
+              0
+            ],
+            "lon": [
+              0,
+              0
+            ]
+          },
+          "time_range": [
+            null,
+            null
+          ],
+          "is_loaded": true,
+          "is_parsed": true
+        }
+      },
+      "direct_success": false,
+      "direct_error": "'XTFReader' object has no attribute 'get_metadata'",
+      "intensity_success": true,
+      "intensity_result": {
+        "intensity_pings_count": 0,
+        "port_channel_data": false,
+        "starboard_channel_data": false,
+        "combined_intensity_shape": [
+          0
+        ]
+      }
+    },
+    {
+      "filename": "pohang_SDS_1_SDS_800_050_20250326112449_4.xtf",
+      "filepath": "datasets/Pohang_Eardo_1_Edgetech4205_800_050_20241012110900_001_04/simulation/spd5_alt14/pohang_SDS_1_SDS_800_050_20250326112449_4.xtf",
+      "size_mb": 56.872161865234375,
+      "pipeline_success": true,
+      "pipeline_result": {
+        "ping_count": 200,
+        "intensity_shape": [
+          200,
+          6832
+        ],
+        "coordinate_stats": {
+          "latitude_range": [
+            0,
+            0
+          ],
+          "longitude_range": [
+            0,
+            0
+          ],
+          "total_records": 0
+        },
+        "summary": {
+          "filename": "pohang_SDS_1_SDS_800_050_20250326112449_4.xtf",
+          "total_pings": 200,
+          "processed_pings": 200,
+          "num_sonar_channels": 2,
+          "frequency_info": {},
+          "coordinate_bounds": {
+            "lat": [
+              0,
+              0
+            ],
+            "lon": [
+              0,
+              0
+            ]
+          },
+          "time_range": [
+            null,
+            null
+          ],
+          "is_loaded": true,
+          "is_parsed": true
+        }
+      },
+      "direct_success": false,
+      "direct_error": "'XTFReader' object has no attribute 'get_metadata'",
+      "intensity_success": true,
+      "intensity_result": {
+        "intensity_pings_count": 0,
+        "port_channel_data": false,
+        "starboard_channel_data": false,
+        "combined_intensity_shape": [
+          0
+        ]
+      }
+    },
+    {
+      "filename": "pohang_SDS_1_SDS_800_050_20250326112753_4.xtf",
+      "filepath": "datasets/Pohang_Eardo_1_Edgetech4205_800_050_20241012110900_001_04/simulation/spd5_alt15/pohang_SDS_1_SDS_800_050_20250326112753_4.xtf",
+      "size_mb": 56.872161865234375,
+      "pipeline_success": true,
+      "pipeline_result": {
+        "ping_count": 200,
+        "intensity_shape": [
+          200,
+          6832
+        ],
+        "coordinate_stats": {
+          "latitude_range": [
+            0,
+            0
+          ],
+          "longitude_range": [
+            0,
+            0
+          ],
+          "total_records": 0
+        },
+        "summary": {
+          "filename": "pohang_SDS_1_SDS_800_050_20250326112753_4.xtf",
+          "total_pings": 200,
+          "processed_pings": 200,
+          "num_sonar_channels": 2,
+          "frequency_info": {},
+          "coordinate_bounds": {
+            "lat": [
+              0,
+              0
+            ],
+            "lon": [
+              0,
+              0
+            ]
+          },
+          "time_range": [
+            null,
+            null
+          ],
+          "is_loaded": true,
+          "is_parsed": true
+        }
+      },
+      "direct_success": false,
+      "direct_error": "'XTFReader' object has no attribute 'get_metadata'",
+      "intensity_success": true,
+      "intensity_result": {
+        "intensity_pings_count": 0,
+        "port_channel_data": false,
+        "starboard_channel_data": false,
+        "combined_intensity_shape": [
+          0
+        ]
+      }
+    }
+  ]
+}

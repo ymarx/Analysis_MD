@@ -129,18 +129,51 @@ class XTFIntensityExtractor:
             ping_count = 0
             timestamps = []
             coordinates = []
-            
-            for packet in xtf_file:
-                if hasattr(packet, 'ping_number'):
-                    ping_count += 1
-                    if hasattr(packet, 'time'):
-                        timestamps.append(packet.time)
-                    if hasattr(packet, 'SensorXCoordinate') and hasattr(packet, 'SensorYCoordinate'):
-                        coordinates.append((packet.SensorXCoordinate, packet.SensorYCoordinate))
-            
+            frequency = 0.0
+            range_resolution = 0.0
+            sample_rate = 0.0
+
+            # 파일 헤더에서 기본 정보 추출
+            if file_header:
+                frequency = getattr(file_header, 'frequency', 0.0)
+                range_resolution = getattr(file_header, 'range_resolution', 0.0)
+                sample_rate = getattr(file_header, 'sample_rate', 0.0)
+
+            # 패킷에서 ping 정보 추출
+            if isinstance(packets, dict):
+                # pyxtf.XTFHeaderType.sonar 패킷 확인
+                import pyxtf
+                if pyxtf.XTFHeaderType.sonar in packets:
+                    sonar_packets = packets[pyxtf.XTFHeaderType.sonar]
+                    ping_count = len(sonar_packets)
+
+                    for packet in sonar_packets[:100]:  # 처음 100개만 메타데이터용으로 확인
+                        # 타임스탬프 수집
+                        if hasattr(packet, 'TimeStamp'):
+                            timestamps.append(packet.TimeStamp)
+                        elif hasattr(packet, 'time'):
+                            timestamps.append(packet.time)
+
+                        # 좌표 수집
+                        if hasattr(packet, 'SensorXcoordinate') and hasattr(packet, 'SensorYcoordinate'):
+                            coordinates.append((packet.SensorXcoordinate, packet.SensorYcoordinate))
+                        elif hasattr(packet, 'SensorX') and hasattr(packet, 'SensorY'):
+                            coordinates.append((packet.SensorX, packet.SensorY))
+
+                        # 주파수 정보 업데이트
+                        if hasattr(packet, 'SonarFreq') and packet.SonarFreq > 0:
+                            frequency = packet.SonarFreq
+            elif isinstance(packets, list):
+                ping_count = len(packets)
+                for packet in packets[:100]:  # 처음 100개만 확인
+                    if hasattr(packet, 'TimeStamp'):
+                        timestamps.append(packet.TimeStamp)
+                    if hasattr(packet, 'SensorXcoordinate') and hasattr(packet, 'SensorYcoordinate'):
+                        coordinates.append((packet.SensorXcoordinate, packet.SensorYcoordinate))
+
             # 시간 범위
             time_range = (min(timestamps), max(timestamps)) if timestamps else (0.0, 0.0)
-            
+
             # 좌표 범위
             coord_bounds = None
             if coordinates:
@@ -149,20 +182,20 @@ class XTFIntensityExtractor:
                     'longitude': (min(lons), max(lons)),
                     'latitude': (min(lats), max(lats))
                 }
-            
+
             metadata = IntensityMetadata(
                 file_path=file_path,
                 ping_count=ping_count,
                 channel_count=2,  # Port/Starboard
-                frequency=getattr(xtf_file, 'frequency', 0.0),
-                range_resolution=getattr(xtf_file, 'range_resolution', 0.0),
-                sample_rate=getattr(xtf_file, 'sample_rate', 0.0),
+                frequency=frequency,
+                range_resolution=range_resolution,
+                sample_rate=sample_rate,
                 timestamp_range=time_range,
                 coordinate_bounds=coord_bounds
             )
-            
+
             return metadata
-            
+
         except Exception as e:
             logger.warning(f"메타데이터 추출 중 오류: {e}")
             return IntensityMetadata(
@@ -249,7 +282,7 @@ class XTFIntensityExtractor:
                         timestamp=timestamp,
                         latitude=latitude,
                         longitude=longitude,
-                        heading=heading,
+                        heading=heading if heading is not None else 0.0,  # 기본값 사용
                         port_intensity=port_intensity,
                         starboard_intensity=starboard_intensity,
                         port_range=port_range,

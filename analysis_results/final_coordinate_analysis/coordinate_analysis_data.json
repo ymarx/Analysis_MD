@@ -1,0 +1,130 @@
+{
+  "Pohang_Eardo_1_Edgetech4205_800_050_20241012110900_001_04.xtf": {
+    "success": true,
+    "file_path": "datasets/Pohang_Eardo_1_Edgetech4205_800_050_20241012110900_001_04/original/Pohang_Eardo_1_Edgetech4205_800_050_20241012110900_001_04.xtf",
+    "coordinate_count": 500,
+    "xtf_bounds": {
+      "lat_min": 36.098713333333336,
+      "lat_max": 36.09874333333333,
+      "lon_min": 12.514938333333333,
+      "lon_max": 129.51529333333335
+    },
+    "center": [
+      36.098728333333334,
+      71.01511583333334
+    ],
+    "coverage_km": [
+      0.0033299999994795826,
+      10493.568294171215
+    ],
+    "distance_to_mines_km": 5154.127207162476,
+    "has_overlap": false,
+    "sample_coordinates": [
+      {
+        "ping": 0,
+        "latitude": 36.09874333333333,
+        "longitude": 129.51529333333335,
+        "timestamp": "2025-09-22 15:16:50.667166",
+        "frequency": 0.0
+      },
+      {
+        "ping": 1,
+        "latitude": 36.09874333333333,
+        "longitude": 129.51529333333335,
+        "timestamp": "2025-09-22 15:16:50.667484",
+        "frequency": 0.0
+      },
+      {
+        "ping": 2,
+        "latitude": 36.09874333333333,
+        "longitude": 129.51526666666666,
+        "timestamp": "2025-09-22 15:16:50.667507",
+        "frequency": 0.0
+      },
+      {
+        "ping": 3,
+        "latitude": 36.09874333333333,
+        "longitude": 129.51526666666666,
+        "timestamp": "2025-09-22 15:16:50.667528",
+        "frequency": 0.0
+      },
+      {
+        "ping": 4,
+        "latitude": 36.09874333333333,
+        "longitude": 129.51526666666666,
+        "timestamp": "2025-09-22 15:16:50.667548",
+        "frequency": 0.0
+      }
+    ],
+    "coordinate_stats": {
+      "lat_mean": 36.098726333333325,
+      "lat_std": 8.611362002925809e-06,
+      "lon_mean": 122.96301846666667,
+      "lon_std": 26.900861437711292
+    }
+  },
+  "Pohang_Eardo_1_Klein3900_900_050_20241011171100_001_04.xtf": {
+    "success": true,
+    "file_path": "datasets/Pohang_Eardo_1_Klein3900_900_050_20241011171100_001_04/original/Pohang_Eardo_1_Klein3900_900_050_20241011171100_001_04.xtf",
+    "coordinate_count": 500,
+    "xtf_bounds": {
+      "lat_min": 36.098665367933,
+      "lat_max": 36.09868440126634,
+      "lon_min": 129.51430175454334,
+      "lon_max": 129.5150347545434
+    },
+    "center": [
+      36.098674884599674,
+      129.51466825454338
+    ],
+    "coverage_km": [
+      0.0021127000005023433,
+      0.06574159758334716
+    ],
+    "distance_to_mines_km": 54.99874151801035,
+    "has_overlap": false,
+    "sample_coordinates": [
+      {
+        "ping": 0,
+        "latitude": 36.09868440126634,
+        "longitude": 129.5150347545434,
+        "timestamp": "2025-09-22 15:16:50.889483",
+        "frequency": 0.0
+      },
+      {
+        "ping": 1,
+        "latitude": 36.09868440126634,
+        "longitude": 129.5150347545434,
+        "timestamp": "2025-09-22 15:16:50.889532",
+        "frequency": 0.0
+      },
+      {
+        "ping": 2,
+        "latitude": 36.09868440126634,
+        "longitude": 129.5150347545434,
+        "timestamp": "2025-09-22 15:16:50.889545",
+        "frequency": 0.0
+      },
+      {
+        "ping": 3,
+        "latitude": 36.09868440126634,
+        "longitude": 129.5150347545434,
+        "timestamp": "2025-09-22 15:16:50.889556",
+        "frequency": 0.0
+      },
+      {
+        "ping": 4,
+        "latitude": 36.09868440126634,
+        "longitude": 129.5150347545434,
+        "timestamp": "2025-09-22 15:16:50.889567",
+        "frequency": 0.0
+      }
+    ],
+    "coordinate_stats": {
+      "lat_mean": 36.098674138499675,
+      "lat_std": 5.501683965617131e-06,
+      "lon_mean": 129.51466933371003,
+      "lon_std": 0.00021303257134961586
+    }
+  }
+}

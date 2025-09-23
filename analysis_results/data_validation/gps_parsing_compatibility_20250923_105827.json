@@ -1,0 +1,101 @@
+{
+  "test_timestamp": "2025-09-23T10:58:27.829249",
+  "test_description": "Location_MDGPS.xlsx GPS 파싱 호환성 완전 테스트",
+  "total_points": 25,
+  "successful_parsing": 25,
+  "success_rate": 100.0,
+  "failed_cases_count": 0,
+  "coordinate_ranges": {
+    "latitude": [
+      36.593171,
+      36.5933983
+    ],
+    "longitude": [
+      129.50929621666666,
+      129.51409248333334
+    ]
+  },
+  "korea_region_valid": true,
+  "parsing_details": [
+    {
+      "point_id": "PH_01",
+      "lat_raw": "36.5933983 N",
+      "lon_raw": "129 30.557773 E",
+      "lat_parsed": 36.5933983,
+      "lon_parsed": 129.50929621666666,
+      "success": true
+    },
+    {
+      "point_id": "PH_02",
+      "lat_raw": "36.5933620 N",
+      "lon_raw": "129 30.569606 E",
+      "lat_parsed": 36.593362,
+      "lon_parsed": 129.50949343333335,
+      "success": true
+    },
+    {
+      "point_id": "PH_03",
+      "lat_raw": "36.5933256 N",
+      "lon_raw": "129 30.581569 E",
+      "lat_parsed": 36.5933256,
+      "lon_parsed": 129.50969281666667,
+      "success": true
+    },
+    {
+      "point_id": "PH_04",
+      "lat_raw": "36.5933309 N",
+      "lon_raw": "129 30.593662 E",
+      "lat_parsed": 36.5933309,
+      "lon_parsed": 129.50989436666666,
+      "success": true
+    },
+    {
+      "point_id": "PH_05",
+      "lat_raw": "36.5933049 N",
+      "lon_raw": "129 30.605496 E",
+      "lat_parsed": 36.5933049,
+      "lon_parsed": 129.5100916,
+      "success": true
+    },
+    {
+      "point_id": "PH_06",
+      "lat_raw": "36.5932997 N",
+      "lon_raw": "129 30.617718 E",
+      "lat_parsed": 36.5932997,
+      "lon_parsed": 129.5102953,
+      "success": true
+    },
+    {
+      "point_id": "PH_07",
+      "lat_raw": "36.5933259 N",
+      "lon_raw": "129 30.629813 E",
+      "lat_parsed": 36.5933259,
+      "lon_parsed": 129.51049688333333,
+      "success": true
+    },
+    {
+      "point_id": "PH_08",
+      "lat_raw": "36.5933000 N",
+      "lon_raw": "129 30.641518 E",
+      "lat_parsed": 36.5933,
+      "lon_parsed": 129.51069196666666,
+      "success": true
+    },
+    {
+      "point_id": "PH_09",
+      "lat_raw": "36.5933053 N",
+      "lon_raw": "129 30.653740 E",
+      "lat_parsed": 36.5933053,
+      "lon_parsed": 129.51089566666667,
+      "success": true
+    },
+    {
+      "point_id": "PH_10",
+      "lat_raw": "36.5932793 N",
+      "lon_raw": "129 30.665703 E",
+      "lat_parsed": 36.5932793,
+      "lon_parsed": 129.51109505,
+      "success": true
+    }
+  ]
+}

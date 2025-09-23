@@ -1,0 +1,436 @@
+{
+  "verification_results": [
+    {
+      "file_path": "datasets/Pohang_Eardo_1_Edgetech4205_800_050_20241012110900_001_04/original/Pohang_Eardo_1_Edgetech4205_800_050_20241012110900_001_04.xtf",
+      "filename": "Pohang_Eardo_1_Edgetech4205_800_050_20241012110900_001_04.xtf",
+      "raw_coordinates": {
+        "total_packets": 1000,
+        "coordinate_packets": 999,
+        "available_fields": [
+          "SensorXcoordinate",
+          "SensorYcoordinate",
+          "ShipXcoordinate",
+          "ShipYcoordinate"
+        ],
+        "coordinate_samples": [
+          {
+            "SensorXcoordinate": 129.51529333333335,
+            "SensorYcoordinate": 36.09874333333333,
+            "ShipXcoordinate": 129.51529333333335,
+            "ShipYcoordinate": 36.09874333333333
+          },
+          {
+            "SensorXcoordinate": 129.51529333333335,
+            "SensorYcoordinate": 36.09874333333333,
+            "ShipXcoordinate": 129.51529333333335,
+            "ShipYcoordinate": 36.09874333333333
+          }
+        ],
+        "coordinate_statistics": {
+          "SensorXcoordinate": {
+            "count": 999,
+            "min": 12.514938333333333,
+            "max": 129.51529333333335,
+            "mean": 126.23548223556888,
+            "std": 19.31115852293807
+          },
+          "SensorYcoordinate": {
+            "count": 999,
+            "min": 36.09869333333334,
+            "max": 36.09874333333333,
+            "mean": 36.09871388054721,
+            "std": 1.4716040999574e-05
+          },
+          "ShipXcoordinate": {
+            "count": 999,
+            "min": 12.514938333333333,
+            "max": 129.51529333333335,
+            "mean": 126.23548223556888,
+            "std": 19.31115852293807
+          },
+          "ShipYcoordinate": {
+            "count": 999,
+            "min": 36.09869333333334,
+            "max": 36.09874333333333,
+            "mean": 36.09871388054721,
+            "std": 1.4716040999574e-05
+          }
+        }
+      },
+      "reader_coordinates": {
+        "extracted_pings": 1000,
+        "coordinate_samples": [
+          {
+            "latitude": 36.09874333333333,
+            "longitude": 129.51529333333335,
+            "ship_x": 129.51529333333335,
+            "ship_y": 36.09874333333333,
+            "ping_number": 224619
+          },
+          {
+            "latitude": 36.09874333333333,
+            "longitude": 129.51529333333335,
+            "ship_x": 129.51529333333335,
+            "ship_y": 36.09874333333333,
+            "ping_number": 224620
+          }
+        ],
+        "latitude_stats": {
+          "min": 36.09869333333334,
+          "max": 36.09874333333333,
+          "mean": 36.09871386,
+          "std": 1.472301146670046e-05
+        },
+        "longitude_stats": {
+          "min": 12.514938333333333,
+          "max": 129.51529333333335,
+          "mean": 126.23876100666665,
+          "std": 19.301778732648383
+        }
+      },
+      "comparison": {
+        "coordinate_consistency": {
+          "longitude_difference": 0.00327877109776864,
+          "latitude_difference": 2.0547211931898346e-08,
+          "significant_longitude_difference": false,
+          "significant_latitude_difference": false
+        },
+        "potential_errors": [],
+        "coordinate_ranges": {
+          "raw_longitude_range": [
+            12.514938333333333,
+            129.51529333333335
+          ],
+          "raw_latitude_range": [
+            36.09869333333334,
+            36.09874333333333
+          ],
+          "reader_longitude_range": [
+            12.514938333333333,
+            129.51529333333335
+          ],
+          "reader_latitude_range": [
+            36.09869333333334,
+            36.09874333333333
+          ]
+        },
+        "extraction_method_comparison": {}
+      },
+      "verification_timestamp": "2025-09-22T17:22:15.810936"
+    },
+    {
+      "file_path": "datasets/Pohang_Eardo_1_Klein3900_900_050_20241011171100_001_04/original/Pohang_Eardo_1_Klein3900_900_050_20241011171100_001_04.xtf",
+      "filename": "Pohang_Eardo_1_Klein3900_900_050_20241011171100_001_04.xtf",
+      "raw_coordinates": {
+        "total_packets": 1000,
+        "coordinate_packets": 333,
+        "available_fields": [
+          "SensorXcoordinate",
+          "SensorYcoordinate",
+          "ShipXcoordinate",
+          "ShipYcoordinate"
+        ],
+        "coordinate_samples": [
+          {
+            "SensorXcoordinate": 129.5150347545434,
+            "SensorYcoordinate": 36.09868440126634,
+            "ShipXcoordinate": 129.5150347545434,
+            "ShipYcoordinate": 36.09868440126634
+          },
+          {
+            "SensorXcoordinate": 129.5150347545434,
+            "SensorYcoordinate": 36.09868440126634,
+            "ShipXcoordinate": 129.5150347545434,
+            "ShipYcoordinate": 36.09868440126634
+          }
+        ],
+        "coordinate_statistics": {
+          "SensorXcoordinate": {
+            "count": 333,
+            "min": 129.51455785454337,
+            "max": 129.5150347545434,
+            "mean": 129.51479232861743,
+            "std": 0.0001428044173870144
+          },
+          "SensorYcoordinate": {
+            "count": 333,
+            "min": 36.098671184599674,
+            "max": 36.09868440126634,
+            "mean": 36.09867720957466,
+            "std": 4.0665108973520514e-06
+          },
+          "ShipXcoordinate": {
+            "count": 333,
+            "min": 129.51455785454337,
+            "max": 129.5150347545434,
+            "mean": 129.51479232861743,
+            "std": 0.0001428044173870144
+          },
+          "ShipYcoordinate": {
+            "count": 333,
+            "min": 36.098671184599674,
+            "max": 36.09868440126634,
+            "mean": 36.09867720957466,
+            "std": 4.066510897355069e-06
+          }
+        }
+      },
+      "reader_coordinates": {
+        "extracted_pings": 1000,
+        "coordinate_samples": [
+          {
+            "latitude": 36.09868440126634,
+            "longitude": 129.5150347545434,
+            "ship_x": 129.5150347545434,
+            "ship_y": 36.09868440126634,
+            "ping_number": 474996
+          },
+          {
+            "latitude": 36.09868440126634,
+            "longitude": 129.5150347545434,
+            "ship_x": 129.5150347545434,
+            "ship_y": 36.09868440126634,
+            "ping_number": 474997
+          }
+        ],
+        "latitude_stats": {
+          "min": 36.09866393459968,
+          "max": 36.09868440126634,
+          "mean": 36.09867036529967,
+          "std": 5.674952203627996e-06
+        },
+        "longitude_stats": {
+          "min": 129.51356935454334,
+          "max": 129.5150347545434,
+          "mean": 129.51430265459337,
+          "std": 0.0004242824401569311
+        }
+      },
+      "comparison": {
+        "coordinate_consistency": {
+          "longitude_difference": 0.0004896740240667441,
+          "latitude_difference": 6.844274992090504e-06,
+          "significant_longitude_difference": false,
+          "significant_latitude_difference": false
+        },
+        "potential_errors": [],
+        "coordinate_ranges": {
+          "raw_longitude_range": [
+            129.51455785454337,
+            129.5150347545434
+          ],
+          "raw_latitude_range": [
+            36.098671184599674,
+            36.09868440126634
+          ],
+          "reader_longitude_range": [
+            129.51356935454334,
+            129.5150347545434
+          ],
+          "reader_latitude_range": [
+            36.09866393459968,
+            36.09868440126634
+          ]
+        },
+        "extraction_method_comparison": {}
+      },
+      "verification_timestamp": "2025-09-22T17:22:16.008886"
+    },
+    {
+      "file_path": "datasets/Pohang_Eardo_1_Edgetech4205_800_050_20241012181900_001_04/original/Pohang_Eardo_1_Edgetech4205_800_050_20241012181900_001_04.xtf",
+      "filename": "Pohang_Eardo_1_Edgetech4205_800_050_20241012181900_001_04.xtf",
+      "raw_coordinates": {
+        "total_packets": 1000,
+        "coordinate_packets": 999,
+        "available_fields": [
+          "SensorXcoordinate",
+          "SensorYcoordinate",
+          "ShipXcoordinate",
+          "ShipYcoordinate"
+        ],
+        "coordinate_samples": [
+          {
+            "SensorXcoordinate": 129.50765333333334,
+            "SensorYcoordinate": 36.098753333333335,
+            "ShipXcoordinate": 129.50765333333334,
+            "ShipYcoordinate": 36.098753333333335
+          },
+          {
+            "SensorXcoordinate": 129.50765333333334,
+            "SensorYcoordinate": 36.098753333333335,
+            "ShipXcoordinate": 129.50765333333334,
+            "ShipYcoordinate": 36.098753333333335
+          }
+        ],
+        "coordinate_statistics": {
+          "SensorXcoordinate": {
+            "count": 999,
+            "min": 129.50765333333334,
+            "max": 129.50869333333333,
+            "mean": 129.50815366032697,
+            "std": 0.0003011944926734231
+          },
+          "SensorYcoordinate": {
+            "count": 999,
+            "min": 36.09874666666666,
+            "max": 36.098753333333335,
+            "mean": 36.09875005672338,
+            "std": 2.5370367699247773e-06
+          },
+          "ShipXcoordinate": {
+            "count": 999,
+            "min": 129.50765333333334,
+            "max": 129.50869333333333,
+            "mean": 129.50815366032697,
+            "std": 0.0003011944926734231
+          },
+          "ShipYcoordinate": {
+            "count": 999,
+            "min": 36.09874666666666,
+            "max": 36.098753333333335,
+            "mean": 36.09875005672338,
+            "std": 2.5370367699247773e-06
+          }
+        }
+      },
+      "reader_coordinates": {
+        "extracted_pings": 1000,
+        "coordinate_samples": [
+          {
+            "latitude": 36.098753333333335,
+            "longitude": 129.50765333333334,
+            "ship_x": 129.50765333333334,
+            "ship_y": 36.098753333333335,
+            "ping_number": 948643
+          },
+          {
+            "latitude": 36.098753333333335,
+            "longitude": 129.50765333333334,
+            "ship_x": 129.50765333333334,
+            "ship_y": 36.098753333333335,
+            "ping_number": 948644
+          }
+        ],
+        "latitude_stats": {
+          "min": 36.09874666666666,
+          "max": 36.098753333333335,
+          "mean": 36.098750053333326,
+          "std": 2.5380307343503887e-06
+        },
+        "longitude_stats": {
+          "min": 129.50765333333334,
+          "max": 129.50869333333333,
+          "mean": 129.50815419999998,
+          "std": 0.00030152671523629905
+        }
+      },
+      "comparison": {
+        "coordinate_consistency": {
+          "longitude_difference": 5.396730102802394e-07,
+          "latitude_difference": 3.390056235730299e-09,
+          "significant_longitude_difference": false,
+          "significant_latitude_difference": false
+        },
+        "potential_errors": [],
+        "coordinate_ranges": {
+          "raw_longitude_range": [
+            129.50765333333334,
+            129.50869333333333
+          ],
+          "raw_latitude_range": [
+            36.09874666666666,
+            36.098753333333335
+          ],
+          "reader_longitude_range": [
+            129.50765333333334,
+            129.50869333333333
+          ],
+          "reader_latitude_range": [
+            36.09874666666666,
+            36.098753333333335
+          ]
+        },
+        "extraction_method_comparison": {}
+      },
+      "verification_timestamp": "2025-09-22T17:22:16.196804"
+    }
+  ],
+  "comprehensive_analysis": {
+    "total_files_analyzed": 3,
+    "files_with_errors": 0,
+    "files_with_coordinate_discrepancies": 0,
+    "common_error_patterns": {},
+    "coordinate_range_summary": [
+      {
+        "filename": "Pohang_Eardo_1_Edgetech4205_800_050_20241012110900_001_04.xtf",
+        "ranges": {
+          "raw_longitude_range": [
+            12.514938333333333,
+            129.51529333333335
+          ],
+          "raw_latitude_range": [
+            36.09869333333334,
+            36.09874333333333
+          ],
+          "reader_longitude_range": [
+            12.514938333333333,
+            129.51529333333335
+          ],
+          "reader_latitude_range": [
+            36.09869333333334,
+            36.09874333333333
+          ]
+        }
+      },
+      {
+        "filename": "Pohang_Eardo_1_Klein3900_900_050_20241011171100_001_04.xtf",
+        "ranges": {
+          "raw_longitude_range": [
+            129.51455785454337,
+            129.5150347545434
+          ],
+          "raw_latitude_range": [
+            36.098671184599674,
+            36.09868440126634
+          ],
+          "reader_longitude_range": [
+            129.51356935454334,
+            129.5150347545434
+          ],
+          "reader_latitude_range": [
+            36.09866393459968,
+            36.09868440126634
+          ]
+        }
+      },
+      {
+        "filename": "Pohang_Eardo_1_Edgetech4205_800_050_20241012181900_001_04.xtf",
+        "ranges": {
+          "raw_longitude_range": [
+            129.50765333333334,
+            129.50869333333333
+          ],
+          "raw_latitude_range": [
+            36.09874666666666,
+            36.098753333333335
+          ],
+          "reader_longitude_range": [
+            129.50765333333334,
+            129.50869333333333
+          ],
+          "reader_latitude_range": [
+            36.09874666666666,
+            36.098753333333335
+          ]
+        }
+      }
+    ],
+    "impact_on_location_analysis": {
+      "affected_files": 0,
+      "potential_location_shift": false,
+      "requires_reanalysis": false,
+      "estimated_error_magnitude": "No significant errors detected"
+    }
+  },
+  "verification_timestamp": "2025-09-22T17:22:16.197226"
+}

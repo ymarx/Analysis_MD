@@ -1,0 +1,97 @@
+{
+  "images": {
+    "annotation": {
+      "path": "datasets/PH_annotation.bmp",
+      "shape": [
+        3862,
+        1024,
+        3
+      ],
+      "size_mb": 11.314504623413086
+    },
+    "xtf": {
+      "path": "datasets/Pohang_Eardo_1_Edgetech4205_800_050_20241012110900_001_04/original/Pohang_Eardo_1_Edgetech4205_800_050_20241012110900_001_04_IMG_00.BMP",
+      "shape": [
+        7974,
+        1024,
+        3
+      ],
+      "size_mb": 23.361379623413086
+    }
+  },
+  "best_transform": "flip_horizontal",
+  "best_score": 2.6389154070209404,
+  "similarity_summary": [
+    {
+      "transform": "original",
+      "score": 2.625154396225674,
+      "metrics": {
+        "mse": "0.023918666",
+        "ncc": "0.31674334",
+        "ssim": 0.44259445808414166,
+        "hist_corr": 0.8897352600185346
+      }
+    },
+    {
+      "transform": "rotate_180",
+      "score": 2.6345231525562207,
+      "metrics": {
+        "mse": "0.023675395",
+        "ncc": "0.32507035",
+        "ssim": 0.443382054580656,
+        "hist_corr": 0.8897461417891506
+      }
+    },
+    {
+      "transform": "flip_horizontal",
+      "score": 2.6389154070209404,
+      "metrics": {
+        "mse": "0.023527242",
+        "ncc": "0.33014506",
+        "ssim": 0.44256232822961306,
+        "hist_corr": 0.8897352600185346
+      }
+    },
+    {
+      "transform": "flip_vertical",
+      "score": 2.620987223174908,
+      "metrics": {
+        "mse": "0.024069991",
+        "ncc": "0.31156",
+        "ssim": 0.4437510673989311,
+        "hist_corr": 0.8897461417891506
+      }
+    },
+    {
+      "transform": "rotate_flip",
+      "score": 2.620987223174908,
+      "metrics": {
+        "mse": "0.024069991",
+        "ncc": "0.31156",
+        "ssim": 0.4437510673989311,
+        "hist_corr": 0.8897461417891506
+      }
+    },
+    {
+      "transform": "rotate_90",
+      "score": 2.1857558585880072,
+      "metrics": {
+        "mse": "0.032678563",
+        "ncc": "0.0012662268",
+        "ssim": 0.2368333229280768,
+        "hist_corr": 0.9803348720531896
+      }
+    },
+    {
+      "transform": "rotate_270",
+      "score": 2.1835815685183766,
+      "metrics": {
+        "mse": "0.032793973",
+        "ncc": "-0.002799048",
+        "ssim": 0.23883971719490768,
+        "hist_corr": 0.9803348720531896
+      }
+    }
+  ],
+  "analysis_timestamp": "2025-09-22T15:23:14.984752"
+}

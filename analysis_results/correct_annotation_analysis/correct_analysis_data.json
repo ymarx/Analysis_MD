@@ -1,0 +1,1235 @@
+{
+  "annotation_boxes": [
+    {
+      "id": 50,
+      "bbox": [
+        815,
+        201,
+        57,
+        94
+      ],
+      "center": [
+        843,
+        248
+      ],
+      "area": 4079.0,
+      "contour": "[[[830 201]]\n\n [[830 244]]\n\n [[829 245]]\n\n [[815 245]]\n\n [[815 294]]\n\n [[861 294]]\n\n [[861 248]]\n\n [[862 247]]\n\n [[871 247]]\n\n [[871 201]]]",
+      "solidity": 0.8785268145595521,
+      "perimeter": 296.8284270763397,
+      "number": 5,
+      "number_distance": 74.73285756613352
+    },
+    {
+      "id": 46,
+      "bbox": [
+        902,
+        261,
+        63,
+        59
+      ],
+      "center": [
+        933,
+        290
+      ],
+      "area": 3596.0,
+      "contour": "[[[902 261]]\n\n [[902 319]]\n\n [[964 319]]\n\n [[964 261]]]",
+      "solidity": 1.0,
+      "perimeter": 240.0,
+      "number": 5,
+      "number_distance": 50.00999900019995
+    },
+    {
+      "id": 40,
+      "bbox": [
+        820,
+        578,
+        68,
+        50
+      ],
+      "center": [
+        854,
+        603
+      ],
+      "area": 3283.0,
+      "contour": "[[[820 578]]\n\n [[820 627]]\n\n [[887 627]]\n\n [[887 578]]]",
+      "solidity": 1.0,
+      "perimeter": 232.0,
+      "number": 5,
+      "number_distance": 41.10960958218893
+    },
+    {
+      "id": 38,
+      "bbox": [
+        841,
+        690,
+        51,
+        65
+      ],
+      "center": [
+        866,
+        722
+      ],
+      "area": 3200.0,
+      "contour": "[[[841 690]]\n\n [[841 754]]\n\n [[891 754]]\n\n [[891 690]]]",
+      "solidity": 1.0,
+      "perimeter": 228.0,
+      "number": 5,
+      "number_distance": 39.59797974644666
+    },
+    {
+      "id": 44,
+      "bbox": [
+        902,
+        376,
+        64,
+        49
+      ],
+      "center": [
+        934,
+        400
+      ],
+      "area": 3024.0,
+      "contour": "[[[902 376]]\n\n [[902 424]]\n\n [[965 424]]\n\n [[965 376]]]",
+      "solidity": 1.0,
+      "perimeter": 222.0,
+      "number": 5,
+      "number_distance": 48.010415536631214
+    },
+    {
+      "id": 42,
+      "bbox": [
+        849,
+        511,
+        49,
+        57
+      ],
+      "center": [
+        873,
+        539
+      ],
+      "area": 2688.0,
+      "contour": "[[[849 511]]\n\n [[849 567]]\n\n [[897 567]]\n\n [[897 511]]]",
+      "solidity": 1.0,
+      "perimeter": 208.0,
+      "number": 5,
+      "number_distance": 58.69412236331676
+    },
+    {
+      "id": 52,
+      "bbox": [
+        806,
+        124,
+        50,
+        53
+      ],
+      "center": [
+        831,
+        150
+      ],
+      "area": 2548.0,
+      "contour": "[[[806 124]]\n\n [[806 176]]\n\n [[855 176]]\n\n [[855 124]]]",
+      "solidity": 1.0,
+      "perimeter": 202.0,
+      "number": 5,
+      "number_distance": 65.80273550544841
+    },
+    {
+      "id": 41,
+      "bbox": [
+        937,
+        519,
+        52,
+        37
+      ],
+      "center": [
+        963,
+        537
+      ],
+      "area": 1441.5,
+      "contour": "[[[943 519]]\n\n [[942 520]]\n\n [[940 520]]\n\n [[939 521]]\n\n [[938 521]]\n\n [[938 522]]\n\n [[937 523]]\n\n [[937 527]]\n\n [[942 527]]\n\n [[943 526]]\n\n [[947 526]]\n\n [[949 528]]\n\n [[949 533]]\n\n [[947 535]]\n\n [[947 536]]\n\n [[945 538]]\n\n [[945 539]]\n\n [[944 540]]\n\n [[943 540]]\n\n [[942 541]]\n\n [[942 542]]\n\n [[937 547]]\n\n [[937 553]]\n\n [[938 554]]\n\n [[958 554]]\n\n [[960 552]]\n\n [[960 551]]\n\n [[961 550]]\n\n [[965 550]]\n\n [[968 553]]\n\n [[969 553]]\n\n [[970 554]]\n\n [[972 554]]\n\n [[973 555]]\n\n [[977 555]]\n\n [[978 554]]\n\n [[980 554]]\n\n [[982 552]]\n\n [[983 552]]\n\n [[985 550]]\n\n [[985 549]]\n\n [[986 548]]\n\n [[986 546]]\n\n [[987 545]]\n\n [[987 541]]\n\n [[988 540]]\n\n [[988 531]]\n\n [[987 530]]\n\n [[987 527]]\n\n [[986 526]]\n\n [[986 525]]\n\n [[985 524]]\n\n [[985 523]]\n\n [[982 520]]\n\n [[981 520]]\n\n [[980 519]]\n\n [[971 519]]\n\n [[970 520]]\n\n [[969 520]]\n\n [[967 522]]\n\n [[966 522]]\n\n [[966 523]]\n\n [[965 524]]\n\n [[965 525]]\n\n [[964 526]]\n\n [[959 526]]\n\n [[958 525]]\n\n [[958 523]]\n\n [[956 521]]\n\n [[955 521]]\n\n [[954 520]]\n\n [[953 520]]\n\n [[952 519]]]",
+      "solidity": 0.8301180535560034,
+      "perimeter": 192.1248903274536,
+      "number": 5,
+      "number_distance": 12.0
+    },
+    {
+      "id": 30,
+      "bbox": [
+        779,
+        1266,
+        66,
+        63
+      ],
+      "center": [
+        812,
+        1297
+      ],
+      "area": 4030.0,
+      "contour": "[[[ 779 1266]]\n\n [[ 779 1328]]\n\n [[ 844 1328]]\n\n [[ 844 1266]]]",
+      "solidity": 1.0,
+      "perimeter": 254.0,
+      "number": 9,
+      "number_distance": 54.62600113499065
+    },
+    {
+      "id": 33,
+      "bbox": [
+        780,
+        1163,
+        69,
+        58
+      ],
+      "center": [
+        814,
+        1192
+      ],
+      "area": 3876.0,
+      "contour": "[[[ 780 1163]]\n\n [[ 780 1220]]\n\n [[ 848 1220]]\n\n [[ 848 1163]]]",
+      "solidity": 1.0,
+      "perimeter": 250.0,
+      "number": 9,
+      "number_distance": 75.05997601918082
+    },
+    {
+      "id": 28,
+      "bbox": [
+        765,
+        1408,
+        79,
+        40
+      ],
+      "center": [
+        804,
+        1428
+      ],
+      "area": 3042.0,
+      "contour": "[[[ 765 1408]]\n\n [[ 765 1447]]\n\n [[ 843 1447]]\n\n [[ 843 1408]]]",
+      "solidity": 1.0,
+      "perimeter": 234.0,
+      "number": 9,
+      "number_distance": 43.840620433565945
+    },
+    {
+      "id": 36,
+      "bbox": [
+        825,
+        793,
+        57,
+        49
+      ],
+      "center": [
+        853,
+        817
+      ],
+      "area": 2688.0,
+      "contour": "[[[825 793]]\n\n [[825 841]]\n\n [[881 841]]\n\n [[881 793]]]",
+      "solidity": 1.0,
+      "perimeter": 208.0,
+      "number": 10,
+      "number_distance": 63.655321851358195
+    },
+    {
+      "id": 25,
+      "bbox": [
+        704,
+        1519,
+        119,
+        109
+      ],
+      "center": [
+        763,
+        1573
+      ],
+      "area": 6705.0,
+      "contour": "[[[ 760 1519]]\n\n [[ 760 1568]]\n\n [[ 759 1569]]\n\n [[ 704 1569]]\n\n [[ 704 1627]]\n\n [[ 762 1627]]\n\n [[ 762 1574]]\n\n [[ 763 1573]]\n\n [[ 822 1573]]\n\n [[ 822 1519]]]",
+      "solidity": 0.689531057178116,
+      "perimeter": 450.8284270763397,
+      "number": 14,
+      "number_distance": 42.05948168962618
+    },
+    {
+      "id": 20,
+      "bbox": [
+        726,
+        1777,
+        62,
+        66
+      ],
+      "center": [
+        757,
+        1810
+      ],
+      "area": 3965.0,
+      "contour": "[[[ 726 1777]]\n\n [[ 726 1842]]\n\n [[ 787 1842]]\n\n [[ 787 1777]]]",
+      "solidity": 1.0,
+      "perimeter": 252.0,
+      "number": 14,
+      "number_distance": 43.657759905886145
+    },
+    {
+      "id": 18,
+      "bbox": [
+        761,
+        1943,
+        62,
+        64
+      ],
+      "center": [
+        792,
+        1975
+      ],
+      "area": 3843.0,
+      "contour": "[[[ 761 1943]]\n\n [[ 761 2006]]\n\n [[ 822 2006]]\n\n [[ 822 1943]]]",
+      "solidity": 1.0,
+      "perimeter": 248.0,
+      "number": 14,
+      "number_distance": 47.53945729601885
+    },
+    {
+      "id": 22,
+      "bbox": [
+        710,
+        1693,
+        64,
+        37
+      ],
+      "center": [
+        742,
+        1711
+      ],
+      "area": 2268.0,
+      "contour": "[[[ 710 1693]]\n\n [[ 710 1729]]\n\n [[ 773 1729]]\n\n [[ 773 1693]]]",
+      "solidity": 1.0,
+      "perimeter": 198.0,
+      "number": 14,
+      "number_distance": 42.01190307520001
+    },
+    {
+      "id": 16,
+      "bbox": [
+        834,
+        2202,
+        68,
+        62
+      ],
+      "center": [
+        868,
+        2233
+      ],
+      "area": 4087.0,
+      "contour": "[[[ 834 2202]]\n\n [[ 834 2263]]\n\n [[ 901 2263]]\n\n [[ 901 2202]]]",
+      "solidity": 1.0,
+      "perimeter": 256.0,
+      "number": 15,
+      "number_distance": 56.0357029044876
+    },
+    {
+      "id": 19,
+      "bbox": [
+        842,
+        1793,
+        51,
+        36
+      ],
+      "center": [
+        867,
+        1811
+      ],
+      "area": 1139.0,
+      "contour": "[[[ 876 1793]]\n\n [[ 875 1794]]\n\n [[ 873 1794]]\n\n [[ 871 1796]]\n\n [[ 870 1796]]\n\n [[ 870 1797]]\n\n [[ 869 1798]]\n\n [[ 869 1799]]\n\n [[ 868 1800]]\n\n [[ 868 1801]]\n\n [[ 867 1802]]\n\n [[ 867 1821]]\n\n [[ 866 1822]]\n\n [[ 858 1822]]\n\n [[ 857 1821]]\n\n [[ 857 1794]]\n\n [[ 850 1794]]\n\n [[ 849 1795]]\n\n [[ 848 1795]]\n\n [[ 846 1797]]\n\n [[ 845 1797]]\n\n [[ 842 1800]]\n\n [[ 842 1803]]\n\n [[ 843 1804]]\n\n [[ 849 1804]]\n\n [[ 850 1805]]\n\n [[ 850 1821]]\n\n [[ 849 1822]]\n\n [[ 843 1822]]\n\n [[ 843 1823]]\n\n [[ 842 1824]]\n\n [[ 842 1827]]\n\n [[ 843 1828]]\n\n [[ 862 1828]]\n\n [[ 863 1827]]\n\n [[ 863 1826]]\n\n [[ 865 1824]]\n\n [[ 869 1824]]\n\n [[ 872 1827]]\n\n [[ 873 1827]]\n\n [[ 874 1828]]\n\n [[ 884 1828]]\n\n [[ 886 1826]]\n\n [[ 887 1826]]\n\n [[ 888 1825]]\n\n [[ 888 1824]]\n\n [[ 889 1823]]\n\n [[ 889 1822]]\n\n [[ 890 1821]]\n\n [[ 890 1819]]\n\n [[ 891 1818]]\n\n [[ 891 1812]]\n\n [[ 892 1811]]\n\n [[ 892 1806]]\n\n [[ 891 1805]]\n\n [[ 891 1802]]\n\n [[ 890 1801]]\n\n [[ 890 1799]]\n\n [[ 889 1798]]\n\n [[ 889 1797]]\n\n [[ 886 1794]]\n\n [[ 885 1794]]\n\n [[ 884 1793]]]",
+      "solidity": 0.6951480012206286,
+      "perimeter": 226.56854116916656,
+      "number": 15,
+      "number_distance": 23.769728648009426
+    },
+    {
+      "id": 4,
+      "bbox": [
+        822,
+        2947,
+        90,
+        79
+      ],
+      "center": [
+        867,
+        2986
+      ],
+      "area": 6942.0,
+      "contour": "[[[ 822 2947]]\n\n [[ 822 3025]]\n\n [[ 911 3025]]\n\n [[ 911 2947]]]",
+      "solidity": 1.0,
+      "perimeter": 334.0,
+      "number": 20,
+      "number_distance": 69.05070600652827
+    },
+    {
+      "id": 14,
+      "bbox": [
+        873,
+        2303,
+        76,
+        75
+      ],
+      "center": [
+        911,
+        2340
+      ],
+      "area": 5550.0,
+      "contour": "[[[ 873 2303]]\n\n [[ 873 2377]]\n\n [[ 948 2377]]\n\n [[ 948 2303]]]",
+      "solidity": 1.0,
+      "perimeter": 298.0,
+      "number": 20,
+      "number_distance": 81.74350127074322
+    },
+    {
+      "id": 6,
+      "bbox": [
+        876,
+        2805,
+        88,
+        62
+      ],
+      "center": [
+        920,
+        2836
+      ],
+      "area": 5307.0,
+      "contour": "[[[ 876 2805]]\n\n [[ 876 2866]]\n\n [[ 963 2866]]\n\n [[ 963 2805]]]",
+      "solidity": 1.0,
+      "perimeter": 296.0,
+      "number": 20,
+      "number_distance": 82.02438661763951
+    },
+    {
+      "id": 12,
+      "bbox": [
+        879,
+        2451,
+        66,
+        66
+      ],
+      "center": [
+        912,
+        2484
+      ],
+      "area": 4225.0,
+      "contour": "[[[ 879 2451]]\n\n [[ 879 2516]]\n\n [[ 944 2516]]\n\n [[ 944 2451]]]",
+      "solidity": 1.0,
+      "perimeter": 260.0,
+      "number": 20,
+      "number_distance": 78.56844150166147
+    },
+    {
+      "id": 10,
+      "bbox": [
+        831,
+        2524,
+        57,
+        55
+      ],
+      "center": [
+        859,
+        2551
+      ],
+      "area": 3024.0,
+      "contour": "[[[ 831 2524]]\n\n [[ 831 2578]]\n\n [[ 887 2578]]\n\n [[ 887 2524]]]",
+      "solidity": 1.0,
+      "perimeter": 220.0,
+      "number": 20,
+      "number_distance": 50.00999900019995
+    },
+    {
+      "id": 8,
+      "bbox": [
+        882,
+        2700,
+        69,
+        44
+      ],
+      "center": [
+        916,
+        2722
+      ],
+      "area": 2924.0,
+      "contour": "[[[ 882 2700]]\n\n [[ 882 2743]]\n\n [[ 950 2743]]\n\n [[ 950 2700]]]",
+      "solidity": 1.0,
+      "perimeter": 222.0,
+      "number": 20,
+      "number_distance": 78.05767098754612
+    },
+    {
+      "id": 2,
+      "bbox": [
+        762,
+        3067,
+        90,
+        72
+      ],
+      "center": [
+        807,
+        3103
+      ],
+      "area": 6319.0,
+      "contour": "[[[ 762 3067]]\n\n [[ 762 3138]]\n\n [[ 851 3138]]\n\n [[ 851 3067]]]",
+      "solidity": 1.0,
+      "perimeter": 320.0,
+      "number": 24,
+      "number_distance": 52.88667128870941
+    }
+  ],
+  "gps_data": {
+    "locations": [
+      {
+        "id": "Point_01",
+        "latitude": 36.5933983,
+        "longitude": 129.50929621666666,
+        "raw_latitude": "36.5933983 N",
+        "raw_longitude": "129 30.557773 E",
+        "row_index": 0,
+        "mine_number": 1
+      },
+      {
+        "id": "Point_02",
+        "latitude": 36.593362,
+        "longitude": 129.50949343333335,
+        "raw_latitude": "36.5933620 N",
+        "raw_longitude": "129 30.569606 E",
+        "row_index": 1,
+        "mine_number": 2
+      },
+      {
+        "id": "Point_03",
+        "latitude": 36.5933256,
+        "longitude": 129.50969281666667,
+        "raw_latitude": "36.5933256 N",
+        "raw_longitude": "129 30.581569 E",
+        "row_index": 2,
+        "mine_number": 3
+      },
+      {
+        "id": "Point_04",
+        "latitude": 36.5933309,
+        "longitude": 129.50989436666666,
+        "raw_latitude": "36.5933309 N",
+        "raw_longitude": "129 30.593662 E",
+        "row_index": 3,
+        "mine_number": 4
+      },
+      {
+        "id": "Point_05",
+        "latitude": 36.5933049,
+        "longitude": 129.5100916,
+        "raw_latitude": "36.5933049 N",
+        "raw_longitude": "129 30.605496 E",
+        "row_index": 4,
+        "mine_number": 5
+      },
+      {
+        "id": "Point_06",
+        "latitude": 36.5932997,
+        "longitude": 129.5102953,
+        "raw_latitude": "36.5932997 N",
+        "raw_longitude": "129 30.617718 E",
+        "row_index": 5,
+        "mine_number": 6
+      },
+      {
+        "id": "Point_07",
+        "latitude": 36.5933259,
+        "longitude": 129.51049688333333,
+        "raw_latitude": "36.5933259 N",
+        "raw_longitude": "129 30.629813 E",
+        "row_index": 6,
+        "mine_number": 7
+      },
+      {
+        "id": "Point_08",
+        "latitude": 36.5933,
+        "longitude": 129.51069196666666,
+        "raw_latitude": "36.5933000 N",
+        "raw_longitude": "129 30.641518 E",
+        "row_index": 7,
+        "mine_number": 8
+      },
+      {
+        "id": "Point_09",
+        "latitude": 36.5933053,
+        "longitude": 129.51089566666667,
+        "raw_latitude": "36.5933053 N",
+        "raw_longitude": "129 30.653740 E",
+        "row_index": 8,
+        "mine_number": 9
+      },
+      {
+        "id": "Point_10",
+        "latitude": 36.5932793,
+        "longitude": 129.51109505,
+        "raw_latitude": "36.5932793 N",
+        "raw_longitude": "129 30.665703 E",
+        "row_index": 9,
+        "mine_number": 10
+      },
+      {
+        "id": "Point_11",
+        "latitude": 36.5932846,
+        "longitude": 129.5112966,
+        "raw_latitude": "36.5932846 N",
+        "raw_longitude": "129 30.677796 E",
+        "row_index": 10,
+        "mine_number": 11
+      },
+      {
+        "id": "Point_12",
+        "latitude": 36.5932691,
+        "longitude": 129.5114917,
+        "raw_latitude": "36.5932691 N",
+        "raw_longitude": "129 30.689502 E",
+        "row_index": 11,
+        "mine_number": 12
+      },
+      {
+        "id": "Point_13",
+        "latitude": 36.593264,
+        "longitude": 129.51169325,
+        "raw_latitude": "36.5932640 N",
+        "raw_longitude": "129 30.701595 E",
+        "row_index": 12,
+        "mine_number": 13
+      },
+      {
+        "id": "Point_14",
+        "latitude": 36.5932484,
+        "longitude": 129.51189478333333,
+        "raw_latitude": "36.5932484 N",
+        "raw_longitude": "129 30.713687 E",
+        "row_index": 13,
+        "mine_number": 14
+      },
+      {
+        "id": "Point_15",
+        "latitude": 36.5932643,
+        "longitude": 129.51208778333333,
+        "raw_latitude": "36.5932643 N",
+        "raw_longitude": "129 30.725267 E",
+        "row_index": 14,
+        "mine_number": 15
+      },
+      {
+        "id": "Point_16",
+        "latitude": 36.5932486,
+        "longitude": 129.5122936,
+        "raw_latitude": "36.5932486 N",
+        "raw_longitude": "129 30.737616 E",
+        "row_index": 15,
+        "mine_number": 16
+      },
+      {
+        "id": "Point_17",
+        "latitude": 36.5932539,
+        "longitude": 129.51249301666667,
+        "raw_latitude": "36.5932539 N",
+        "raw_longitude": "129 30.749581 E",
+        "row_index": 16,
+        "mine_number": 17
+      },
+      {
+        "id": "Point_18",
+        "latitude": 36.5932278,
+        "longitude": 129.51269455,
+        "raw_latitude": "36.5932278 N",
+        "raw_longitude": "129 30.761673 E",
+        "row_index": 17,
+        "mine_number": 18
+      },
+      {
+        "id": "Point_19",
+        "latitude": 36.5932331,
+        "longitude": 129.5128961,
+        "raw_latitude": "36.5932331 N",
+        "raw_longitude": "129 30.773766 E",
+        "row_index": 18,
+        "mine_number": 19
+      },
+      {
+        "id": "Point_20",
+        "latitude": 36.593249,
+        "longitude": 129.51308908333334,
+        "raw_latitude": "36.5932490 N",
+        "raw_longitude": "129 30.785345 E",
+        "row_index": 19,
+        "mine_number": 20
+      },
+      {
+        "id": "Point_21",
+        "latitude": 36.5932229,
+        "longitude": 129.5132949,
+        "raw_latitude": "36.5932229 N",
+        "raw_longitude": "129 30.797694 E",
+        "row_index": 20,
+        "mine_number": 21
+      },
+      {
+        "id": "Point_22",
+        "latitude": 36.5931865,
+        "longitude": 129.51349211666667,
+        "raw_latitude": "36.5931865 N",
+        "raw_longitude": "129 30.809527 E",
+        "row_index": 21,
+        "mine_number": 22
+      },
+      {
+        "id": "Point_23",
+        "latitude": 36.5932231,
+        "longitude": 129.5136938,
+        "raw_latitude": "36.5932231 N",
+        "raw_longitude": "129 30.821628 E",
+        "row_index": 22,
+        "mine_number": 23
+      },
+      {
+        "id": "Point_24",
+        "latitude": 36.593197,
+        "longitude": 129.5138931,
+        "raw_latitude": "36.5931970 N",
+        "raw_longitude": "129 30.833586 E",
+        "row_index": 23,
+        "mine_number": 24
+      },
+      {
+        "id": "Point_25",
+        "latitude": 36.593171,
+        "longitude": 129.51409248333334,
+        "raw_latitude": "36.5931710 N",
+        "raw_longitude": "129 30.845549 E",
+        "row_index": 24,
+        "mine_number": 25
+      }
+    ],
+    "count": 25,
+    "validation": {
+      "total_count": 25,
+      "valid_count": 25,
+      "invalid_count": 0,
+      "validation_errors": [],
+      "coordinate_ranges": {
+        "latitude": {
+          "min": 36.593171,
+          "max": 36.5933983
+        },
+        "longitude": {
+          "min": 129.50929621666666,
+          "max": 129.51409248333334
+        }
+      }
+    }
+  },
+  "analysis_result": {
+    "annotation_count": 25,
+    "gps_count": 25,
+    "perfect_match": true,
+    "correspondence_details": [
+      {
+        "box_number": 5,
+        "box_center": [
+          843,
+          248
+        ],
+        "box_area": 4079.0,
+        "gps_location": {
+          "id": "Point_05",
+          "latitude": 36.5933049,
+          "longitude": 129.5100916,
+          "raw_latitude": "36.5933049 N",
+          "raw_longitude": "129 30.605496 E",
+          "row_index": 4,
+          "mine_number": 5
+        },
+        "has_match": true,
+        "gps_lat": 36.5933049,
+        "gps_lon": 129.5100916
+      },
+      {
+        "box_number": 5,
+        "box_center": [
+          933,
+          290
+        ],
+        "box_area": 3596.0,
+        "gps_location": {
+          "id": "Point_05",
+          "latitude": 36.5933049,
+          "longitude": 129.5100916,
+          "raw_latitude": "36.5933049 N",
+          "raw_longitude": "129 30.605496 E",
+          "row_index": 4,
+          "mine_number": 5
+        },
+        "has_match": true,
+        "gps_lat": 36.5933049,
+        "gps_lon": 129.5100916
+      },
+      {
+        "box_number": 5,
+        "box_center": [
+          854,
+          603
+        ],
+        "box_area": 3283.0,
+        "gps_location": {
+          "id": "Point_05",
+          "latitude": 36.5933049,
+          "longitude": 129.5100916,
+          "raw_latitude": "36.5933049 N",
+          "raw_longitude": "129 30.605496 E",
+          "row_index": 4,
+          "mine_number": 5
+        },
+        "has_match": true,
+        "gps_lat": 36.5933049,
+        "gps_lon": 129.5100916
+      },
+      {
+        "box_number": 5,
+        "box_center": [
+          866,
+          722
+        ],
+        "box_area": 3200.0,
+        "gps_location": {
+          "id": "Point_05",
+          "latitude": 36.5933049,
+          "longitude": 129.5100916,
+          "raw_latitude": "36.5933049 N",
+          "raw_longitude": "129 30.605496 E",
+          "row_index": 4,
+          "mine_number": 5
+        },
+        "has_match": true,
+        "gps_lat": 36.5933049,
+        "gps_lon": 129.5100916
+      },
+      {
+        "box_number": 5,
+        "box_center": [
+          934,
+          400
+        ],
+        "box_area": 3024.0,
+        "gps_location": {
+          "id": "Point_05",
+          "latitude": 36.5933049,
+          "longitude": 129.5100916,
+          "raw_latitude": "36.5933049 N",
+          "raw_longitude": "129 30.605496 E",
+          "row_index": 4,
+          "mine_number": 5
+        },
+        "has_match": true,
+        "gps_lat": 36.5933049,
+        "gps_lon": 129.5100916
+      },
+      {
+        "box_number": 5,
+        "box_center": [
+          873,
+          539
+        ],
+        "box_area": 2688.0,
+        "gps_location": {
+          "id": "Point_05",
+          "latitude": 36.5933049,
+          "longitude": 129.5100916,
+          "raw_latitude": "36.5933049 N",
+          "raw_longitude": "129 30.605496 E",
+          "row_index": 4,
+          "mine_number": 5
+        },
+        "has_match": true,
+        "gps_lat": 36.5933049,
+        "gps_lon": 129.5100916
+      },
+      {
+        "box_number": 5,
+        "box_center": [
+          831,
+          150
+        ],
+        "box_area": 2548.0,
+        "gps_location": {
+          "id": "Point_05",
+          "latitude": 36.5933049,
+          "longitude": 129.5100916,
+          "raw_latitude": "36.5933049 N",
+          "raw_longitude": "129 30.605496 E",
+          "row_index": 4,
+          "mine_number": 5
+        },
+        "has_match": true,
+        "gps_lat": 36.5933049,
+        "gps_lon": 129.5100916
+      },
+      {
+        "box_number": 5,
+        "box_center": [
+          963,
+          537
+        ],
+        "box_area": 1441.5,
+        "gps_location": {
+          "id": "Point_05",
+          "latitude": 36.5933049,
+          "longitude": 129.5100916,
+          "raw_latitude": "36.5933049 N",
+          "raw_longitude": "129 30.605496 E",
+          "row_index": 4,
+          "mine_number": 5
+        },
+        "has_match": true,
+        "gps_lat": 36.5933049,
+        "gps_lon": 129.5100916
+      },
+      {
+        "box_number": 9,
+        "box_center": [
+          812,
+          1297
+        ],
+        "box_area": 4030.0,
+        "gps_location": {
+          "id": "Point_09",
+          "latitude": 36.5933053,
+          "longitude": 129.51089566666667,
+          "raw_latitude": "36.5933053 N",
+          "raw_longitude": "129 30.653740 E",
+          "row_index": 8,
+          "mine_number": 9
+        },
+        "has_match": true,
+        "gps_lat": 36.5933053,
+        "gps_lon": 129.51089566666667
+      },
+      {
+        "box_number": 9,
+        "box_center": [
+          814,
+          1192
+        ],
+        "box_area": 3876.0,
+        "gps_location": {
+          "id": "Point_09",
+          "latitude": 36.5933053,
+          "longitude": 129.51089566666667,
+          "raw_latitude": "36.5933053 N",
+          "raw_longitude": "129 30.653740 E",
+          "row_index": 8,
+          "mine_number": 9
+        },
+        "has_match": true,
+        "gps_lat": 36.5933053,
+        "gps_lon": 129.51089566666667
+      },
+      {
+        "box_number": 9,
+        "box_center": [
+          804,
+          1428
+        ],
+        "box_area": 3042.0,
+        "gps_location": {
+          "id": "Point_09",
+          "latitude": 36.5933053,
+          "longitude": 129.51089566666667,
+          "raw_latitude": "36.5933053 N",
+          "raw_longitude": "129 30.653740 E",
+          "row_index": 8,
+          "mine_number": 9
+        },
+        "has_match": true,
+        "gps_lat": 36.5933053,
+        "gps_lon": 129.51089566666667
+      },
+      {
+        "box_number": 10,
+        "box_center": [
+          853,
+          817
+        ],
+        "box_area": 2688.0,
+        "gps_location": {
+          "id": "Point_10",
+          "latitude": 36.5932793,
+          "longitude": 129.51109505,
+          "raw_latitude": "36.5932793 N",
+          "raw_longitude": "129 30.665703 E",
+          "row_index": 9,
+          "mine_number": 10
+        },
+        "has_match": true,
+        "gps_lat": 36.5932793,
+        "gps_lon": 129.51109505
+      },
+      {
+        "box_number": 14,
+        "box_center": [
+          763,
+          1573
+        ],
+        "box_area": 6705.0,
+        "gps_location": {
+          "id": "Point_14",
+          "latitude": 36.5932484,
+          "longitude": 129.51189478333333,
+          "raw_latitude": "36.5932484 N",
+          "raw_longitude": "129 30.713687 E",
+          "row_index": 13,
+          "mine_number": 14
+        },
+        "has_match": true,
+        "gps_lat": 36.5932484,
+        "gps_lon": 129.51189478333333
+      },
+      {
+        "box_number": 14,
+        "box_center": [
+          757,
+          1810
+        ],
+        "box_area": 3965.0,
+        "gps_location": {
+          "id": "Point_14",
+          "latitude": 36.5932484,
+          "longitude": 129.51189478333333,
+          "raw_latitude": "36.5932484 N",
+          "raw_longitude": "129 30.713687 E",
+          "row_index": 13,
+          "mine_number": 14
+        },
+        "has_match": true,
+        "gps_lat": 36.5932484,
+        "gps_lon": 129.51189478333333
+      },
+      {
+        "box_number": 14,
+        "box_center": [
+          792,
+          1975
+        ],
+        "box_area": 3843.0,
+        "gps_location": {
+          "id": "Point_14",
+          "latitude": 36.5932484,
+          "longitude": 129.51189478333333,
+          "raw_latitude": "36.5932484 N",
+          "raw_longitude": "129 30.713687 E",
+          "row_index": 13,
+          "mine_number": 14
+        },
+        "has_match": true,
+        "gps_lat": 36.5932484,
+        "gps_lon": 129.51189478333333
+      },
+      {
+        "box_number": 14,
+        "box_center": [
+          742,
+          1711
+        ],
+        "box_area": 2268.0,
+        "gps_location": {
+          "id": "Point_14",
+          "latitude": 36.5932484,
+          "longitude": 129.51189478333333,
+          "raw_latitude": "36.5932484 N",
+          "raw_longitude": "129 30.713687 E",
+          "row_index": 13,
+          "mine_number": 14
+        },
+        "has_match": true,
+        "gps_lat": 36.5932484,
+        "gps_lon": 129.51189478333333
+      },
+      {
+        "box_number": 15,
+        "box_center": [
+          868,
+          2233
+        ],
+        "box_area": 4087.0,
+        "gps_location": {
+          "id": "Point_15",
+          "latitude": 36.5932643,
+          "longitude": 129.51208778333333,
+          "raw_latitude": "36.5932643 N",
+          "raw_longitude": "129 30.725267 E",
+          "row_index": 14,
+          "mine_number": 15
+        },
+        "has_match": true,
+        "gps_lat": 36.5932643,
+        "gps_lon": 129.51208778333333
+      },
+      {
+        "box_number": 15,
+        "box_center": [
+          867,
+          1811
+        ],
+        "box_area": 1139.0,
+        "gps_location": {
+          "id": "Point_15",
+          "latitude": 36.5932643,
+          "longitude": 129.51208778333333,
+          "raw_latitude": "36.5932643 N",
+          "raw_longitude": "129 30.725267 E",
+          "row_index": 14,
+          "mine_number": 15
+        },
+        "has_match": true,
+        "gps_lat": 36.5932643,
+        "gps_lon": 129.51208778333333
+      },
+      {
+        "box_number": 20,
+        "box_center": [
+          867,
+          2986
+        ],
+        "box_area": 6942.0,
+        "gps_location": {
+          "id": "Point_20",
+          "latitude": 36.593249,
+          "longitude": 129.51308908333334,
+          "raw_latitude": "36.5932490 N",
+          "raw_longitude": "129 30.785345 E",
+          "row_index": 19,
+          "mine_number": 20
+        },
+        "has_match": true,
+        "gps_lat": 36.593249,
+        "gps_lon": 129.51308908333334
+      },
+      {
+        "box_number": 20,
+        "box_center": [
+          911,
+          2340
+        ],
+        "box_area": 5550.0,
+        "gps_location": {
+          "id": "Point_20",
+          "latitude": 36.593249,
+          "longitude": 129.51308908333334,
+          "raw_latitude": "36.5932490 N",
+          "raw_longitude": "129 30.785345 E",
+          "row_index": 19,
+          "mine_number": 20
+        },
+        "has_match": true,
+        "gps_lat": 36.593249,
+        "gps_lon": 129.51308908333334
+      },
+      {
+        "box_number": 20,
+        "box_center": [
+          920,
+          2836
+        ],
+        "box_area": 5307.0,
+        "gps_location": {
+          "id": "Point_20",
+          "latitude": 36.593249,
+          "longitude": 129.51308908333334,
+          "raw_latitude": "36.5932490 N",
+          "raw_longitude": "129 30.785345 E",
+          "row_index": 19,
+          "mine_number": 20
+        },
+        "has_match": true,
+        "gps_lat": 36.593249,
+        "gps_lon": 129.51308908333334
+      },
+      {
+        "box_number": 20,
+        "box_center": [
+          912,
+          2484
+        ],
+        "box_area": 4225.0,
+        "gps_location": {
+          "id": "Point_20",
+          "latitude": 36.593249,
+          "longitude": 129.51308908333334,
+          "raw_latitude": "36.5932490 N",
+          "raw_longitude": "129 30.785345 E",
+          "row_index": 19,
+          "mine_number": 20
+        },
+        "has_match": true,
+        "gps_lat": 36.593249,
+        "gps_lon": 129.51308908333334
+      },
+      {
+        "box_number": 20,
+        "box_center": [
+          859,
+          2551
+        ],
+        "box_area": 3024.0,
+        "gps_location": {
+          "id": "Point_20",
+          "latitude": 36.593249,
+          "longitude": 129.51308908333334,
+          "raw_latitude": "36.5932490 N",
+          "raw_longitude": "129 30.785345 E",
+          "row_index": 19,
+          "mine_number": 20
+        },
+        "has_match": true,
+        "gps_lat": 36.593249,
+        "gps_lon": 129.51308908333334
+      },
+      {
+        "box_number": 20,
+        "box_center": [
+          916,
+          2722
+        ],
+        "box_area": 2924.0,
+        "gps_location": {
+          "id": "Point_20",
+          "latitude": 36.593249,
+          "longitude": 129.51308908333334,
+          "raw_latitude": "36.5932490 N",
+          "raw_longitude": "129 30.785345 E",
+          "row_index": 19,
+          "mine_number": 20
+        },
+        "has_match": true,
+        "gps_lat": 36.593249,
+        "gps_lon": 129.51308908333334
+      },
+      {
+        "box_number": 24,
+        "box_center": [
+          807,
+          3103
+        ],
+        "box_area": 6319.0,
+        "gps_location": {
+          "id": "Point_24",
+          "latitude": 36.593197,
+          "longitude": 129.5138931,
+          "raw_latitude": "36.5931970 N",
+          "raw_longitude": "129 30.833586 E",
+          "row_index": 23,
+          "mine_number": 24
+        },
+        "has_match": true,
+        "gps_lat": 36.593197,
+        "gps_lon": 129.5138931
+      }
+    ],
+    "spatial_correlation": 0.4641620641912406,
+    "overall_score": 0.6784972385147443
+  },
+  "analysis_timestamp": "2025-09-22T15:38:42.488497"
+}

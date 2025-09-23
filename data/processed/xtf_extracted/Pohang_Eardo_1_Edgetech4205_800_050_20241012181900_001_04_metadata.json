@@ -1,0 +1,23 @@
+{
+  "file_path": "datasets/Pohang_Eardo_1_Edgetech4205_800_050_20241012181900_001_04/original/Pohang_Eardo_1_Edgetech4205_800_050_20241012181900_001_04.xtf",
+  "ping_count": 7083,
+  "channel_count": 2,
+  "frequency": 0.0,
+  "range_resolution": 0.0,
+  "sample_rate": 0.0,
+  "timestamp_range": [
+    0.0,
+    0.0
+  ],
+  "coordinate_bounds": {
+    "longitude": [
+      129.50765333333334,
+      129.50773333333333
+    ],
+    "latitude": [
+      36.098753333333335,
+      36.098753333333335
+    ]
+  },
+  "intensity_range": null
+}

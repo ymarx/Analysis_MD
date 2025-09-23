@@ -1,0 +1,385 @@
+{
+  "timestamp": "2025-09-22T13:27:34.155350",
+  "config": {
+    "data_dir": "datasets",
+    "output_dir": "data/processed/enhanced_pipeline_test",
+    "xtf_sample_rate": 0.05,
+    "xtf_channels": [
+      "port",
+      "starboard"
+    ],
+    "gps_file": "datasets/Location_MDGPS.xlsx",
+    "annotation_image": "datasets/PH_annotation.png",
+    "transform_type": "rotate_flip",
+    "feature_methods": [
+      "statistical",
+      "textural"
+    ],
+    "patch_size": [
+      64,
+      64
+    ],
+    "enable_augmentation": true,
+    "augmentation_config": {
+      "rotation_range": [
+        -180,
+        180
+      ],
+      "rotation_probability": 0.7,
+      "scale_range": [
+        0.8,
+        1.2
+      ],
+      "scale_probability": 0.5,
+      "translation_range": [
+        -0.1,
+        0.1
+      ],
+      "translation_probability": 0.4,
+      "noise_std_range": [
+        0.01,
+        0.05
+      ],
+      "noise_probability": 0.6,
+      "brightness_range": [
+        0.8,
+        1.2
+      ],
+      "contrast_range": [
+        0.8,
+        1.2
+      ],
+      "brightness_probability": 0.5,
+      "contrast_probability": 0.5,
+      "beam_angle_variation": 5.0,
+      "range_distortion": 0.05,
+      "acoustic_shadow_probability": 0.3,
+      "augmentation_strength": 0.5
+    },
+    "mine_augmentation_factor": 5,
+    "background_augmentation_factor": 2,
+    "test_size": 0.2,
+    "validation_size": 0.2,
+    "random_state": 42,
+    "stratify": true,
+    "mine_locations_file": "datasets/Location_MDGPS.xlsx",
+    "mine_confidence_threshold": 0.8,
+    "use_gps_validation": true,
+    "classifier_type": "ensemble",
+    "use_terrain": true,
+    "cross_validation_folds": 5,
+    "save_intermediate": true,
+    "save_augmented_samples": true,
+    "generate_reports": true,
+    "verbose": true
+  },
+  "mine_locations": {
+    "locations": [
+      {
+        "id": "Point_01",
+        "latitude": 36.5933983,
+        "longitude": 129.50929621666666,
+        "confidence": 0.8,
+        "type": "confirmed_mine",
+        "raw_coordinates": {
+          "latitude": "36.5933983 N",
+          "longitude": "129 30.557773 E"
+        }
+      },
+      {
+        "id": "Point_02",
+        "latitude": 36.593362,
+        "longitude": 129.50949343333335,
+        "confidence": 0.8,
+        "type": "confirmed_mine",
+        "raw_coordinates": {
+          "latitude": "36.5933620 N",
+          "longitude": "129 30.569606 E"
+        }
+      },
+      {
+        "id": "Point_03",
+        "latitude": 36.5933256,
+        "longitude": 129.50969281666667,
+        "confidence": 0.8,
+        "type": "confirmed_mine",
+        "raw_coordinates": {
+          "latitude": "36.5933256 N",
+          "longitude": "129 30.581569 E"
+        }
+      },
+      {
+        "id": "Point_04",
+        "latitude": 36.5933309,
+        "longitude": 129.50989436666666,
+        "confidence": 0.8,
+        "type": "confirmed_mine",
+        "raw_coordinates": {
+          "latitude": "36.5933309 N",
+          "longitude": "129 30.593662 E"
+        }
+      },
+      {
+        "id": "Point_05",
+        "latitude": 36.5933049,
+        "longitude": 129.5100916,
+        "confidence": 0.8,
+        "type": "confirmed_mine",
+        "raw_coordinates": {
+          "latitude": "36.5933049 N",
+          "longitude": "129 30.605496 E"
+        }
+      },
+      {
+        "id": "Point_06",
+        "latitude": 36.5932997,
+        "longitude": 129.5102953,
+        "confidence": 0.8,
+        "type": "confirmed_mine",
+        "raw_coordinates": {
+          "latitude": "36.5932997 N",
+          "longitude": "129 30.617718 E"
+        }
+      },
+      {
+        "id": "Point_07",
+        "latitude": 36.5933259,
+        "longitude": 129.51049688333333,
+        "confidence": 0.8,
+        "type": "confirmed_mine",
+        "raw_coordinates": {
+          "latitude": "36.5933259 N",
+          "longitude": "129 30.629813 E"
+        }
+      },
+      {
+        "id": "Point_08",
+        "latitude": 36.5933,
+        "longitude": 129.51069196666666,
+        "confidence": 0.8,
+        "type": "confirmed_mine",
+        "raw_coordinates": {
+          "latitude": "36.5933000 N",
+          "longitude": "129 30.641518 E"
+        }
+      },
+      {
+        "id": "Point_09",
+        "latitude": 36.5933053,
+        "longitude": 129.51089566666667,
+        "confidence": 0.8,
+        "type": "confirmed_mine",
+        "raw_coordinates": {
+          "latitude": "36.5933053 N",
+          "longitude": "129 30.653740 E"
+        }
+      },
+      {
+        "id": "Point_10",
+        "latitude": 36.5932793,
+        "longitude": 129.51109505,
+        "confidence": 0.8,
+        "type": "confirmed_mine",
+        "raw_coordinates": {
+          "latitude": "36.5932793 N",
+          "longitude": "129 30.665703 E"
+        }
+      },
+      {
+        "id": "Point_11",
+        "latitude": 36.5932846,
+        "longitude": 129.5112966,
+        "confidence": 0.8,
+        "type": "confirmed_mine",
+        "raw_coordinates": {
+          "latitude": "36.5932846 N",
+          "longitude": "129 30.677796 E"
+        }
+      },
+      {
+        "id": "Point_12",
+        "latitude": 36.5932691,
+        "longitude": 129.5114917,
+        "confidence": 0.8,
+        "type": "confirmed_mine",
+        "raw_coordinates": {
+          "latitude": "36.5932691 N",
+          "longitude": "129 30.689502 E"
+        }
+      },
+      {
+        "id": "Point_13",
+        "latitude": 36.593264,
+        "longitude": 129.51169325,
+        "confidence": 0.8,
+        "type": "confirmed_mine",
+        "raw_coordinates": {
+          "latitude": "36.5932640 N",
+          "longitude": "129 30.701595 E"
+        }
+      },
+      {
+        "id": "Point_14",
+        "latitude": 36.5932484,
+        "longitude": 129.51189478333333,
+        "confidence": 0.8,
+        "type": "confirmed_mine",
+        "raw_coordinates": {
+          "latitude": "36.5932484 N",
+          "longitude": "129 30.713687 E"
+        }
+      },
+      {
+        "id": "Point_15",
+        "latitude": 36.5932643,
+        "longitude": 129.51208778333333,
+        "confidence": 0.8,
+        "type": "confirmed_mine",
+        "raw_coordinates": {
+          "latitude": "36.5932643 N",
+          "longitude": "129 30.725267 E"
+        }
+      },
+      {
+        "id": "Point_16",
+        "latitude": 36.5932486,
+        "longitude": 129.5122936,
+        "confidence": 0.8,
+        "type": "confirmed_mine",
+        "raw_coordinates": {
+          "latitude": "36.5932486 N",
+          "longitude": "129 30.737616 E"
+        }
+      },
+      {
+        "id": "Point_17",
+        "latitude": 36.5932539,
+        "longitude": 129.51249301666667,
+        "confidence": 0.8,
+        "type": "confirmed_mine",
+        "raw_coordinates": {
+          "latitude": "36.5932539 N",
+          "longitude": "129 30.749581 E"
+        }
+      },
+      {
+        "id": "Point_18",
+        "latitude": 36.5932278,
+        "longitude": 129.51269455,
+        "confidence": 0.8,
+        "type": "confirmed_mine",
+        "raw_coordinates": {
+          "latitude": "36.5932278 N",
+          "longitude": "129 30.761673 E"
+        }
+      },
+      {
+        "id": "Point_19",
+        "latitude": 36.5932331,
+        "longitude": 129.5128961,
+        "confidence": 0.8,
+        "type": "confirmed_mine",
+        "raw_coordinates": {
+          "latitude": "36.5932331 N",
+          "longitude": "129 30.773766 E"
+        }
+      },
+      {
+        "id": "Point_20",
+        "latitude": 36.593249,
+        "longitude": 129.51308908333334,
+        "confidence": 0.8,
+        "type": "confirmed_mine",
+        "raw_coordinates": {
+          "latitude": "36.5932490 N",
+          "longitude": "129 30.785345 E"
+        }
+      },
+      {
+        "id": "Point_21",
+        "latitude": 36.5932229,
+        "longitude": 129.5132949,
+        "confidence": 0.8,
+        "type": "confirmed_mine",
+        "raw_coordinates": {
+          "latitude": "36.5932229 N",
+          "longitude": "129 30.797694 E"
+        }
+      },
+      {
+        "id": "Point_22",
+        "latitude": 36.5931865,
+        "longitude": 129.51349211666667,
+        "confidence": 0.8,
+        "type": "confirmed_mine",
+        "raw_coordinates": {
+          "latitude": "36.5931865 N",
+          "longitude": "129 30.809527 E"
+        }
+      },
+      {
+        "id": "Point_23",
+        "latitude": 36.5932231,
+        "longitude": 129.5136938,
+        "confidence": 0.8,
+        "type": "confirmed_mine",
+        "raw_coordinates": {
+          "latitude": "36.5932231 N",
+          "longitude": "129 30.821628 E"
+        }
+      },
+      {
+        "id": "Point_24",
+        "latitude": 36.593197,
+        "longitude": 129.5138931,
+        "confidence": 0.8,
+        "type": "confirmed_mine",
+        "raw_coordinates": {
+          "latitude": "36.5931970 N",
+          "longitude": "129 30.833586 E"
+        }
+      },
+      {
+        "id": "Point_25",
+        "latitude": 36.593171,
+        "longitude": 129.51409248333334,
+        "confidence": 0.8,
+        "type": "confirmed_mine",
+        "raw_coordinates": {
+          "latitude": "36.5931710 N",
+          "longitude": "129 30.845549 E"
+        }
+      }
+    ],
+    "total_count": 25,
+    "valid_count": 25,
+    "coordinate_ranges": {
+      "latitude": {
+        "min": 36.593171,
+        "max": 36.5933983
+      },
+      "longitude": {
+        "min": 129.50929621666666,
+        "max": 129.51409248333334
+      }
+    },
+    "source_file": "datasets/Location_MDGPS.xlsx"
+  },
+  "augmentation_info": {
+    "original_positive": 5,
+    "original_negative": 10,
+    "final_positive": 10,
+    "final_negative": 10,
+    "augmentation_ratio": 1.3333333333333333
+  },
+  "data_splits": {
+    "train_size": 12,
+    "validation_size": 4,
+    "test_size": 4
+  },
+  "evaluation_results": {
+    "error": "train() missing 1 required positional argument: 'ensemble_config'"
+  },
+  "coordinate_mapping_accuracy": 0,
+  "pipeline_version": "2.0"
+}

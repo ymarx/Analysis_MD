@@ -1,0 +1,1428 @@
+{
+  "correct_xtf_extraction": {
+    "count": 4,
+    "files": [
+      {
+        "name": "correct_xtf_extraction_data.json",
+        "path": "analysis_results/correct_xtf_extraction/correct_xtf_extraction_data.json",
+        "size": 19441,
+        "modified": 1758524561.8549166
+      },
+      {
+        "name": "FINAL_COORDINATE_VERIFICATION_REPORT.md",
+        "path": "analysis_results/correct_xtf_extraction/FINAL_COORDINATE_VERIFICATION_REPORT.md",
+        "size": 5721,
+        "modified": 1758524650.2375212
+      },
+      {
+        "name": "coordinate_comparison_visualization.png",
+        "path": "analysis_results/correct_xtf_extraction/coordinate_comparison_visualization.png",
+        "size": 131847,
+        "modified": 1758524562.6618173
+      },
+      {
+        "name": "CORRECT_XTF_EXTRACTION_REPORT.md",
+        "path": "analysis_results/correct_xtf_extraction/CORRECT_XTF_EXTRACTION_REPORT.md",
+        "size": 3635,
+        "modified": 1758524561.8552725
+      }
+    ]
+  },
+  "session_20250922_145641": {
+    "count": 0,
+    "files": []
+  },
+  "location_annotation_verification": {
+    "count": 3,
+    "files": [
+      {
+        "name": "verification_data.json",
+        "path": "analysis_results/location_annotation_verification/verification_data.json",
+        "size": 1738,
+        "modified": 1758522488.5735416
+      },
+      {
+        "name": "correspondence_analysis.png",
+        "path": "analysis_results/location_annotation_verification/correspondence_analysis.png",
+        "size": 505644,
+        "modified": 1758522488.5716395
+      },
+      {
+        "name": "LOCATION_ANNOTATION_VERIFICATION_REPORT.md",
+        "path": "analysis_results/location_annotation_verification/LOCATION_ANNOTATION_VERIFICATION_REPORT.md",
+        "size": 2969,
+        "modified": 1758522488.5732477
+      }
+    ]
+  },
+  "quick_terrain_comparison": {
+    "count": 1,
+    "files": [
+      {
+        "name": "QUICK_TERRAIN_COMPARISON_REPORT.md",
+        "path": "analysis_results/quick_terrain_comparison/QUICK_TERRAIN_COMPARISON_REPORT.md",
+        "size": 522,
+        "modified": 1758527563.86206
+      }
+    ]
+  },
+  "distance_recalculation": {
+    "count": 1,
+    "files": [
+      {
+        "name": "distance_recalculation_report.md",
+        "path": "analysis_results/distance_recalculation/distance_recalculation_report.md",
+        "size": 1353,
+        "modified": 1758530096.1727312
+      }
+    ]
+  },
+  "data_relationship_inference": {
+    "count": 2,
+    "files": [
+      {
+        "name": "data_relationship_inference_detail.json",
+        "path": "analysis_results/data_relationship_inference/data_relationship_inference_detail.json",
+        "size": 9371,
+        "modified": 1758528139.2165582
+      },
+      {
+        "name": "DATA_RELATIONSHIP_INFERENCE_REPORT.md",
+        "path": "analysis_results/data_relationship_inference/DATA_RELATIONSHIP_INFERENCE_REPORT.md",
+        "size": 4536,
+        "modified": 1758528139.2168603
+      }
+    ]
+  },
+  "coordinate_anomaly_investigation": {
+    "count": 1,
+    "files": [
+      {
+        "name": "coordinate_anomaly_analysis.png",
+        "path": "analysis_results/coordinate_anomaly_investigation/coordinate_anomaly_analysis.png",
+        "size": 191090,
+        "modified": 1758529669.4011228
+      }
+    ]
+  },
+  "raw_data": {
+    "count": 22,
+    "files": [
+      {
+        "name": "xtf_raw_20250922_145641.json",
+        "path": "analysis_results/raw_data/xtf_raw_20250922_145641.json",
+        "size": 123266,
+        "modified": 1758520602.023101
+      },
+      {
+        "name": "correct_xtf_extraction_data.json",
+        "path": "analysis_results/raw_data/correct_xtf_extraction_data.json",
+        "size": 19441,
+        "modified": 1758524561.854916
+      },
+      {
+        "name": "correct_analysis_data_1.json",
+        "path": "analysis_results/raw_data/correct_analysis_data_1.json",
+        "size": 31529,
+        "modified": 1758523122.492113
+      },
+      {
+        "name": "xtf_raw_20250922_150835.json",
+        "path": "analysis_results/raw_data/xtf_raw_20250922_150835.json",
+        "size": 123466,
+        "modified": 1758521315.993449
+      },
+      {
+        "name": "xtf_raw_20250922_150835_1.json",
+        "path": "analysis_results/raw_data/xtf_raw_20250922_150835_1.json",
+        "size": 123466,
+        "modified": 1758521315.993449
+      },
+      {
+        "name": "sonar_system_analysis_data.json",
+        "path": "analysis_results/raw_data/sonar_system_analysis_data.json",
+        "size": 12032,
+        "modified": 1758525318.951161
+      },
+      {
+        "name": "xtf_raw_20250922_145641_1.json",
+        "path": "analysis_results/raw_data/xtf_raw_20250922_145641_1.json",
+        "size": 123266,
+        "modified": 1758520602.023101
+      },
+      {
+        "name": "xtf_raw_20250922_151124_1.json",
+        "path": "analysis_results/raw_data/xtf_raw_20250922_151124_1.json",
+        "size": 126127,
+        "modified": 1758521484.129196
+      },
+      {
+        "name": "transform_results_1.json",
+        "path": "analysis_results/raw_data/transform_results_1.json",
+        "size": 29237,
+        "modified": 1758521317.97179
+      },
+      {
+        "name": "correct_analysis_data.json",
+        "path": "analysis_results/raw_data/correct_analysis_data.json",
+        "size": 31529,
+        "modified": 1758523122.492113
+      },
+      {
+        "name": "correct_xtf_extraction_data_1.json",
+        "path": "analysis_results/raw_data/correct_xtf_extraction_data_1.json",
+        "size": 19441,
+        "modified": 1758524561.854916
+      },
+      {
+        "name": "xtf_raw_20250922_151124.json",
+        "path": "analysis_results/raw_data/xtf_raw_20250922_151124.json",
+        "size": 126127,
+        "modified": 1758521484.129196
+      },
+      {
+        "name": "feature_statistics_1.csv",
+        "path": "analysis_results/raw_data/feature_statistics_1.csv",
+        "size": 456,
+        "modified": 1758520605.813704
+      },
+      {
+        "name": "coverage_data.json",
+        "path": "analysis_results/raw_data/coverage_data.json",
+        "size": 2,
+        "modified": 1758521484.862788
+      },
+      {
+        "name": "xtf_raw_20250922_151123_1.json",
+        "path": "analysis_results/raw_data/xtf_raw_20250922_151123_1.json",
+        "size": 123477,
+        "modified": 1758521483.823512
+      },
+      {
+        "name": "augmented_samples.json",
+        "path": "analysis_results/raw_data/augmented_samples.json",
+        "size": 7294,
+        "modified": 1758520604.959164
+      },
+      {
+        "name": "augmented_samples_1.json",
+        "path": "analysis_results/raw_data/augmented_samples_1.json",
+        "size": 7294,
+        "modified": 1758520604.959164
+      },
+      {
+        "name": "coverage_data_1.json",
+        "path": "analysis_results/raw_data/coverage_data_1.json",
+        "size": 2,
+        "modified": 1758521484.862788
+      },
+      {
+        "name": "transform_results.json",
+        "path": "analysis_results/raw_data/transform_results.json",
+        "size": 29237,
+        "modified": 1758521317.97179
+      },
+      {
+        "name": "xtf_raw_20250922_151123.json",
+        "path": "analysis_results/raw_data/xtf_raw_20250922_151123.json",
+        "size": 123477,
+        "modified": 1758521483.823512
+      },
+      {
+        "name": "sonar_system_analysis_data_1.json",
+        "path": "analysis_results/raw_data/sonar_system_analysis_data_1.json",
+        "size": 12032,
+        "modified": 1758525318.951161
+      },
+      {
+        "name": "feature_statistics.csv",
+        "path": "analysis_results/raw_data/feature_statistics.csv",
+        "size": 456,
+        "modified": 1758520605.813704
+      }
+    ]
+  },
+  "image_comparison": {
+    "count": 4,
+    "files": [
+      {
+        "name": "similarity_metrics.png",
+        "path": "analysis_results/image_comparison/similarity_metrics.png",
+        "size": 148754,
+        "modified": 1758522194.982582
+      },
+      {
+        "name": "IMAGE_COMPARISON_REPORT.md",
+        "path": "analysis_results/image_comparison/IMAGE_COMPARISON_REPORT.md",
+        "size": 2885,
+        "modified": 1758522194.9846938
+      },
+      {
+        "name": "comparison_data.json",
+        "path": "analysis_results/image_comparison/comparison_data.json",
+        "size": 2336,
+        "modified": 1758522194.9850714
+      },
+      {
+        "name": "comparison_visualization.png",
+        "path": "analysis_results/image_comparison/comparison_visualization.png",
+        "size": 737807,
+        "modified": 1758522194.4328358
+      }
+    ]
+  },
+  "terrain_analysis": {
+    "count": 10,
+    "files": [
+      {
+        "name": "similarity_metrics.png",
+        "path": "analysis_results/terrain_analysis/similarity_metrics.png",
+        "size": 148754,
+        "modified": 1758522194.982582
+      },
+      {
+        "name": "comparison_data_1.json",
+        "path": "analysis_results/terrain_analysis/comparison_data_1.json",
+        "size": 2336,
+        "modified": 1758522194.985071
+      },
+      {
+        "name": "IMAGE_COMPARISON_REPORT.md",
+        "path": "analysis_results/terrain_analysis/IMAGE_COMPARISON_REPORT.md",
+        "size": 2885,
+        "modified": 1758522194.984693
+      },
+      {
+        "name": "QUICK_TERRAIN_COMPARISON_REPORT.md",
+        "path": "analysis_results/terrain_analysis/QUICK_TERRAIN_COMPARISON_REPORT.md",
+        "size": 522,
+        "modified": 1758527563.86206
+      },
+      {
+        "name": "similarity_metrics_1.png",
+        "path": "analysis_results/terrain_analysis/similarity_metrics_1.png",
+        "size": 148754,
+        "modified": 1758522194.982582
+      },
+      {
+        "name": "comparison_visualization_1.png",
+        "path": "analysis_results/terrain_analysis/comparison_visualization_1.png",
+        "size": 737807,
+        "modified": 1758522194.432835
+      },
+      {
+        "name": "comparison_data.json",
+        "path": "analysis_results/terrain_analysis/comparison_data.json",
+        "size": 2336,
+        "modified": 1758522194.985071
+      },
+      {
+        "name": "IMAGE_COMPARISON_REPORT_1.md",
+        "path": "analysis_results/terrain_analysis/IMAGE_COMPARISON_REPORT_1.md",
+        "size": 2885,
+        "modified": 1758522194.984693
+      },
+      {
+        "name": "comparison_visualization.png",
+        "path": "analysis_results/terrain_analysis/comparison_visualization.png",
+        "size": 737807,
+        "modified": 1758522194.432835
+      },
+      {
+        "name": "QUICK_TERRAIN_COMPARISON_REPORT_1.md",
+        "path": "analysis_results/terrain_analysis/QUICK_TERRAIN_COMPARISON_REPORT_1.md",
+        "size": 522,
+        "modified": 1758527563.86206
+      }
+    ]
+  },
+  "coordinate_fix": {
+    "count": 1,
+    "files": [
+      {
+        "name": "coordinate_fix_report.md",
+        "path": "analysis_results/coordinate_fix/coordinate_fix_report.md",
+        "size": 825,
+        "modified": 1758530001.744371
+      }
+    ]
+  },
+  "correct_mapping": {
+    "count": 4,
+    "files": [
+      {
+        "name": "transform_comparison.png",
+        "path": "analysis_results/correct_mapping/transform_comparison.png",
+        "size": 1217468,
+        "modified": 1758521317.9680226
+      },
+      {
+        "name": "xtf_raw_20250922_150835.json",
+        "path": "analysis_results/correct_mapping/xtf_raw_20250922_150835.json",
+        "size": 123466,
+        "modified": 1758521315.9934494
+      },
+      {
+        "name": "transform_analysis_report.md",
+        "path": "analysis_results/correct_mapping/transform_analysis_report.md",
+        "size": 972,
+        "modified": 1758521317.9703712
+      },
+      {
+        "name": "transform_results.json",
+        "path": "analysis_results/correct_mapping/transform_results.json",
+        "size": 29237,
+        "modified": 1758521317.9717903
+      }
+    ]
+  },
+  "ship_movement": {
+    "count": 7,
+    "files": [
+      {
+        "name": "ship_movement_analysis_2.png",
+        "path": "analysis_results/ship_movement/ship_movement_analysis_2.png",
+        "size": 381103,
+        "modified": 1758585382.56257
+      },
+      {
+        "name": "ship_movement_analysis_1.png",
+        "path": "analysis_results/ship_movement/ship_movement_analysis_1.png",
+        "size": 381103,
+        "modified": 1758585382.56257
+      },
+      {
+        "name": "ship_movement_analysis.png",
+        "path": "analysis_results/ship_movement/ship_movement_analysis.png",
+        "size": 381103,
+        "modified": 1758585382.5625706
+      },
+      {
+        "name": "DATA_RELATIONSHIP_INFERENCE_REPORT_1.md",
+        "path": "analysis_results/ship_movement/DATA_RELATIONSHIP_INFERENCE_REPORT_1.md",
+        "size": 4536,
+        "modified": 1758528139.21686
+      },
+      {
+        "name": "data_relationship_inference_detail_1.json",
+        "path": "analysis_results/ship_movement/data_relationship_inference_detail_1.json",
+        "size": 9371,
+        "modified": 1758528139.216558
+      },
+      {
+        "name": "data_relationship_inference_detail.json",
+        "path": "analysis_results/ship_movement/data_relationship_inference_detail.json",
+        "size": 9371,
+        "modified": 1758528139.216558
+      },
+      {
+        "name": "DATA_RELATIONSHIP_INFERENCE_REPORT.md",
+        "path": "analysis_results/ship_movement/DATA_RELATIONSHIP_INFERENCE_REPORT.md",
+        "size": 4536,
+        "modified": 1758528139.21686
+      }
+    ]
+  },
+  "visualizations": {
+    "count": 18,
+    "files": [
+      {
+        "name": "transform_comparison.png",
+        "path": "analysis_results/visualizations/transform_comparison.png",
+        "size": 1217468,
+        "modified": 1758521317.968022
+      },
+      {
+        "name": "intensity_data_1.png",
+        "path": "analysis_results/visualizations/intensity_data_1.png",
+        "size": 1417121,
+        "modified": 1758520603.890435
+      },
+      {
+        "name": "feature_dimensions_1.png",
+        "path": "analysis_results/visualizations/feature_dimensions_1.png",
+        "size": 87542,
+        "modified": 1757644437.071599
+      },
+      {
+        "name": "augmented_samples.png",
+        "path": "analysis_results/visualizations/augmented_samples.png",
+        "size": 1038063,
+        "modified": 1758520605.800521
+      },
+      {
+        "name": "geographic_coverage_map.png",
+        "path": "analysis_results/visualizations/geographic_coverage_map.png",
+        "size": 98382,
+        "modified": 1758521484.861385
+      },
+      {
+        "name": "augmented_samples_1.png",
+        "path": "analysis_results/visualizations/augmented_samples_1.png",
+        "size": 1038063,
+        "modified": 1758520605.800521
+      },
+      {
+        "name": "correct_correspondence_analysis_1.png",
+        "path": "analysis_results/visualizations/correct_correspondence_analysis_1.png",
+        "size": 476643,
+        "modified": 1758523122.486815
+      },
+      {
+        "name": "feature_distributions_1.png",
+        "path": "analysis_results/visualizations/feature_distributions_1.png",
+        "size": 97704,
+        "modified": 1758520606.861775
+      },
+      {
+        "name": "correct_correspondence_analysis.png",
+        "path": "analysis_results/visualizations/correct_correspondence_analysis.png",
+        "size": 476643,
+        "modified": 1758523122.486815
+      },
+      {
+        "name": "feature_distributions_2.png",
+        "path": "analysis_results/visualizations/feature_distributions_2.png",
+        "size": 117404,
+        "modified": 1757644437.720876
+      },
+      {
+        "name": "feature_distributions_3.png",
+        "path": "analysis_results/visualizations/feature_distributions_3.png",
+        "size": 97704,
+        "modified": 1758520606.861775
+      },
+      {
+        "name": "feature_distributions.png",
+        "path": "analysis_results/visualizations/feature_distributions.png",
+        "size": 117404,
+        "modified": 1757644437.720876
+      },
+      {
+        "name": "roi_patch_samples_1.png",
+        "path": "analysis_results/visualizations/roi_patch_samples_1.png",
+        "size": 257153,
+        "modified": 1757644436.772282
+      },
+      {
+        "name": "intensity_data.png",
+        "path": "analysis_results/visualizations/intensity_data.png",
+        "size": 1417121,
+        "modified": 1758520603.890435
+      },
+      {
+        "name": "geographic_coverage_map_1.png",
+        "path": "analysis_results/visualizations/geographic_coverage_map_1.png",
+        "size": 98382,
+        "modified": 1758521484.861385
+      },
+      {
+        "name": "feature_dimensions.png",
+        "path": "analysis_results/visualizations/feature_dimensions.png",
+        "size": 87542,
+        "modified": 1757644437.071599
+      },
+      {
+        "name": "transform_comparison_1.png",
+        "path": "analysis_results/visualizations/transform_comparison_1.png",
+        "size": 1217468,
+        "modified": 1758521317.968022
+      },
+      {
+        "name": "roi_patch_samples.png",
+        "path": "analysis_results/visualizations/roi_patch_samples.png",
+        "size": 257153,
+        "modified": 1757644436.772282
+      }
+    ]
+  },
+  "simple_coordinate_check": {
+    "count": 2,
+    "files": [
+      {
+        "name": "analysis_report.md",
+        "path": "analysis_results/simple_coordinate_check/analysis_report.md",
+        "size": 953,
+        "modified": 1758521666.7952592
+      },
+      {
+        "name": "coordinate_analysis.png",
+        "path": "analysis_results/simple_coordinate_check/coordinate_analysis.png",
+        "size": 67878,
+        "modified": 1758521666.7941308
+      }
+    ]
+  },
+  "session_20250922_145620": {
+    "count": 0,
+    "files": []
+  },
+  "direct_coordinate_check": {
+    "count": 3,
+    "files": [
+      {
+        "name": "coordinate_comparison.png",
+        "path": "analysis_results/direct_coordinate_check/coordinate_comparison.png",
+        "size": 123762,
+        "modified": 1758521583.8126438
+      },
+      {
+        "name": "coordinate_data.json",
+        "path": "analysis_results/direct_coordinate_check/coordinate_data.json",
+        "size": 2,
+        "modified": 1758521583.814136
+      },
+      {
+        "name": "coordinate_analysis_report.md",
+        "path": "analysis_results/direct_coordinate_check/coordinate_analysis_report.md",
+        "size": 1495,
+        "modified": 1758521583.8139439
+      }
+    ]
+  },
+  "sonar_system_analysis": {
+    "count": 2,
+    "files": [
+      {
+        "name": "sonar_system_analysis_data.json",
+        "path": "analysis_results/sonar_system_analysis/sonar_system_analysis_data.json",
+        "size": 12032,
+        "modified": 1758525318.9511616
+      },
+      {
+        "name": "SONAR_SYSTEM_ANALYSIS_REPORT.md",
+        "path": "analysis_results/sonar_system_analysis/SONAR_SYSTEM_ANALYSIS_REPORT.md",
+        "size": 2203,
+        "modified": 1758525318.952064
+      }
+    ]
+  },
+  "final_coordinate_analysis": {
+    "count": 3,
+    "files": [
+      {
+        "name": "comprehensive_analysis.png",
+        "path": "analysis_results/final_coordinate_analysis/comprehensive_analysis.png",
+        "size": 224484,
+        "modified": 1758521811.996131
+      },
+      {
+        "name": "FINAL_COORDINATE_ANALYSIS_REPORT.md",
+        "path": "analysis_results/final_coordinate_analysis/FINAL_COORDINATE_ANALYSIS_REPORT.md",
+        "size": 4265,
+        "modified": 1758521811.997997
+      },
+      {
+        "name": "coordinate_analysis_data.json",
+        "path": "analysis_results/final_coordinate_analysis/coordinate_analysis_data.json",
+        "size": 3712,
+        "modified": 1758521811.9984114
+      }
+    ]
+  },
+  "xtf_metadata_verification": {
+    "count": 2,
+    "files": [
+      {
+        "name": "XTF_METADATA_VERIFICATION_REPORT.md",
+        "path": "analysis_results/xtf_metadata_verification/XTF_METADATA_VERIFICATION_REPORT.md",
+        "size": 2969,
+        "modified": 1758529336.1985776
+      },
+      {
+        "name": "xtf_metadata_verification_detail.json",
+        "path": "analysis_results/xtf_metadata_verification/xtf_metadata_verification_detail.json",
+        "size": 13756,
+        "modified": 1758529336.1982071
+      }
+    ]
+  },
+  "coordinate_verification": {
+    "count": 4,
+    "files": [
+      {
+        "name": "coordinate_verification_analysis.png",
+        "path": "analysis_results/coordinate_verification/coordinate_verification_analysis.png",
+        "size": 94455,
+        "modified": 1758524073.7816668
+      },
+      {
+        "name": "COORDINATE_VERIFICATION_REPORT.md",
+        "path": "analysis_results/coordinate_verification/COORDINATE_VERIFICATION_REPORT.md",
+        "size": 1567,
+        "modified": 1758524073.7833264
+      },
+      {
+        "name": "coordinate_verification_data.json",
+        "path": "analysis_results/coordinate_verification/coordinate_verification_data.json",
+        "size": 8672,
+        "modified": 1758524073.7839293
+      },
+      {
+        "name": "original_xtf_coordinate_ranges.md",
+        "path": "analysis_results/coordinate_verification/original_xtf_coordinate_ranges.md",
+        "size": 1109,
+        "modified": 1758583309.7606487
+      }
+    ]
+  },
+  "correct_annotation_analysis": {
+    "count": 3,
+    "files": [
+      {
+        "name": "correct_analysis_data.json",
+        "path": "analysis_results/correct_annotation_analysis/correct_analysis_data.json",
+        "size": 31529,
+        "modified": 1758523122.4921136
+      },
+      {
+        "name": "correct_correspondence_analysis.png",
+        "path": "analysis_results/correct_annotation_analysis/correct_correspondence_analysis.png",
+        "size": 476643,
+        "modified": 1758523122.4868157
+      },
+      {
+        "name": "CORRECT_ANNOTATION_ANALYSIS_REPORT.md",
+        "path": "analysis_results/correct_annotation_analysis/CORRECT_ANNOTATION_ANALYSIS_REPORT.md",
+        "size": 3633,
+        "modified": 1758523122.4884167
+      }
+    ]
+  },
+  "xtf_extraction_test": {
+    "count": 2,
+    "files": [
+      {
+        "name": "XTF_EXTRACTION_VERIFICATION_REPORT.md",
+        "path": "analysis_results/xtf_extraction_test/XTF_EXTRACTION_VERIFICATION_REPORT.md",
+        "size": 2390,
+        "modified": 1758525187.875156
+      },
+      {
+        "name": "xtf_extraction_verification_data.json",
+        "path": "analysis_results/xtf_extraction_test/xtf_extraction_verification_data.json",
+        "size": 2568,
+        "modified": 1758525187.8755245
+      }
+    ]
+  },
+  "data_validation": {
+    "count": 28,
+    "files": [
+      {
+        "name": "Pohang_Eardo_1_Klein3900_900_050_20241011171100_001_04_combined_intensity_1.npy",
+        "path": "analysis_results/data_validation/Pohang_Eardo_1_Klein3900_900_050_20241011171100_001_04_combined_intensity_1.npy",
+        "size": 12800128,
+        "modified": 1758525187.20711
+      },
+      {
+        "name": "Pohang_Eardo_1_Edgetech4205_800_050_20241012110900_001_04_starboard_intensity_1.npy",
+        "path": "analysis_results/data_validation/Pohang_Eardo_1_Edgetech4205_800_050_20241012110900_001_04_starboard_intensity_1.npy",
+        "size": 6832128,
+        "modified": 1758525186.93722
+      },
+      {
+        "name": "Pohang_Eardo_1_Klein3900_900_050_20241011171100_001_04_starboard_intensity.npy",
+        "path": "analysis_results/data_validation/Pohang_Eardo_1_Klein3900_900_050_20241011171100_001_04_starboard_intensity.npy",
+        "size": 6400128,
+        "modified": 1758525187.214637
+      },
+      {
+        "name": "XTF_EXTRACTION_VERIFICATION_REPORT.md",
+        "path": "analysis_results/data_validation/XTF_EXTRACTION_VERIFICATION_REPORT.md",
+        "size": 2390,
+        "modified": 1758525187.875156
+      },
+      {
+        "name": "Pohang_Eardo_1_Edgetech4205_800_050_20241012110900_001_04_combined_intensity_1.npy",
+        "path": "analysis_results/data_validation/Pohang_Eardo_1_Edgetech4205_800_050_20241012110900_001_04_combined_intensity_1.npy",
+        "size": 13664128,
+        "modified": 1758525186.927072
+      },
+      {
+        "name": "Pohang_Eardo_1_Klein3900_900_050_20241011171100_001_04_metadata_1.json",
+        "path": "analysis_results/data_validation/Pohang_Eardo_1_Klein3900_900_050_20241011171100_001_04_metadata_1.json",
+        "size": 515,
+        "modified": 1758525187.204137
+      },
+      {
+        "name": "XTF_EXTRACTION_VERIFICATION_REPORT_1.md",
+        "path": "analysis_results/data_validation/XTF_EXTRACTION_VERIFICATION_REPORT_1.md",
+        "size": 2390,
+        "modified": 1758525187.875156
+      },
+      {
+        "name": "PING_PREPROCESSOR_CHECK_REPORT_1.md",
+        "path": "analysis_results/data_validation/PING_PREPROCESSOR_CHECK_REPORT_1.md",
+        "size": 2454,
+        "modified": 1758525749.706117
+      },
+      {
+        "name": "XTF_METADATA_VERIFICATION_REPORT.md",
+        "path": "analysis_results/data_validation/XTF_METADATA_VERIFICATION_REPORT.md",
+        "size": 2969,
+        "modified": 1758529336.198577
+      },
+      {
+        "name": "Pohang_Eardo_1_Edgetech4205_800_050_20241012110900_001_04_port_intensity_1.npy",
+        "path": "analysis_results/data_validation/Pohang_Eardo_1_Edgetech4205_800_050_20241012110900_001_04_port_intensity_1.npy",
+        "size": 6832128,
+        "modified": 1758525186.929547
+      },
+      {
+        "name": "Pohang_Eardo_1_Klein3900_900_050_20241011171100_001_04_metadata.json",
+        "path": "analysis_results/data_validation/Pohang_Eardo_1_Klein3900_900_050_20241011171100_001_04_metadata.json",
+        "size": 515,
+        "modified": 1758525187.204137
+      },
+      {
+        "name": "xtf_metadata_verification_detail.json",
+        "path": "analysis_results/data_validation/xtf_metadata_verification_detail.json",
+        "size": 13756,
+        "modified": 1758529336.198207
+      },
+      {
+        "name": "Pohang_Eardo_1_Klein3900_900_050_20241011171100_001_04_port_intensity.npy",
+        "path": "analysis_results/data_validation/Pohang_Eardo_1_Klein3900_900_050_20241011171100_001_04_port_intensity.npy",
+        "size": 6400128,
+        "modified": 1758525187.208947
+      },
+      {
+        "name": "Pohang_Eardo_1_Klein3900_900_050_20241011171100_001_04_combined_intensity.npy",
+        "path": "analysis_results/data_validation/Pohang_Eardo_1_Klein3900_900_050_20241011171100_001_04_combined_intensity.npy",
+        "size": 12800128,
+        "modified": 1758525187.20711
+      },
+      {
+        "name": "PING_PREPROCESSOR_CHECK_REPORT.md",
+        "path": "analysis_results/data_validation/PING_PREPROCESSOR_CHECK_REPORT.md",
+        "size": 2454,
+        "modified": 1758525749.706117
+      },
+      {
+        "name": "Pohang_Eardo_1_Edgetech4205_800_050_20241012110900_001_04_starboard_intensity.npy",
+        "path": "analysis_results/data_validation/Pohang_Eardo_1_Edgetech4205_800_050_20241012110900_001_04_starboard_intensity.npy",
+        "size": 6832128,
+        "modified": 1758525186.93722
+      },
+      {
+        "name": "Pohang_Eardo_1_Edgetech4205_800_050_20241012110900_001_04_metadata_1.json",
+        "path": "analysis_results/data_validation/Pohang_Eardo_1_Edgetech4205_800_050_20241012110900_001_04_metadata_1.json",
+        "size": 524,
+        "modified": 1758525186.924759
+      },
+      {
+        "name": "ping_preprocessor_check_data_1.json",
+        "path": "analysis_results/data_validation/ping_preprocessor_check_data_1.json",
+        "size": 2666,
+        "modified": 1758525749.706413
+      },
+      {
+        "name": "xtf_extraction_verification_data_1.json",
+        "path": "analysis_results/data_validation/xtf_extraction_verification_data_1.json",
+        "size": 2568,
+        "modified": 1758525187.875524
+      },
+      {
+        "name": "Pohang_Eardo_1_Edgetech4205_800_050_20241012110900_001_04_port_intensity.npy",
+        "path": "analysis_results/data_validation/Pohang_Eardo_1_Edgetech4205_800_050_20241012110900_001_04_port_intensity.npy",
+        "size": 6832128,
+        "modified": 1758525186.929547
+      },
+      {
+        "name": "ping_preprocessor_check_data.json",
+        "path": "analysis_results/data_validation/ping_preprocessor_check_data.json",
+        "size": 2666,
+        "modified": 1758525749.706413
+      },
+      {
+        "name": "Pohang_Eardo_1_Klein3900_900_050_20241011171100_001_04_starboard_intensity_1.npy",
+        "path": "analysis_results/data_validation/Pohang_Eardo_1_Klein3900_900_050_20241011171100_001_04_starboard_intensity_1.npy",
+        "size": 6400128,
+        "modified": 1758525187.214637
+      },
+      {
+        "name": "XTF_METADATA_VERIFICATION_REPORT_1.md",
+        "path": "analysis_results/data_validation/XTF_METADATA_VERIFICATION_REPORT_1.md",
+        "size": 2969,
+        "modified": 1758529336.198577
+      },
+      {
+        "name": "Pohang_Eardo_1_Edgetech4205_800_050_20241012110900_001_04_combined_intensity.npy",
+        "path": "analysis_results/data_validation/Pohang_Eardo_1_Edgetech4205_800_050_20241012110900_001_04_combined_intensity.npy",
+        "size": 13664128,
+        "modified": 1758525186.927072
+      },
+      {
+        "name": "xtf_metadata_verification_detail_1.json",
+        "path": "analysis_results/data_validation/xtf_metadata_verification_detail_1.json",
+        "size": 13756,
+        "modified": 1758529336.198207
+      },
+      {
+        "name": "Pohang_Eardo_1_Edgetech4205_800_050_20241012110900_001_04_metadata.json",
+        "path": "analysis_results/data_validation/Pohang_Eardo_1_Edgetech4205_800_050_20241012110900_001_04_metadata.json",
+        "size": 524,
+        "modified": 1758525186.924759
+      },
+      {
+        "name": "Pohang_Eardo_1_Klein3900_900_050_20241011171100_001_04_port_intensity_1.npy",
+        "path": "analysis_results/data_validation/Pohang_Eardo_1_Klein3900_900_050_20241011171100_001_04_port_intensity_1.npy",
+        "size": 6400128,
+        "modified": 1758525187.208947
+      },
+      {
+        "name": "xtf_extraction_verification_data.json",
+        "path": "analysis_results/data_validation/xtf_extraction_verification_data.json",
+        "size": 2568,
+        "modified": 1758525187.875524
+      }
+    ]
+  },
+  "final_busan_pohang_comparison": {
+    "count": 1,
+    "files": [
+      {
+        "name": "FINAL_BUSAN_POHANG_COMPARISON_REPORT.md",
+        "path": "analysis_results/final_busan_pohang_comparison/FINAL_BUSAN_POHANG_COMPARISON_REPORT.md",
+        "size": 2313,
+        "modified": 1758529035.6430213
+      }
+    ]
+  },
+  "ping_preprocessor_check": {
+    "count": 2,
+    "files": [
+      {
+        "name": "PING_PREPROCESSOR_CHECK_REPORT.md",
+        "path": "analysis_results/ping_preprocessor_check/PING_PREPROCESSOR_CHECK_REPORT.md",
+        "size": 2454,
+        "modified": 1758525749.7061179
+      },
+      {
+        "name": "ping_preprocessor_check_data.json",
+        "path": "analysis_results/ping_preprocessor_check/ping_preprocessor_check_data.json",
+        "size": 2666,
+        "modified": 1758525749.7064133
+      }
+    ]
+  },
+  "coordinate_analysis": {
+    "count": 58,
+    "files": [
+      {
+        "name": "pixel_labels_1.json",
+        "path": "analysis_results/coordinate_analysis/pixel_labels_1.json",
+        "size": 3854,
+        "modified": 1758520604.034141
+      },
+      {
+        "name": "coordinate_comparison.png",
+        "path": "analysis_results/coordinate_analysis/coordinate_comparison.png",
+        "size": 123762,
+        "modified": 1758521583.812643
+      },
+      {
+        "name": "coordinate_data.json",
+        "path": "analysis_results/coordinate_analysis/coordinate_data.json",
+        "size": 2,
+        "modified": 1758521583.814135
+      },
+      {
+        "name": "coordinate_anomaly_analysis_1.png",
+        "path": "analysis_results/coordinate_analysis/coordinate_anomaly_analysis_1.png",
+        "size": 191090,
+        "modified": 1758529669.401122
+      },
+      {
+        "name": "COORDINATE_VERIFICATION_REPORT_1.md",
+        "path": "analysis_results/coordinate_analysis/COORDINATE_VERIFICATION_REPORT_1.md",
+        "size": 1567,
+        "modified": 1758524073.783326
+      },
+      {
+        "name": "verification_data_1.json",
+        "path": "analysis_results/coordinate_analysis/verification_data_1.json",
+        "size": 1738,
+        "modified": 1758522488.573541
+      },
+      {
+        "name": "mapping_report_1.csv",
+        "path": "analysis_results/coordinate_analysis/mapping_report_1.csv",
+        "size": 1363,
+        "modified": 1758520604.101417
+      },
+      {
+        "name": "coordinate_verification_analysis_1.png",
+        "path": "analysis_results/coordinate_analysis/coordinate_verification_analysis_1.png",
+        "size": 94455,
+        "modified": 1758524073.781666
+      },
+      {
+        "name": "coordinate_analysis_report.md",
+        "path": "analysis_results/coordinate_analysis/coordinate_analysis_report.md",
+        "size": 6442,
+        "modified": 1758520675.067912
+      },
+      {
+        "name": "verification_data.json",
+        "path": "analysis_results/coordinate_analysis/verification_data.json",
+        "size": 1738,
+        "modified": 1758522488.573541
+      },
+      {
+        "name": "coordinate_mapping_analysis_1.png",
+        "path": "analysis_results/coordinate_analysis/coordinate_mapping_analysis_1.png",
+        "size": 646319,
+        "modified": 1757644255.546317
+      },
+      {
+        "name": "FINAL_COORDINATE_VERIFICATION_REPORT.md",
+        "path": "analysis_results/coordinate_analysis/FINAL_COORDINATE_VERIFICATION_REPORT.md",
+        "size": 5721,
+        "modified": 1758524650.237521
+      },
+      {
+        "name": "coordinate_analysis_report_1.md",
+        "path": "analysis_results/coordinate_analysis/coordinate_analysis_report_1.md",
+        "size": 1495,
+        "modified": 1758521583.813943
+      },
+      {
+        "name": "coordinate_mapping_1.png",
+        "path": "analysis_results/coordinate_analysis/coordinate_mapping_1.png",
+        "size": 827849,
+        "modified": 1758520604.956063
+      },
+      {
+        "name": "mapping_report.csv",
+        "path": "analysis_results/coordinate_analysis/mapping_report.csv",
+        "size": 1363,
+        "modified": 1758520604.101417
+      },
+      {
+        "name": "correspondence_analysis_1.png",
+        "path": "analysis_results/coordinate_analysis/correspondence_analysis_1.png",
+        "size": 505644,
+        "modified": 1758522488.571639
+      },
+      {
+        "name": "coordinate_fix_report.md",
+        "path": "analysis_results/coordinate_analysis/coordinate_fix_report.md",
+        "size": 825,
+        "modified": 1758530001.74437
+      },
+      {
+        "name": "correspondence_analysis.png",
+        "path": "analysis_results/coordinate_analysis/correspondence_analysis.png",
+        "size": 505644,
+        "modified": 1758522488.571639
+      },
+      {
+        "name": "coordinate_comparison_1.png",
+        "path": "analysis_results/coordinate_analysis/coordinate_comparison_1.png",
+        "size": 123762,
+        "modified": 1758521583.812643
+      },
+      {
+        "name": "detected_objects.json",
+        "path": "analysis_results/coordinate_analysis/detected_objects.json",
+        "size": 9314,
+        "modified": 1757643973.909635
+      },
+      {
+        "name": "coordinate_verification_analysis.png",
+        "path": "analysis_results/coordinate_analysis/coordinate_verification_analysis.png",
+        "size": 94455,
+        "modified": 1758524073.781666
+      },
+      {
+        "name": "XTF_COORDINATE_ANALYSIS_REPORT_1.md",
+        "path": "analysis_results/coordinate_analysis/XTF_COORDINATE_ANALYSIS_REPORT_1.md",
+        "size": 6603,
+        "modified": 1758526713.0238
+      },
+      {
+        "name": "coordinate_comparison_visualization_1.png",
+        "path": "analysis_results/coordinate_analysis/coordinate_comparison_visualization_1.png",
+        "size": 131847,
+        "modified": 1758524562.661817
+      },
+      {
+        "name": "coordinate_mapping.png",
+        "path": "analysis_results/coordinate_analysis/coordinate_mapping.png",
+        "size": 827849,
+        "modified": 1758520604.956063
+      },
+      {
+        "name": "LOCATION_ANNOTATION_VERIFICATION_REPORT.md",
+        "path": "analysis_results/coordinate_analysis/LOCATION_ANNOTATION_VERIFICATION_REPORT.md",
+        "size": 2969,
+        "modified": 1758522488.573247
+      },
+      {
+        "name": "original_xtf_coordinate_ranges_1.md",
+        "path": "analysis_results/coordinate_analysis/original_xtf_coordinate_ranges_1.md",
+        "size": 1109,
+        "modified": 1758583309.760648
+      },
+      {
+        "name": "comprehensive_analysis_1.png",
+        "path": "analysis_results/coordinate_analysis/comprehensive_analysis_1.png",
+        "size": 224484,
+        "modified": 1758521811.996131
+      },
+      {
+        "name": "coordinate_fix_report_1.md",
+        "path": "analysis_results/coordinate_analysis/coordinate_fix_report_1.md",
+        "size": 825,
+        "modified": 1758530001.74437
+      },
+      {
+        "name": "COORDINATE_VERIFICATION_REPORT.md",
+        "path": "analysis_results/coordinate_analysis/COORDINATE_VERIFICATION_REPORT.md",
+        "size": 1567,
+        "modified": 1758524073.783326
+      },
+      {
+        "name": "XTF_COORDINATE_ANALYSIS_REPORT.md",
+        "path": "analysis_results/coordinate_analysis/XTF_COORDINATE_ANALYSIS_REPORT.md",
+        "size": 6603,
+        "modified": 1758526713.0238
+      },
+      {
+        "name": "coordinate_mapping_analysis.png",
+        "path": "analysis_results/coordinate_analysis/coordinate_mapping_analysis.png",
+        "size": 646319,
+        "modified": 1757644255.546317
+      },
+      {
+        "name": "coordinate_comparison_visualization.png",
+        "path": "analysis_results/coordinate_analysis/coordinate_comparison_visualization.png",
+        "size": 131847,
+        "modified": 1758524562.661817
+      },
+      {
+        "name": "comprehensive_analysis.png",
+        "path": "analysis_results/coordinate_analysis/comprehensive_analysis.png",
+        "size": 224484,
+        "modified": 1758521811.996131
+      },
+      {
+        "name": "FINAL_COORDINATE_VERIFICATION_REPORT_1.md",
+        "path": "analysis_results/coordinate_analysis/FINAL_COORDINATE_VERIFICATION_REPORT_1.md",
+        "size": 5721,
+        "modified": 1758524650.237521
+      },
+      {
+        "name": "LOCATION_ANNOTATION_VERIFICATION_REPORT_1.md",
+        "path": "analysis_results/coordinate_analysis/LOCATION_ANNOTATION_VERIFICATION_REPORT_1.md",
+        "size": 2969,
+        "modified": 1758522488.573247
+      },
+      {
+        "name": "FINAL_COORDINATE_ANALYSIS_REPORT_1.md",
+        "path": "analysis_results/coordinate_analysis/FINAL_COORDINATE_ANALYSIS_REPORT_1.md",
+        "size": 4265,
+        "modified": 1758521811.997997
+      },
+      {
+        "name": "coordinate_verification_data.json",
+        "path": "analysis_results/coordinate_analysis/coordinate_verification_data.json",
+        "size": 8672,
+        "modified": 1758524073.783929
+      },
+      {
+        "name": "analysis_report.md",
+        "path": "analysis_results/coordinate_analysis/analysis_report.md",
+        "size": 953,
+        "modified": 1758521666.795259
+      },
+      {
+        "name": "analysis_report_1.md",
+        "path": "analysis_results/coordinate_analysis/analysis_report_1.md",
+        "size": 953,
+        "modified": 1758521666.795259
+      },
+      {
+        "name": "object_detection_overlay.png",
+        "path": "analysis_results/coordinate_analysis/object_detection_overlay.png",
+        "size": 1153511,
+        "modified": 1757643973.905861
+      },
+      {
+        "name": "coordinate_analysis_1.png",
+        "path": "analysis_results/coordinate_analysis/coordinate_analysis_1.png",
+        "size": 67878,
+        "modified": 1758521666.79413
+      },
+      {
+        "name": "xtf_coordinate_analysis_detail.json",
+        "path": "analysis_results/coordinate_analysis/xtf_coordinate_analysis_detail.json",
+        "size": 13535,
+        "modified": 1758526713.023201
+      },
+      {
+        "name": "FINAL_COORDINATE_ANALYSIS_REPORT.md",
+        "path": "analysis_results/coordinate_analysis/FINAL_COORDINATE_ANALYSIS_REPORT.md",
+        "size": 4265,
+        "modified": 1758521811.997997
+      },
+      {
+        "name": "xtf_coordinate_analysis_detail_1.json",
+        "path": "analysis_results/coordinate_analysis/xtf_coordinate_analysis_detail_1.json",
+        "size": 13535,
+        "modified": 1758526713.023201
+      },
+      {
+        "name": "coordinate_anomaly_analysis.png",
+        "path": "analysis_results/coordinate_analysis/coordinate_anomaly_analysis.png",
+        "size": 191090,
+        "modified": 1758529669.401122
+      },
+      {
+        "name": "object_detection_overlay_1.png",
+        "path": "analysis_results/coordinate_analysis/object_detection_overlay_1.png",
+        "size": 1153511,
+        "modified": 1757643973.905861
+      },
+      {
+        "name": "coordinate_analysis_report_2.md",
+        "path": "analysis_results/coordinate_analysis/coordinate_analysis_report_2.md",
+        "size": 6442,
+        "modified": 1758520675.067912
+      },
+      {
+        "name": "detected_objects_1.json",
+        "path": "analysis_results/coordinate_analysis/detected_objects_1.json",
+        "size": 9314,
+        "modified": 1757643973.909635
+      },
+      {
+        "name": "coordinate_analysis_data.json",
+        "path": "analysis_results/coordinate_analysis/coordinate_analysis_data.json",
+        "size": 3712,
+        "modified": 1758521811.998411
+      },
+      {
+        "name": "mapping_table_1.png",
+        "path": "analysis_results/coordinate_analysis/mapping_table_1.png",
+        "size": 317182,
+        "modified": 1757644256.063422
+      },
+      {
+        "name": "coordinate_verification_data_1.json",
+        "path": "analysis_results/coordinate_analysis/coordinate_verification_data_1.json",
+        "size": 8672,
+        "modified": 1758524073.783929
+      },
+      {
+        "name": "mapping_table.png",
+        "path": "analysis_results/coordinate_analysis/mapping_table.png",
+        "size": 317182,
+        "modified": 1757644256.063422
+      },
+      {
+        "name": "original_xtf_coordinate_ranges.md",
+        "path": "analysis_results/coordinate_analysis/original_xtf_coordinate_ranges.md",
+        "size": 1109,
+        "modified": 1758583309.760648
+      },
+      {
+        "name": "coordinate_data_1.json",
+        "path": "analysis_results/coordinate_analysis/coordinate_data_1.json",
+        "size": 2,
+        "modified": 1758521583.814135
+      },
+      {
+        "name": "pixel_labels.json",
+        "path": "analysis_results/coordinate_analysis/pixel_labels.json",
+        "size": 3854,
+        "modified": 1758520604.034141
+      },
+      {
+        "name": "coordinate_analysis_data_1.json",
+        "path": "analysis_results/coordinate_analysis/coordinate_analysis_data_1.json",
+        "size": 3712,
+        "modified": 1758521811.998411
+      },
+      {
+        "name": "coordinate_analysis.png",
+        "path": "analysis_results/coordinate_analysis/coordinate_analysis.png",
+        "size": 67878,
+        "modified": 1758521666.79413
+      },
+      {
+        "name": "coordinate_analysis_report_3.md",
+        "path": "analysis_results/coordinate_analysis/coordinate_analysis_report_3.md",
+        "size": 1495,
+        "modified": 1758521583.813943
+      }
+    ]
+  },
+  "multi_xtf_coverage": {
+    "count": 5,
+    "files": [
+      {
+        "name": "coverage_analysis_report.md",
+        "path": "analysis_results/multi_xtf_coverage/coverage_analysis_report.md",
+        "size": 864,
+        "modified": 1758521484.862611
+      },
+      {
+        "name": "geographic_coverage_map.png",
+        "path": "analysis_results/multi_xtf_coverage/geographic_coverage_map.png",
+        "size": 98382,
+        "modified": 1758521484.8613858
+      },
+      {
+        "name": "xtf_raw_20250922_151124.json",
+        "path": "analysis_results/multi_xtf_coverage/xtf_raw_20250922_151124.json",
+        "size": 126127,
+        "modified": 1758521484.129197
+      },
+      {
+        "name": "coverage_data.json",
+        "path": "analysis_results/multi_xtf_coverage/coverage_data.json",
+        "size": 2,
+        "modified": 1758521484.862789
+      },
+      {
+        "name": "xtf_raw_20250922_151123.json",
+        "path": "analysis_results/multi_xtf_coverage/xtf_raw_20250922_151123.json",
+        "size": 123477,
+        "modified": 1758521483.8235126
+      }
+    ]
+  },
+  "reports": {
+    "count": 18,
+    "files": [
+      {
+        "name": "coverage_analysis_report.md",
+        "path": "analysis_results/reports/coverage_analysis_report.md",
+        "size": 864,
+        "modified": 1758521484.862611
+      },
+      {
+        "name": "SONAR_SYSTEM_ANALYSIS_REPORT_1.md",
+        "path": "analysis_results/reports/SONAR_SYSTEM_ANALYSIS_REPORT_1.md",
+        "size": 2203,
+        "modified": 1758525318.952063
+      },
+      {
+        "name": "transform_analysis_report.md",
+        "path": "analysis_results/reports/transform_analysis_report.md",
+        "size": 972,
+        "modified": 1758521317.970371
+      },
+      {
+        "name": "coverage_analysis_report_1.md",
+        "path": "analysis_results/reports/coverage_analysis_report_1.md",
+        "size": 864,
+        "modified": 1758521484.862611
+      },
+      {
+        "name": "distance_recalculation_report.md",
+        "path": "analysis_results/reports/distance_recalculation_report.md",
+        "size": 1353,
+        "modified": 1758530096.172731
+      },
+      {
+        "name": "distance_recalculation_report_1.md",
+        "path": "analysis_results/reports/distance_recalculation_report_1.md",
+        "size": 1353,
+        "modified": 1758530096.172731
+      },
+      {
+        "name": "CORRECT_ANNOTATION_ANALYSIS_REPORT_1.md",
+        "path": "analysis_results/reports/CORRECT_ANNOTATION_ANALYSIS_REPORT_1.md",
+        "size": 3633,
+        "modified": 1758523122.488416
+      },
+      {
+        "name": "analysis_report.md",
+        "path": "analysis_results/reports/analysis_report.md",
+        "size": 3543,
+        "modified": 1758520606.86784
+      },
+      {
+        "name": "analysis_report_1.md",
+        "path": "analysis_results/reports/analysis_report_1.md",
+        "size": 3543,
+        "modified": 1758520606.86784
+      },
+      {
+        "name": "transform_analysis_report_1.md",
+        "path": "analysis_results/reports/transform_analysis_report_1.md",
+        "size": 972,
+        "modified": 1758521317.970371
+      },
+      {
+        "name": "CORRECT_XTF_EXTRACTION_REPORT_1.md",
+        "path": "analysis_results/reports/CORRECT_XTF_EXTRACTION_REPORT_1.md",
+        "size": 3635,
+        "modified": 1758524561.855272
+      },
+      {
+        "name": "CORRECT_XTF_EXTRACTION_REPORT.md",
+        "path": "analysis_results/reports/CORRECT_XTF_EXTRACTION_REPORT.md",
+        "size": 3635,
+        "modified": 1758524561.855272
+      },
+      {
+        "name": "CORRECT_ANNOTATION_ANALYSIS_REPORT.md",
+        "path": "analysis_results/reports/CORRECT_ANNOTATION_ANALYSIS_REPORT.md",
+        "size": 3633,
+        "modified": 1758523122.488416
+      },
+      {
+        "name": "FINAL_BUSAN_POHANG_COMPARISON_REPORT_1.md",
+        "path": "analysis_results/reports/FINAL_BUSAN_POHANG_COMPARISON_REPORT_1.md",
+        "size": 2313,
+        "modified": 1758529035.643021
+      },
+      {
+        "name": "FINAL_SUMMARY_REPORT.md",
+        "path": "analysis_results/reports/FINAL_SUMMARY_REPORT.md",
+        "size": 6195,
+        "modified": 1758520771.393288
+      },
+      {
+        "name": "FINAL_SUMMARY_REPORT_1.md",
+        "path": "analysis_results/reports/FINAL_SUMMARY_REPORT_1.md",
+        "size": 6195,
+        "modified": 1758520771.393288
+      },
+      {
+        "name": "FINAL_BUSAN_POHANG_COMPARISON_REPORT.md",
+        "path": "analysis_results/reports/FINAL_BUSAN_POHANG_COMPARISON_REPORT.md",
+        "size": 2313,
+        "modified": 1758529035.643021
+      },
+      {
+        "name": "SONAR_SYSTEM_ANALYSIS_REPORT.md",
+        "path": "analysis_results/reports/SONAR_SYSTEM_ANALYSIS_REPORT.md",
+        "size": 2203,
+        "modified": 1758525318.952063
+      }
+    ]
+  },
+  "xtf_coordinate_analysis": {
+    "count": 2,
+    "files": [
+      {
+        "name": "XTF_COORDINATE_ANALYSIS_REPORT.md",
+        "path": "analysis_results/xtf_coordinate_analysis/XTF_COORDINATE_ANALYSIS_REPORT.md",
+        "size": 6603,
+        "modified": 1758526713.0238006
+      },
+      {
+        "name": "xtf_coordinate_analysis_detail.json",
+        "path": "analysis_results/xtf_coordinate_analysis/xtf_coordinate_analysis_detail.json",
+        "size": 13535,
+        "modified": 1758526713.023202
+      }
+    ]
+  }
+}

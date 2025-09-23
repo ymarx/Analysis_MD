@@ -1,0 +1,98 @@
+{
+  "xtf_reader_results": {
+    "Pohang_Eardo_1_Edgetech4205_800_050_20241012110900_001_04.xtf": {
+      "file_type": "EdgeTech 4205",
+      "frequency": "800 kHz",
+      "load_success": true,
+      "metadata_valid": true,
+      "ping_count": 1000,
+      "intensity_matrix_shape": [
+        1000,
+        6832
+      ],
+      "georef_data_valid": true,
+      "summary_valid": true
+    },
+    "Pohang_Eardo_1_Klein3900_900_050_20241011171100_001_04.xtf": {
+      "file_type": "Klein 3900",
+      "frequency": "900 kHz",
+      "load_success": true,
+      "metadata_valid": true,
+      "ping_count": 1000,
+      "intensity_matrix_shape": [
+        1000,
+        6400
+      ],
+      "georef_data_valid": true,
+      "summary_valid": true
+    },
+    "Pohang_Eardo_1_Edgetech4205_800_050_20241012181900_001_04.xtf": {
+      "file_type": "EdgeTech 4205",
+      "frequency": "800 kHz",
+      "load_success": true,
+      "metadata_valid": true,
+      "ping_count": 1000,
+      "intensity_matrix_shape": [
+        1000,
+        6832
+      ],
+      "georef_data_valid": true,
+      "summary_valid": true
+    }
+  },
+  "intensity_extractor_results": {
+    "Pohang_Eardo_1_Edgetech4205_800_050_20241012110900_001_04.xtf": {
+      "file_type": "EdgeTech 4205",
+      "extraction_success": true,
+      "metadata_valid": true,
+      "ping_count": 500,
+      "intensity_images": {
+        "combined": [
+          500,
+          6832
+        ],
+        "port": [
+          500,
+          3416
+        ],
+        "starboard": [
+          500,
+          3416
+        ]
+      },
+      "navigation_data_valid": true,
+      "quality_score": 94,
+      "output_directory": "analysis_results/xtf_extraction_test/Pohang_Eardo_1_Edgetech4205_800_050_20241012110900_001_04"
+    },
+    "Pohang_Eardo_1_Klein3900_900_050_20241011171100_001_04.xtf": {
+      "file_type": "Klein 3900",
+      "extraction_success": true,
+      "metadata_valid": true,
+      "ping_count": 500,
+      "intensity_images": {
+        "combined": [
+          500,
+          6400
+        ],
+        "port": [
+          500,
+          3200
+        ],
+        "starboard": [
+          500,
+          3200
+        ]
+      },
+      "navigation_data_valid": true,
+      "quality_score": 94,
+      "output_directory": "analysis_results/xtf_extraction_test/Pohang_Eardo_1_Klein3900_900_050_20241011171100_001_04"
+    }
+  },
+  "batch_processing_success": true,
+  "summary": {
+    "reader_success_rate": 100.0,
+    "extractor_success_rate": 100.0,
+    "average_quality_score": 94.0
+  },
+  "test_timestamp": "2025-09-22T16:13:07.875196"
+}

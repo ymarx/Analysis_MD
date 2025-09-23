@@ -1,0 +1,86 @@
+{
+  "analysis_timestamp": "2025-09-23T13:23:14.071937",
+  "analysis_description": "포항 모의기물 투하좌표와 XTF 영역 겹침 분석",
+  "source_file": "모의기물_투하좌표_포항.xlsx",
+  "coordinate_format": "DDMM (도분)",
+  "total_coordinates": 25,
+  "coordinate_bounds": {
+    "pohang_area": {
+      "lat_min": 36.098863333333334,
+      "lat_max": 36.099003333333336,
+      "lon_min": 129.50931666666668,
+      "lon_max": 129.51410166666668,
+      "center_lat": 36.098912866666666,
+      "center_lon": 129.5118678
+    },
+    "xtf_area": {
+      "lat_min": 36.098637,
+      "lat_max": 36.098753,
+      "lon_min": 129.507147,
+      "lon_max": 129.515293,
+      "center_lat": 36.098695,
+      "center_lon": 129.51122,
+      "description": "Original XTF 영역 (포항 남쪽 연안)"
+    }
+  },
+  "overlap_analysis": {
+    "has_area_overlap": false,
+    "overlap_percentage": 0,
+    "points_in_xtf_area": 0,
+    "points_in_xtf_percentage": 0.0
+  },
+  "distance_analysis": {
+    "min_distance_km": 0.03212146649662081,
+    "max_distance_km": 0.25912596797426535,
+    "avg_distance_km": 0.13286565191604618,
+    "distance_distribution": {
+      "very_close": 25,
+      "close": 0,
+      "moderate": 0,
+      "far": 0
+    }
+  },
+  "closest_coordinates": [
+    {
+      "point_id": "PH_09",
+      "latitude": 36.098971666666664,
+      "longitude": 129.511115,
+      "lat_raw": "36° 5.9383'",
+      "lon_raw": "129° 30.6669'",
+      "distance_to_xtf_center": 0.03212146649662081
+    },
+    {
+      "point_id": "PH_10",
+      "latitude": 36.099003333333336,
+      "longitude": 129.51136333333332,
+      "lat_raw": "36° 5.9402'",
+      "lon_raw": "129° 30.6818'",
+      "distance_to_xtf_center": 0.03655966224164764
+    },
+    {
+      "point_id": "PH_11",
+      "latitude": 36.09898666666667,
+      "longitude": 129.51153,
+      "lat_raw": "36° 5.9392'",
+      "lon_raw": "129° 30.6918'",
+      "distance_to_xtf_center": 0.042675093274127794
+    },
+    {
+      "point_id": "PH_12",
+      "latitude": 36.098956666666666,
+      "longitude": 129.51166166666667,
+      "lat_raw": "36° 5.9374'",
+      "lon_raw": "129° 30.6997'",
+      "distance_to_xtf_center": 0.04911965791693237
+    },
+    {
+      "point_id": "PH_08",
+      "latitude": 36.098906666666664,
+      "longitude": 129.510675,
+      "lat_raw": "36° 5.9344'",
+      "lon_raw": "129° 30.6405'",
+      "distance_to_xtf_center": 0.05423349684031303
+    }
+  ],
+  "coordinates_in_xtf": []
+}

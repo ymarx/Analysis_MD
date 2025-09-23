@@ -1,0 +1,395 @@
+{
+  "individual_results": [
+    {
+      "file_path": "datasets/Pohang_Eardo_1_Edgetech4205_800_050_20241012110900_001_04/original/Pohang_Eardo_1_Edgetech4205_800_050_20241012110900_001_04.xtf",
+      "filename": "Pohang_Eardo_1_Edgetech4205_800_050_20241012110900_001_04.xtf",
+      "raw_packet_analysis": {
+        "total_packets": 7975,
+        "sonar_packets": 7974,
+        "nav_packets": 0,
+        "coordinate_fields": [
+          "SensorXcoordinate",
+          "SensorYcoordinate",
+          "ShipXcoordinate",
+          "ShipYcoordinate"
+        ],
+        "coordinate_statistics": {
+          "SensorXcoordinate": {
+            "count": 7974,
+            "min": 12.514938333333333,
+            "max": 129.51529333333335,
+            "mean": 128.7805242350138,
+            "std": 9.199037754218697
+          },
+          "SensorYcoordinate": {
+            "count": 7974,
+            "min": 36.098636666666664,
+            "max": 36.098753333333335,
+            "mean": 36.09869742914472,
+            "std": 2.8279412636771264e-05
+          },
+          "ShipXcoordinate": {
+            "count": 7974,
+            "min": 12.514938333333333,
+            "max": 129.51529333333335,
+            "mean": 128.7805242350138,
+            "std": 9.199037754218697
+          },
+          "ShipYcoordinate": {
+            "count": 7974,
+            "min": 36.098636666666664,
+            "max": 36.098753333333335,
+            "mean": 36.09869742914472,
+            "std": 2.8279412636771264e-05
+          }
+        },
+        "has_slant_range": false,
+        "has_depth_offset": false,
+        "has_towfish_data": false
+      },
+      "reader_analysis": {
+        "extracted_pings": 100,
+        "latitude_stats": {
+          "min": 36.098733333333335,
+          "max": 36.09874333333333,
+          "mean": 36.098738199999985,
+          "std": 4.33128156383879e-06,
+          "range": 9.999999996068709e-06
+        },
+        "longitude_stats": {
+          "min": 129.51517333333334,
+          "max": 129.51529333333335,
+          "mean": 129.5152317333333,
+          "std": 3.176469039027241e-05,
+          "range": 0.00012000000000966793
+        },
+        "coordinate_units": {
+          "unit_type": "십진도 (Decimal Degrees)",
+          "latitude_range": 9.999999996068709e-06,
+          "longitude_range": 0.00012000000000966793,
+          "is_valid_korea_region": true,
+          "sample_coordinate": "(36.098743, 129.515293)"
+        },
+        "extraction_method": "SensorXcoordinate/SensorYcoordinate or SensorX/SensorY"
+      },
+      "coordinate_analysis": {
+        "detailed_packet_info": {
+          "SensorXcoordinate": 129.51529333333335,
+          "SensorYcoordinate": 36.09874333333333,
+          "ShipXcoordinate": 129.51529333333335,
+          "ShipYcoordinate": 36.09874333333333,
+          "CableOut": 0,
+          "SensorDepth": 13.270999908447266
+        },
+        "positioning_error_factors": {
+          "sensor_vs_ship_coordinates": {
+            "distance_difference": 0.0,
+            "x_difference": 0.0,
+            "y_difference": 0.0,
+            "uses_sensor_position": true
+          },
+          "slant_range_effect": {},
+          "depth_layback_effect": {},
+          "heading_attitude_effect": {},
+          "coordinate_system_issues": {
+            "potential_issues": [
+              "좌표가 한국 지역 십진도 형식"
+            ]
+          }
+        }
+      },
+      "analysis_timestamp": "2025-09-22T16:38:32.387146"
+    },
+    {
+      "file_path": "datasets/Pohang_Eardo_1_Klein3900_900_050_20241011171100_001_04/original/Pohang_Eardo_1_Klein3900_900_050_20241011171100_001_04.xtf",
+      "filename": "Pohang_Eardo_1_Klein3900_900_050_20241011171100_001_04.xtf",
+      "raw_packet_analysis": {
+        "total_packets": 15412,
+        "sonar_packets": 15411,
+        "nav_packets": 0,
+        "coordinate_fields": [
+          "SensorXcoordinate",
+          "SensorYcoordinate",
+          "ShipXcoordinate",
+          "ShipYcoordinate"
+        ],
+        "coordinate_statistics": {
+          "SensorXcoordinate": {
+            "count": 5137,
+            "min": 129.50672838787642,
+            "max": 129.5150347545434,
+            "mean": 129.51098089249015,
+            "std": 0.002419248500309591
+          },
+          "SensorYcoordinate": {
+            "count": 5137,
+            "min": 36.09866393459968,
+            "max": 36.09873775126635,
+            "mean": 36.09869273584229,
+            "std": 1.8969135232583403e-05
+          },
+          "ShipXcoordinate": {
+            "count": 5137,
+            "min": 129.50672838787642,
+            "max": 129.5150347545434,
+            "mean": 129.51098089249015,
+            "std": 0.002419248500309591
+          },
+          "ShipYcoordinate": {
+            "count": 5137,
+            "min": 36.09866393459968,
+            "max": 36.09873775126635,
+            "mean": 36.09869273584229,
+            "std": 1.896913523259053e-05
+          }
+        },
+        "has_slant_range": false,
+        "has_depth_offset": false,
+        "has_towfish_data": false
+      },
+      "reader_analysis": {
+        "extracted_pings": 100,
+        "latitude_stats": {
+          "min": 36.09867838459968,
+          "max": 36.09868440126634,
+          "mean": 36.09868208376634,
+          "std": 1.7279216409353897e-06,
+          "range": 6.0166666600025565e-06
+        },
+        "longitude_stats": {
+          "min": 129.5148799878767,
+          "max": 129.5150347545434,
+          "mean": 129.51496574554338,
+          "std": 4.4466621405650715e-05,
+          "range": 0.0001547666666965597
+        },
+        "coordinate_units": {
+          "unit_type": "십진도 (Decimal Degrees)",
+          "latitude_range": 6.0166666600025565e-06,
+          "longitude_range": 0.0001547666666965597,
+          "is_valid_korea_region": true,
+          "sample_coordinate": "(36.098684, 129.515035)"
+        },
+        "extraction_method": "SensorXcoordinate/SensorYcoordinate or SensorX/SensorY"
+      },
+      "coordinate_analysis": {
+        "detailed_packet_info": {},
+        "positioning_error_factors": {
+          "sensor_vs_ship_coordinates": {
+            "uses_sensor_position": false,
+            "note": "Uses ship position as sensor position"
+          },
+          "slant_range_effect": {},
+          "depth_layback_effect": {},
+          "heading_attitude_effect": {},
+          "coordinate_system_issues": {
+            "potential_issues": []
+          }
+        }
+      },
+      "analysis_timestamp": "2025-09-22T16:38:32.716668"
+    },
+    {
+      "file_path": "datasets/Pohang_Eardo_1_Edgetech4205_800_050_20241012181900_001_04/original/Pohang_Eardo_1_Edgetech4205_800_050_20241012181900_001_04.xtf",
+      "filename": "Pohang_Eardo_1_Edgetech4205_800_050_20241012181900_001_04.xtf",
+      "raw_packet_analysis": {
+        "total_packets": 7084,
+        "sonar_packets": 7083,
+        "nav_packets": 0,
+        "coordinate_fields": [
+          "SensorXcoordinate",
+          "SensorYcoordinate",
+          "ShipXcoordinate",
+          "ShipYcoordinate"
+        ],
+        "coordinate_statistics": {
+          "SensorXcoordinate": {
+            "count": 7083,
+            "min": 129.50765333333334,
+            "max": 129.51502666666667,
+            "mean": 129.5113916005459,
+            "std": 0.002125041790238695
+          },
+          "SensorYcoordinate": {
+            "count": 7083,
+            "min": 36.09865666666666,
+            "max": 36.098753333333335,
+            "mean": 36.09870969363264,
+            "std": 2.880457636710164e-05
+          },
+          "ShipXcoordinate": {
+            "count": 7083,
+            "min": 129.50765333333334,
+            "max": 129.51502666666667,
+            "mean": 129.5113916005459,
+            "std": 0.002125041790238695
+          },
+          "ShipYcoordinate": {
+            "count": 7083,
+            "min": 36.09865666666666,
+            "max": 36.098753333333335,
+            "mean": 36.09870969363264,
+            "std": 2.880457636710164e-05
+          }
+        },
+        "has_slant_range": false,
+        "has_depth_offset": false,
+        "has_towfish_data": false
+      },
+      "reader_analysis": {
+        "extracted_pings": 100,
+        "latitude_stats": {
+          "min": 36.098753333333335,
+          "max": 36.098753333333335,
+          "mean": 36.09875333333332,
+          "std": 1.4210854715202004e-14,
+          "range": 0.0
+        },
+        "longitude_stats": {
+          "min": 129.50765333333334,
+          "max": 129.50773333333333,
+          "mean": 129.5076936,
+          "std": 2.7453718631250572e-05,
+          "range": 7.999999999697138e-05
+        },
+        "coordinate_units": {
+          "unit_type": "십진도 (Decimal Degrees)",
+          "latitude_range": 0.0,
+          "longitude_range": 7.999999999697138e-05,
+          "is_valid_korea_region": true,
+          "sample_coordinate": "(36.098753, 129.507653)"
+        },
+        "extraction_method": "SensorXcoordinate/SensorYcoordinate or SensorX/SensorY"
+      },
+      "coordinate_analysis": {
+        "detailed_packet_info": {
+          "SensorXcoordinate": 129.50765333333334,
+          "SensorYcoordinate": 36.098753333333335,
+          "ShipXcoordinate": 129.50765333333334,
+          "ShipYcoordinate": 36.098753333333335,
+          "CableOut": 0,
+          "SensorDepth": 12.958000183105469
+        },
+        "positioning_error_factors": {
+          "sensor_vs_ship_coordinates": {
+            "distance_difference": 0.0,
+            "x_difference": 0.0,
+            "y_difference": 0.0,
+            "uses_sensor_position": true
+          },
+          "slant_range_effect": {},
+          "depth_layback_effect": {},
+          "heading_attitude_effect": {},
+          "coordinate_system_issues": {
+            "potential_issues": [
+              "좌표가 한국 지역 십진도 형식"
+            ]
+          }
+        }
+      },
+      "analysis_timestamp": "2025-09-22T16:38:33.022171"
+    }
+  ],
+  "comprehensive_analysis": {
+    "coordinate_extraction_summary": {
+      "extraction_methods": [
+        "SensorXcoordinate/SensorYcoordinate or SensorX/SensorY"
+      ],
+      "coordinate_ranges": [
+        {
+          "file": "Pohang_Eardo_1_Edgetech4205_800_050_20241012110900_001_04.xtf",
+          "lat_range": [
+            36.098733333333335,
+            36.09874333333333
+          ],
+          "lon_range": [
+            129.51517333333334,
+            129.51529333333335
+          ],
+          "coordinate_center": [
+            36.098738199999985,
+            129.5152317333333
+          ]
+        },
+        {
+          "file": "Pohang_Eardo_1_Klein3900_900_050_20241011171100_001_04.xtf",
+          "lat_range": [
+            36.09867838459968,
+            36.09868440126634
+          ],
+          "lon_range": [
+            129.5148799878767,
+            129.5150347545434
+          ],
+          "coordinate_center": [
+            36.09868208376634,
+            129.51496574554338
+          ]
+        },
+        {
+          "file": "Pohang_Eardo_1_Edgetech4205_800_050_20241012181900_001_04.xtf",
+          "lat_range": [
+            36.098753333333335,
+            36.098753333333335
+          ],
+          "lon_range": [
+            129.50765333333334,
+            129.50773333333333
+          ],
+          "coordinate_center": [
+            36.09875333333332,
+            129.5076936
+          ]
+        }
+      ],
+      "uses_sensor_position": true,
+      "coordinate_unit": "십진도 (Decimal Degrees)"
+    },
+    "common_error_factors": {
+      "sensor_position_vs_measurement_point": {
+        "description": "XTF는 센서(소나) 위치를 기록하지만, 실제 측정은 해저면의 특정 지점",
+        "impact": "Slant range만큼의 수평 오차 가능성",
+        "severity": "Medium to High"
+      },
+      "coordinate_reference_frame": {
+        "description": "선박/센서 좌표계와 지리좌표계 간의 변환 과정에서 오차",
+        "impact": "수 미터에서 수십 미터의 위치 오차",
+        "severity": "Medium"
+      },
+      "towing_geometry": {
+        "description": "견인 소나의 경우 layback, 깊이, 케이블 길이 등의 기하학적 오차",
+        "impact": "견인체와 선박 간의 위치 차이",
+        "severity": "Low to Medium"
+      }
+    },
+    "location_discrepancy_explanation": {
+      "primary_cause": "지리적 분리 (Geographic Separation)",
+      "evidence": "XTF 파일들은 포항 근해 실제 조사 데이터, Location_MDGPS는 기뢰 위치 정보로 서로 다른 지역",
+      "distance": "약 55km 떨어진 위치",
+      "technical_factors": [
+        "XTF는 소나 센서 위치 기록 (해상)",
+        "Location_MDGPS는 기뢰 매설 위치 (해저)",
+        "서로 다른 시점, 다른 목적의 데이터"
+      ],
+      "conclusion": "좌표 추출 방법의 문제가 아닌 데이터 자체의 지리적 분리"
+    },
+    "recommendations": {
+      "for_coordinate_accuracy": [
+        "Slant range correction 적용",
+        "센서-선박 간 offset 보정",
+        "좌표계 변환 정확도 검증"
+      ],
+      "for_data_matching": [
+        "데이터 출처 및 목적 명확화",
+        "지리적 범위 사전 확인",
+        "시간적 일치성 검토"
+      ],
+      "for_analysis_improvement": [
+        "메타데이터 기반 데이터 분류",
+        "좌표 정확도 지표 개발",
+        "다중 소스 데이터 융합 방법론 개발"
+      ]
+    }
+  },
+  "analysis_timestamp": "2025-09-22T16:38:33.022458"
+}

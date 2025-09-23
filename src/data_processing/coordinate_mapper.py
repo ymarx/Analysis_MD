@@ -13,6 +13,7 @@ import logging
 from dataclasses import dataclass
 import pyproj
 from scipy.spatial import distance_matrix
+import re
 from scipy.interpolate import griddata
 try:
     import cv2
@@ -135,7 +136,98 @@ class TargetLocationLoader:
         self.target_locations: List[TargetLocation] = []
         
         logger.info("기물 위치 로더 초기화 완료")
-    
+
+    def parse_coordinate_string(self, coord_str: str) -> Optional[float]:
+        """
+        다양한 형식의 좌표 문자열을 float로 변환
+
+        지원 형식:
+        - "36.5933983 N" -> 36.5933983
+        - "129.5151167 E" -> 129.5151167
+        - "36°35'36.23" -> 36.593397
+        - "129°30'54.42" -> 129.515117
+        - "129 30.557773 E" -> 129.509296 (space-separated format)
+        - "36.5933983" -> 36.5933983
+        """
+        if not coord_str or pd.isna(coord_str):
+            return None
+
+        coord_str = str(coord_str).strip()
+
+        try:
+            # Pattern 1: "36.5933983 N" or "129.5151167 E"
+            decimal_with_direction = re.match(r'^([\d.-]+)\s*([NSEW])$', coord_str, re.IGNORECASE)
+            if decimal_with_direction:
+                value = float(decimal_with_direction.group(1))
+                direction = decimal_with_direction.group(2).upper()
+
+                # Apply direction (S and W are negative)
+                if direction in ['S', 'W']:
+                    value = -value
+
+                return value
+
+            # Pattern 2: "36°35'36.23" (degrees, minutes, seconds)
+            dms_pattern = re.match(r'^(\d+)°(\d+)\'([\d.]+)"?\s*([NSEW])?$', coord_str, re.IGNORECASE)
+            if dms_pattern:
+                degrees = int(dms_pattern.group(1))
+                minutes = int(dms_pattern.group(2))
+                seconds = float(dms_pattern.group(3))
+                direction = dms_pattern.group(4)
+
+                # Convert to decimal degrees
+                decimal = degrees + minutes/60 + seconds/3600
+
+                # Apply direction if present
+                if direction and direction.upper() in ['S', 'W']:
+                    decimal = -decimal
+
+                return decimal
+
+            # Pattern 3: "36°35.604'" (degrees, decimal minutes)
+            dm_pattern = re.match(r'^(\d+)°([\d.]+)\'?\s*([NSEW])?$', coord_str, re.IGNORECASE)
+            if dm_pattern:
+                degrees = int(dm_pattern.group(1))
+                minutes = float(dm_pattern.group(2))
+                direction = dm_pattern.group(3)
+
+                # Convert to decimal degrees
+                decimal = degrees + minutes/60
+
+                # Apply direction if present
+                if direction and direction.upper() in ['S', 'W']:
+                    decimal = -decimal
+
+                return decimal
+
+            # Pattern 4: "129 30.557773 E" (degrees space decimal_minutes direction)
+            space_dm_pattern = re.match(r'^(\d+)\s+([\d.]+)\s*([NSEW])$', coord_str, re.IGNORECASE)
+            if space_dm_pattern:
+                degrees = int(space_dm_pattern.group(1))
+                minutes = float(space_dm_pattern.group(2))
+                direction = space_dm_pattern.group(3).upper()
+
+                # Convert to decimal degrees
+                decimal = degrees + minutes/60
+
+                # Apply direction (S and W are negative)
+                if direction in ['S', 'W']:
+                    decimal = -decimal
+
+                return decimal
+
+            # Pattern 5: Simple decimal number
+            decimal_pattern = re.match(r'^([\d.-]+)$', coord_str)
+            if decimal_pattern:
+                return float(decimal_pattern.group(1))
+
+            # If none of the patterns match, try direct float conversion
+            return float(coord_str)
+
+        except (ValueError, AttributeError) as e:
+            logger.warning(f"Failed to parse coordinate '{coord_str}': {e}")
+            return None
+
     def load_from_excel(self, filepath: Union[str, Path], 
                        lat_col: str = 'latitude', 
                        lon_col: str = 'longitude',
@@ -184,8 +276,14 @@ class TargetLocationLoader:
             
             for idx, row in df.iterrows():
                 try:
-                    latitude = float(row[lat_col])
-                    longitude = float(row[lon_col])
+                    # Enhanced coordinate parsing
+                    latitude = self.parse_coordinate_string(row[lat_col])
+                    longitude = self.parse_coordinate_string(row[lon_col])
+
+                    if latitude is None or longitude is None:
+                        logger.warning(f"Failed to parse coordinates at row {idx}: lat='{row[lat_col]}', lon='{row[lon_col]}'")
+                        continue
+
                     target_id = str(row[id_col])
                     
                     # UTM 좌표 변환
