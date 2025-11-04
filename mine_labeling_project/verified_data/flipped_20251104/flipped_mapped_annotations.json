@@ -1,0 +1,677 @@
+[
+  {
+    "name": "mine",
+    "original_bmp": {
+      "xmin": 779,
+      "ymin": 4017,
+      "xmax": 830,
+      "ymax": 4066
+    },
+    "flipped_bmp": {
+      "xmin": 779,
+      "ymin": 1070,
+      "xmax": 830,
+      "ymax": 1119
+    },
+    "mapped_npy": {
+      "xmin": 4868,
+      "ymin": 1070,
+      "xmax": 5187,
+      "ymax": 1119,
+      "width": 319,
+      "height": 49
+    },
+    "center_npy": {
+      "x": 5028,
+      "y": 1094
+    }
+  },
+  {
+    "name": "mine",
+    "original_bmp": {
+      "xmin": 778,
+      "ymin": 3883,
+      "xmax": 829,
+      "ymax": 3932
+    },
+    "flipped_bmp": {
+      "xmin": 778,
+      "ymin": 1204,
+      "xmax": 829,
+      "ymax": 1253
+    },
+    "mapped_npy": {
+      "xmin": 4862,
+      "ymin": 1204,
+      "xmax": 5181,
+      "ymax": 1253,
+      "width": 319,
+      "height": 49
+    },
+    "center_npy": {
+      "x": 5021,
+      "y": 1228
+    }
+  },
+  {
+    "name": "mine",
+    "original_bmp": {
+      "xmin": 768,
+      "ymin": 3943,
+      "xmax": 819,
+      "ymax": 3992
+    },
+    "flipped_bmp": {
+      "xmin": 768,
+      "ymin": 1144,
+      "xmax": 819,
+      "ymax": 1193
+    },
+    "mapped_npy": {
+      "xmin": 4800,
+      "ymin": 1144,
+      "xmax": 5118,
+      "ymax": 1193,
+      "width": 318,
+      "height": 49
+    },
+    "center_npy": {
+      "x": 4959,
+      "y": 1168
+    }
+  },
+  {
+    "name": "mine",
+    "original_bmp": {
+      "xmin": 772,
+      "ymin": 3433,
+      "xmax": 823,
+      "ymax": 3482
+    },
+    "flipped_bmp": {
+      "xmin": 772,
+      "ymin": 1654,
+      "xmax": 823,
+      "ymax": 1703
+    },
+    "mapped_npy": {
+      "xmin": 4825,
+      "ymin": 1654,
+      "xmax": 5143,
+      "ymax": 1703,
+      "width": 318,
+      "height": 49
+    },
+    "center_npy": {
+      "x": 4984,
+      "y": 1678
+    }
+  },
+  {
+    "name": "mine",
+    "original_bmp": {
+      "xmin": 782,
+      "ymin": 3557,
+      "xmax": 833,
+      "ymax": 3606
+    },
+    "flipped_bmp": {
+      "xmin": 782,
+      "ymin": 1530,
+      "xmax": 833,
+      "ymax": 1579
+    },
+    "mapped_npy": {
+      "xmin": 4887,
+      "ymin": 1530,
+      "xmax": 5206,
+      "ymax": 1579,
+      "width": 319,
+      "height": 49
+    },
+    "center_npy": {
+      "x": 5046,
+      "y": 1554
+    }
+  },
+  {
+    "name": "mine",
+    "original_bmp": {
+      "xmin": 767,
+      "ymin": 3623,
+      "xmax": 818,
+      "ymax": 3672
+    },
+    "flipped_bmp": {
+      "xmin": 767,
+      "ymin": 1464,
+      "xmax": 818,
+      "ymax": 1513
+    },
+    "mapped_npy": {
+      "xmin": 4793,
+      "ymin": 1464,
+      "xmax": 5112,
+      "ymax": 1513,
+      "width": 319,
+      "height": 49
+    },
+    "center_npy": {
+      "x": 4953,
+      "y": 1488
+    }
+  },
+  {
+    "name": "mine",
+    "original_bmp": {
+      "xmin": 709,
+      "ymin": 3752,
+      "xmax": 760,
+      "ymax": 3801
+    },
+    "flipped_bmp": {
+      "xmin": 709,
+      "ymin": 1335,
+      "xmax": 760,
+      "ymax": 1384
+    },
+    "mapped_npy": {
+      "xmin": 4431,
+      "ymin": 1335,
+      "xmax": 4750,
+      "ymax": 1384,
+      "width": 319,
+      "height": 49
+    },
+    "center_npy": {
+      "x": 4590,
+      "y": 1359
+    }
+  },
+  {
+    "name": "mine",
+    "original_bmp": {
+      "xmin": 713,
+      "ymin": 3857,
+      "xmax": 764,
+      "ymax": 3906
+    },
+    "flipped_bmp": {
+      "xmin": 713,
+      "ymin": 1230,
+      "xmax": 764,
+      "ymax": 1279
+    },
+    "mapped_npy": {
+      "xmin": 4456,
+      "ymin": 1230,
+      "xmax": 4775,
+      "ymax": 1279,
+      "width": 319,
+      "height": 49
+    },
+    "center_npy": {
+      "x": 4615,
+      "y": 1254
+    }
+  },
+  {
+    "name": "mine",
+    "original_bmp": {
+      "xmin": 810,
+      "ymin": 2608,
+      "xmax": 861,
+      "ymax": 2657
+    },
+    "flipped_bmp": {
+      "xmin": 810,
+      "ymin": 2479,
+      "xmax": 861,
+      "ymax": 2528
+    },
+    "mapped_npy": {
+      "xmin": 5062,
+      "ymin": 2479,
+      "xmax": 5381,
+      "ymax": 2528,
+      "width": 319,
+      "height": 49
+    },
+    "center_npy": {
+      "x": 5221,
+      "y": 2503
+    }
+  },
+  {
+    "name": "mine",
+    "original_bmp": {
+      "xmin": 785,
+      "ymin": 2729,
+      "xmax": 836,
+      "ymax": 2778
+    },
+    "flipped_bmp": {
+      "xmin": 785,
+      "ymin": 2358,
+      "xmax": 836,
+      "ymax": 2407
+    },
+    "mapped_npy": {
+      "xmin": 4906,
+      "ymin": 2358,
+      "xmax": 5225,
+      "ymax": 2407,
+      "width": 319,
+      "height": 49
+    },
+    "center_npy": {
+      "x": 5065,
+      "y": 2382
+    }
+  },
+  {
+    "name": "mine",
+    "original_bmp": {
+      "xmin": 784,
+      "ymin": 2860,
+      "xmax": 835,
+      "ymax": 2909
+    },
+    "flipped_bmp": {
+      "xmin": 784,
+      "ymin": 2227,
+      "xmax": 835,
+      "ymax": 2276
+    },
+    "mapped_npy": {
+      "xmin": 4900,
+      "ymin": 2227,
+      "xmax": 5218,
+      "ymax": 2276,
+      "width": 318,
+      "height": 49
+    },
+    "center_npy": {
+      "x": 5059,
+      "y": 2251
+    }
+  },
+  {
+    "name": "mine",
+    "original_bmp": {
+      "xmin": 793,
+      "ymin": 2971,
+      "xmax": 844,
+      "ymax": 3020
+    },
+    "flipped_bmp": {
+      "xmin": 793,
+      "ymin": 2116,
+      "xmax": 844,
+      "ymax": 2165
+    },
+    "mapped_npy": {
+      "xmin": 4956,
+      "ymin": 2116,
+      "xmax": 5275,
+      "ymax": 2165,
+      "width": 319,
+      "height": 49
+    },
+    "center_npy": {
+      "x": 5115,
+      "y": 2140
+    }
+  },
+  {
+    "name": "mine",
+    "original_bmp": {
+      "xmin": 774,
+      "ymin": 3336,
+      "xmax": 825,
+      "ymax": 3385
+    },
+    "flipped_bmp": {
+      "xmin": 774,
+      "ymin": 1751,
+      "xmax": 825,
+      "ymax": 1800
+    },
+    "mapped_npy": {
+      "xmin": 4837,
+      "ymin": 1751,
+      "xmax": 5156,
+      "ymax": 1800,
+      "width": 319,
+      "height": 49
+    },
+    "center_npy": {
+      "x": 4996,
+      "y": 1775
+    }
+  },
+  {
+    "name": "mine",
+    "original_bmp": {
+      "xmin": 885,
+      "ymin": 2554,
+      "xmax": 936,
+      "ymax": 2603
+    },
+    "flipped_bmp": {
+      "xmin": 885,
+      "ymin": 2533,
+      "xmax": 936,
+      "ymax": 2582
+    },
+    "mapped_npy": {
+      "xmin": 5531,
+      "ymin": 2533,
+      "xmax": 5850,
+      "ymax": 2582,
+      "width": 319,
+      "height": 49
+    },
+    "center_npy": {
+      "x": 5690,
+      "y": 2557
+    }
+  },
+  {
+    "name": "mine",
+    "original_bmp": {
+      "xmin": 867,
+      "ymin": 2433,
+      "xmax": 918,
+      "ymax": 2482
+    },
+    "flipped_bmp": {
+      "xmin": 867,
+      "ymin": 2654,
+      "xmax": 918,
+      "ymax": 2703
+    },
+    "mapped_npy": {
+      "xmin": 5418,
+      "ymin": 2654,
+      "xmax": 5737,
+      "ymax": 2703,
+      "width": 319,
+      "height": 49
+    },
+    "center_npy": {
+      "x": 5578,
+      "y": 2678
+    }
+  },
+  {
+    "name": "mine",
+    "original_bmp": {
+      "xmin": 872,
+      "ymin": 2331,
+      "xmax": 923,
+      "ymax": 2380
+    },
+    "flipped_bmp": {
+      "xmin": 872,
+      "ymin": 2756,
+      "xmax": 923,
+      "ymax": 2805
+    },
+    "mapped_npy": {
+      "xmin": 5450,
+      "ymin": 2756,
+      "xmax": 5768,
+      "ymax": 2805,
+      "width": 318,
+      "height": 49
+    },
+    "center_npy": {
+      "x": 5609,
+      "y": 2780
+    }
+  },
+  {
+    "name": "mine",
+    "original_bmp": {
+      "xmin": 845,
+      "ymin": 2173,
+      "xmax": 896,
+      "ymax": 2222
+    },
+    "flipped_bmp": {
+      "xmin": 845,
+      "ymin": 2914,
+      "xmax": 896,
+      "ymax": 2963
+    },
+    "mapped_npy": {
+      "xmin": 5281,
+      "ymin": 2914,
+      "xmax": 5600,
+      "ymax": 2963,
+      "width": 319,
+      "height": 49
+    },
+    "center_npy": {
+      "x": 5440,
+      "y": 2938
+    }
+  },
+  {
+    "name": "mine",
+    "original_bmp": {
+      "xmin": 738,
+      "ymin": 1802,
+      "xmax": 789,
+      "ymax": 1851
+    },
+    "flipped_bmp": {
+      "xmin": 738,
+      "ymin": 3285,
+      "xmax": 789,
+      "ymax": 3334
+    },
+    "mapped_npy": {
+      "xmin": 4612,
+      "ymin": 3285,
+      "xmax": 4931,
+      "ymax": 3334,
+      "width": 319,
+      "height": 49
+    },
+    "center_npy": {
+      "x": 4771,
+      "y": 3309
+    }
+  },
+  {
+    "name": "mine",
+    "original_bmp": {
+      "xmin": 789,
+      "ymin": 1907,
+      "xmax": 840,
+      "ymax": 1956
+    },
+    "flipped_bmp": {
+      "xmin": 789,
+      "ymin": 3180,
+      "xmax": 840,
+      "ymax": 3229
+    },
+    "mapped_npy": {
+      "xmin": 4931,
+      "ymin": 3180,
+      "xmax": 5250,
+      "ymax": 3229,
+      "width": 319,
+      "height": 49
+    },
+    "center_npy": {
+      "x": 5090,
+      "y": 3204
+    }
+  },
+  {
+    "name": "mine",
+    "original_bmp": {
+      "xmin": 792,
+      "ymin": 1618,
+      "xmax": 843,
+      "ymax": 1667
+    },
+    "flipped_bmp": {
+      "xmin": 792,
+      "ymin": 3469,
+      "xmax": 843,
+      "ymax": 3518
+    },
+    "mapped_npy": {
+      "xmin": 4950,
+      "ymin": 3469,
+      "xmax": 5268,
+      "ymax": 3518,
+      "width": 318,
+      "height": 49
+    },
+    "center_npy": {
+      "x": 5109,
+      "y": 3493
+    }
+  },
+  {
+    "name": "mine",
+    "original_bmp": {
+      "xmin": 742,
+      "ymin": 1682,
+      "xmax": 793,
+      "ymax": 1731
+    },
+    "flipped_bmp": {
+      "xmin": 742,
+      "ymin": 3405,
+      "xmax": 793,
+      "ymax": 3454
+    },
+    "mapped_npy": {
+      "xmin": 4637,
+      "ymin": 3405,
+      "xmax": 4956,
+      "ymax": 3454,
+      "width": 319,
+      "height": 49
+    },
+    "center_npy": {
+      "x": 4796,
+      "y": 3429
+    }
+  },
+  {
+    "name": "mine",
+    "original_bmp": {
+      "xmin": 742,
+      "ymin": 1353,
+      "xmax": 793,
+      "ymax": 1402
+    },
+    "flipped_bmp": {
+      "xmin": 742,
+      "ymin": 3734,
+      "xmax": 793,
+      "ymax": 3783
+    },
+    "mapped_npy": {
+      "xmin": 4637,
+      "ymin": 3734,
+      "xmax": 4956,
+      "ymax": 3783,
+      "width": 319,
+      "height": 49
+    },
+    "center_npy": {
+      "x": 4796,
+      "y": 3758
+    }
+  },
+  {
+    "name": "mine",
+    "original_bmp": {
+      "xmin": 750,
+      "ymin": 1465,
+      "xmax": 801,
+      "ymax": 1514
+    },
+    "flipped_bmp": {
+      "xmin": 750,
+      "ymin": 3622,
+      "xmax": 801,
+      "ymax": 3671
+    },
+    "mapped_npy": {
+      "xmin": 4687,
+      "ymin": 3622,
+      "xmax": 5006,
+      "ymax": 3671,
+      "width": 319,
+      "height": 49
+    },
+    "center_npy": {
+      "x": 4846,
+      "y": 3646
+    }
+  },
+  {
+    "name": "mine",
+    "original_bmp": {
+      "xmin": 794,
+      "ymin": 1187,
+      "xmax": 845,
+      "ymax": 1236
+    },
+    "flipped_bmp": {
+      "xmin": 794,
+      "ymin": 3900,
+      "xmax": 845,
+      "ymax": 3949
+    },
+    "mapped_npy": {
+      "xmin": 4962,
+      "ymin": 3900,
+      "xmax": 5281,
+      "ymax": 3949,
+      "width": 319,
+      "height": 49
+    },
+    "center_npy": {
+      "x": 5121,
+      "y": 3924
+    }
+  },
+  {
+    "name": "mine",
+    "original_bmp": {
+      "xmin": 842,
+      "ymin": 1069,
+      "xmax": 893,
+      "ymax": 1118
+    },
+    "flipped_bmp": {
+      "xmin": 842,
+      "ymin": 4018,
+      "xmax": 893,
+      "ymax": 4067
+    },
+    "mapped_npy": {
+      "xmin": 5262,
+      "ymin": 4018,
+      "xmax": 5581,
+      "ymax": 4067,
+      "width": 319,
+      "height": 49
+    },
+    "center_npy": {
+      "x": 5421,
+      "y": 4042
+    }
+  }
+]

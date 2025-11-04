@@ -1,0 +1,16 @@
+# Include documentation
+include README.md
+include INSTALL.md
+include USAGE.md
+include VERIFIED_MODULES.md
+recursive-include docs *.md
+
+# Include config files
+recursive-include config *.yaml
+
+# Include requirements
+include requirements.txt
+
+# Exclude test data
+prune data
+prune tests

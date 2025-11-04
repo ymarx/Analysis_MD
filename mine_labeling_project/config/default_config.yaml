@@ -1,0 +1,248 @@
+# Mine Labeling Project - Default Configuration
+# 2025-11-04
+
+# =============================================================================
+# PROJECT PATHS
+# =============================================================================
+paths:
+  # Input data directories
+  xtf_data: "datasets/Pohang_Eardo_1_Klein3900_900_050_20241011171100_001_04/original"
+  bmp_images: "KleinLabeling"
+  xml_annotations: "KleinLabeling"
+
+  # Verified data (pre-processed, ready to use)
+  verified_data: "verified_data/flipped_20251104"
+
+  # Output directories
+  output_root: "data/processed"
+  extracted: "data/processed/xtf_extracted"
+  labeled: "data/processed/labeled"
+  sampled: "data/processed/sampled"
+  augmented: "data/processed/augmented"
+
+  # Logs and checkpoints
+  logs: "logs"
+  checkpoints: "checkpoints"
+
+# =============================================================================
+# XTF EXTRACTION
+# =============================================================================
+extraction:
+  # Full data extraction (no sampling)
+  sample_rate: 1.0
+
+  # Ping range (null = all pings)
+  ping_range: null
+
+  # Output format
+  save_combined: true
+  save_port: true
+  save_starboard: true
+  save_navigation: true
+  save_metadata: true
+
+  # Data processing
+  normalize: true
+  dtype: "float32"
+
+# =============================================================================
+# COORDINATE MAPPING
+# =============================================================================
+coordinate_mapping:
+  # Source dimensions (BMP annotations)
+  bmp_width: 1024
+  bmp_height: 5137
+
+  # Target dimensions (NPY intensity data)
+  npy_width: 6400
+  npy_height: 5137
+
+  # Scaling factors (automatically calculated)
+  scale_x: 6.25  # 6400 / 1024
+  scale_y: 1.0   # 5137 / 5137
+
+  # Y-axis flip (critical for correct orientation)
+  # TRUE: Use for existing BMP data (already flipped)
+  # FALSE: Use for new XTF→image conversions
+  apply_y_flip: true
+
+  # Flip formula: Y_npy = (npy_height - 1) - Y_bmp
+
+# =============================================================================
+# LABELING
+# =============================================================================
+labeling:
+  # Label format
+  label_dtype: "uint8"
+  background_value: 0
+  mine_value: 1
+
+  # Instance segmentation
+  enable_instance_ids: true
+  instance_start_id: 1
+
+  # Bounding box expansion (pixels)
+  bbox_padding: 0
+
+  # Output formats
+  save_npz: true
+  save_json: true
+  save_xml: false
+
+  # Validation
+  validate_labels: true
+  validate_coverage: true
+
+# =============================================================================
+# SAMPLING
+# =============================================================================
+sampling:
+  # Mine sampling
+  mine_samples: 25  # Total number of mines
+
+  # Background sampling
+  background_samples: 125  # 1:5 ratio (mine:background)
+
+  # Sampling strategy
+  random_seed: 42
+  ensure_no_overlap: true
+  min_distance_from_mine: 50  # pixels
+
+  # Patch extraction
+  patch_size: 128
+  center_crop: true
+
+# =============================================================================
+# DATA AUGMENTATION
+# =============================================================================
+augmentation:
+  # Augmentation multiplier (9 = 9 augmented versions per sample)
+  augmentation_factor: 9
+
+  # Random seed for reproducibility
+  random_seed: 42
+
+  # Augmentation techniques
+  techniques:
+    horizontal_flip:
+      enabled: true
+      probability: 1.0
+
+    vertical_flip:
+      enabled: true
+      probability: 1.0
+
+    rotation:
+      enabled: true
+      limit: 15  # degrees
+      probability: 1.0
+
+    scale:
+      enabled: true
+      scale_limit: 0.1  # ±10%
+      probability: 1.0
+
+    brightness:
+      enabled: true
+      limit: 0.2  # ±20%
+      probability: 1.0
+
+    contrast:
+      enabled: true
+      limit: 0.2  # ±20%
+      probability: 1.0
+
+    gaussian_blur:
+      enabled: true
+      blur_limit: [3, 7]
+      probability: 0.5
+
+    gaussian_noise:
+      enabled: true
+      var_limit: [10, 50]
+      probability: 0.5
+
+    elastic_transform:
+      enabled: true
+      alpha: 1
+      sigma: 50
+      probability: 0.3
+
+  # Output organization
+  save_original: false  # Don't save original (already in sampled/)
+  separate_folders: true  # One folder per augmentation type
+
+# =============================================================================
+# VALIDATION
+# =============================================================================
+validation:
+  # Dimension checks
+  check_dimensions: true
+  check_scaling: true
+
+  # Label checks
+  check_label_values: true
+  check_label_coverage: true
+  min_coverage_threshold: 0.0001  # Minimum percentage of mine pixels
+
+  # Coordinate checks
+  check_bounds: true
+  check_overlaps: false  # Mines can overlap
+
+  # Visual validation
+  generate_visualizations: true
+  visualization_samples: 5  # Number of samples to visualize
+
+# =============================================================================
+# LOGGING
+# =============================================================================
+logging:
+  level: "INFO"  # DEBUG, INFO, WARNING, ERROR
+
+  # Console output
+  console_enabled: true
+  console_format: "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+
+  # File output
+  file_enabled: true
+  file_format: "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+  log_file: "logs/mine_labeling.log"
+
+  # Rotation
+  rotate_logs: true
+  max_bytes: 10485760  # 10MB
+  backup_count: 5
+
+# =============================================================================
+# PERFORMANCE
+# =============================================================================
+performance:
+  # Memory management
+  chunk_size: 5000  # For large file processing
+  max_workers: 4    # Parallel processing workers
+
+  # Caching
+  enable_cache: true
+  cache_dir: ".cache"
+
+# =============================================================================
+# METADATA
+# =============================================================================
+metadata:
+  project_name: "Mine Labeling Project"
+  version: "1.0.0"
+  date_created: "2025-11-04"
+
+  # Sonar specifications
+  sonar:
+    manufacturer: "Klein"
+    model: "3900"
+    frequency: 900  # kHz
+    side_scan: true
+
+  # Dataset information
+  dataset:
+    location: "Pohang Eardo 1"
+    total_pings: 5137
+    total_mines: 25
+    verified_date: "2025-11-04"

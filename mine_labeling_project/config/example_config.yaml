@@ -1,0 +1,102 @@
+# Example Configuration - Custom Settings
+# Copy this file and modify for your specific use case
+
+# =============================================================================
+# QUICK START EXAMPLE
+# =============================================================================
+# Use case: Quick testing with small dataset
+
+paths:
+  verified_data: "verified_data/flipped_20251104"
+  output_root: "data/test_output"
+
+sampling:
+  mine_samples: 10        # Test with 10 mines
+  background_samples: 50  # 1:5 ratio
+  patch_size: 64          # Smaller patches for quick testing
+
+augmentation:
+  augmentation_factor: 3  # Only 3 augmentations for testing
+  techniques:
+    horizontal_flip:
+      enabled: true
+      probability: 1.0
+    vertical_flip:
+      enabled: true
+      probability: 1.0
+    rotation:
+      enabled: true
+      limit: 15
+      probability: 1.0
+
+# =============================================================================
+# PRODUCTION EXAMPLE
+# =============================================================================
+# Use case: Full pipeline with all features
+
+# paths:
+#   verified_data: "verified_data/flipped_20251104"
+#   output_root: "data/production"
+
+# sampling:
+#   mine_samples: 25
+#   background_samples: 125
+#   patch_size: 128
+#   random_seed: 42
+
+# augmentation:
+#   augmentation_factor: 9
+#   random_seed: 42
+#   techniques:
+#     horizontal_flip:
+#       enabled: true
+#     vertical_flip:
+#       enabled: true
+#     rotation:
+#       enabled: true
+#     scale:
+#       enabled: true
+#     brightness:
+#       enabled: true
+#     contrast:
+#       enabled: true
+#     gaussian_blur:
+#       enabled: true
+#     gaussian_noise:
+#       enabled: true
+#     elastic_transform:
+#       enabled: true
+
+# =============================================================================
+# NEW DATA PROCESSING EXAMPLE
+# =============================================================================
+# Use case: Processing new XTF file (not using verified data)
+
+# paths:
+#   xtf_data: "datasets/new_survey/original"
+#   bmp_images: "datasets/new_survey/annotations"
+#   xml_annotations: "datasets/new_survey/annotations"
+#   output_root: "data/new_survey"
+
+# extraction:
+#   sample_rate: 1.0
+#   save_combined: true
+#   normalize: true
+
+# coordinate_mapping:
+#   apply_y_flip: false  # For new XTF→image conversion
+
+# labeling:
+#   validate_labels: true
+#   save_npz: true
+#   save_json: true
+
+# =============================================================================
+# MINIMAL CONFIGURATION EXAMPLE
+# =============================================================================
+# Use case: Only use verified data, no sampling/augmentation
+
+# paths:
+#   verified_data: "verified_data/flipped_20251104"
+
+# This will use all defaults from default_config.yaml
