@@ -6,6 +6,9 @@
 **프로젝트**: Mine Labeling Project - 사이드스캔 소나 기뢰 탐지 레이블링 도구
 **목적**: NPY 강도 데이터를 BMP로 변환하고 인터랙티브 레이블링 도구 구현
 
+**독립 리포지토리**: https://github.com/ymarx/mine-labeling-toolkit
+**위치**: `/Users/YMARX/Dropbox/2025_ECMiner/C_P02_기뢰전대/03_진행/mine_labeling_project/`
+
 ## 주요 구현 내용
 
 ### 1. JSON → XML 변환기
